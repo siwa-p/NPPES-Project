@@ -5,11 +5,14 @@ import test
 import os
 import pandas as pd
 import io
+import sqlalchemy
 from ticktock import tick
 
 STORAGE_CONNECTION_STRING = os.getenv("AZURE_STORAGE_CONNECTION_STRING")
 CONTAINER_NAME = os.getenv("AZURE_CONTAINER_NAME")
 FILE_NAME = os.getenv("AZURE_STORAGE_BLOB_NAME_SAMPLE")
+POSTGRES_CONN_STRING = f"postgresql://{os.getenv('PG_USER')}:{os.getenv('PG_PASSWORD')}@{os.getenv('PG_HOST')}:{os.getenv('PG_PORT')}/{os.getenv('PG_DB')}"
+TABLE_NAME = "nppes_sample"
 
 app = func.FunctionApp(http_auth_level=func.AuthLevel.ANONYMOUS)
 
@@ -23,9 +26,9 @@ def load_postgres(req: func.HttpRequest) -> func.HttpResponse:
             container=CONTAINER_NAME,
             blob=FILE_NAME
         )
-        clock = tick()
+        #clock = tick()
         process_nppes_data(blob_client)
-        clock.tock()  
+        #clock.tock()  
     except Exception as e:
         
         return func.HttpResponse(
@@ -34,13 +37,13 @@ def load_postgres(req: func.HttpRequest) -> func.HttpResponse:
         )
         
 
-
-
 def process_nppes_data(blob_client, chunk_size=15000):
     start = 0
     blob_properties = blob_client.get_blob_properties()
     blob_size = blob_properties.size
     bytes_remaining = blob_size
+    last_chunk = blob_size//chunk_size +1
+    chunk_num =1 
     while bytes_remaining > 0:
         if bytes_remaining < chunk_size:
             bytes_to_fetch = bytes_remaining
@@ -51,12 +54,28 @@ def process_nppes_data(blob_client, chunk_size=15000):
         first_chunk_text = data.decode('utf-8')
         # how many lines?
         lines  = first_chunk_text.split('\n')
-        if len(lines)>1:
-            if start == 0:
-                headers = lines[0]
-                data_lines = lines[1:len(lines)-2]
-            else:
-                data_lines = lines[0:len(lines)-2] # fix last line exclusion for the last chunk
+        if chunk_num == 1:
+            headers = lines[0]
+            columns = [col.strip().replace('"', '').replace("'", "") for col in headers.split(",")]
+            data_lines = lines[1:len(lines)-2]
+            #engine = sqlalchemy.create_engine(POSTGRES_CONN_STR)
+            #create_table_from_headers(headers, "nppes", engine)
+            #load_data()sample, engine)
+        elif chunk_num < last_chunk:
+            data_lines = lines[0:len(lines)-2]
+            #load_data()
+        else:
+            #load_data()    
+
+        #df[header] to sql (add arguments to make tables for you)
+        #df[data] to sql (append)
+
+        #if len(lines)>1:
+        #    if start == 0:
+        #        headers = lines[0]
+        #        data_lines = lines[1:len(lines)-2]
+        #    else:
+        #        data_lines = lines[0:len(lines)-2] # fix last line exclusion for the last chunk
                 # can use something like blob_size//chunk_size to figure out chunk number
             
             
@@ -114,3 +133,6 @@ def process_nppes_data(blob_client, chunk_size=15000):
 # local emulator - blob
 
 # postgres - docker-containers
+
+
+
