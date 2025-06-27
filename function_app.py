@@ -6,7 +6,7 @@ import os
 import pandas as pd
 import io
 from ticktock import tick
-
+import csv
 STORAGE_CONNECTION_STRING = os.getenv("AZURE_STORAGE_CONNECTION_STRING")
 CONTAINER_NAME = os.getenv("AZURE_CONTAINER_NAME")
 FILE_NAME = os.getenv("AZURE_STORAGE_BLOB_NAME_SAMPLE")
@@ -94,81 +94,60 @@ def load_sample_nppes(req: func.HttpRequest) -> func.HttpResponse:
             f"An error occurred: {e}",
             status_code=500
         )
-        
 
 
-
-def process_nppes_data(blob_client, chunk_size=15000):
+def process_nppes_data(blob_client, chunk_size=10*1024*1024):
     start = 0
     blob_properties = blob_client.get_blob_properties()
     blob_size = blob_properties.size
     bytes_remaining = blob_size
     last_chunk = blob_size//chunk_size +1
-    chunk_num = 1
+    chunk_num =1 
+    data_headers = []
     while bytes_remaining > 0:
         if bytes_remaining < chunk_size:
             bytes_to_fetch = bytes_remaining
         else:
             bytes_to_fetch = chunk_size 
         downloader = blob_client.download_blob(start, bytes_to_fetch)
-        data = downloader.read()
-        first_chunk_text = data.decode('utf-8')
-        # how many lines?
-        lines  = first_chunk_text.split('\n')
+        blob_data = downloader.read()
+        text_read = blob_data.decode('utf-8')
+        reader = csv.reader(io.StringIO(text_read))
+        values_list = list(reader)
         if chunk_num == 1:
-            headers = lines[0]
-            columns_present = [col for col in headers.split(",")]
-            
-            columns_indexes = [columns_present.index(col) for col in columns_present]
-            print(columns_present)
-            print(columns_indexes)
-            print(columns_indexes[-1], columns_present[-1])
-            
-            # find the index for columns_to_keep
-            columns_to_keep_indexes = [columns_present.index(col) for col in columns_to_keep if col in columns_present]
-            
-            print(f"Indexes of columns to keep: {columns_to_keep_indexes}")
-            print("Columns to keep found:", [columns_present[i] for i in columns_to_keep_indexes])
-            data = []
-            data_lines = lines[1:len(lines)-2]
-            for line in data_lines:
-                values = [entry for entry in line.split(",")]
-                values_to_keep = [values[i] for i in columns_to_keep_indexes]
-                data.append(values_to_keep)
-            
-            print(data)
-            # select the same indexes
-            
-            load_headers()
-            load_data()
-        elif chunk_num<last_chunk:
-            data_lines = lines[0:len(lines)-2]
-            load_data()
+            headers = values_list[0]
+            data_headers.append(headers)
+            values = values_list[1:-1]
+            chunk_df = pd.DataFrame(values, columns=data_headers)
+            data_returned = process_and_load(chunk_df)
+            start, chunk_num, bytes_remaining = clear_bytes(start,values_list,bytes_to_fetch,chunk_num, bytes_remaining)
+        elif chunk_num < last_chunk:
+            values = list(values_list)[0:-1]
+            chunk_df = pd.DataFrame(values, columns=data_headers)
+            data_returned = process_and_load(chunk_df)
+            start, chunk_num, bytes_remaining = clear_bytes(start,values_list,bytes_to_fetch,chunk_num, bytes_remaining)        
         else:
-            load_data()
-        
-        
-        
-# df[header]-to sql ( add arguments to make tables for you)
-# df[data] to sql (append)    
-                
-                    
-            
-            
-            # change csv to dataframe here
-            
-            # add header to postgres table
-            
-            # add data to postgres table
-            
-            
-            last_line = lines[-1]
-            last_line_bytes = len(last_line.encode('utf-8'))
-            bytes_utilized = bytes_to_fetch-last_line_bytes    
-            bytes_remaining -= bytes_utilized
-            start += bytes_utilized
-            
-            chunk_num+=1
+            values = values_list
+            chunk_df = pd.DataFrame(values, columns=data_headers)
+            data_returned = process_and_load(chunk_df)
+            start, chunk_num, bytes_remaining = clear_bytes(start,values_list,bytes_to_fetch,chunk_num, bytes_remaining)
+
+
+def process_and_load(df):
+    filtered_df = df[columns_to_keep]
+    # print(filtered_df)
+    return filtered_df
+    
+    
+def clear_bytes(start, lines, bytes_to_fetch, chunk_num, bytes_remaining):
+    last_line = lines[-1]
+    last_line_bytes = len(','.join(last_line).encode('utf-8'))
+    bytes_utilized = bytes_to_fetch-last_line_bytes    
+    bytes_remaining -= bytes_utilized
+    start += bytes_utilized
+    chunk_num+=1
+    return start, chunk_num, bytes_remaining
+
             
     
     # need to add the remaining data to the next chunk!
