@@ -75,67 +75,6 @@ columns_to_keep = [
     "Healthcare Provider Primary Taxonomy Switch_15"
 ]
 
-columns_to_keep = [
-    "NPI",
-    "Entity Type Code",
-    "Employer Identification Number (EIN)",
-    "Provider Organization Name (Legal Business Name)",
-    "Provider Last Name (Legal Name)",
-    "Provider First Name",
-    "Provider Middle Name",
-    "Provider Name Prefix Text",
-    "Provider Name Suffix Text",
-    "Provider Credential Text",
-    "Provider Other Organization Name",
-    "Provider Other Organization Name Type Code",
-    "Provider Other Last Name",
-    "Provider Other First Name",
-    "Provider Other Middle Name",
-    "Provider Other Name Prefix Text",
-    "Provider Other Name Suffix Text",
-    "Provider Other Credential Text",
-    "Provider Other Last Name Type Code",
-    "Provider First Line Business Practice Location Address",
-    "Provider Second Line Business Practice Location Address",
-    "Provider Business Practice Location Address City Name",
-    "Provider Business Practice Location Address State Name",
-    "Provider Business Practice Location Address Postal Code",
-    "Provider Business Practice Location Address Country Code (If outside U.S.)",
-    "Provider Business Practice Location Address Telephone Number",
-    "Provider Business Practice Location Address Fax Number",
-    "Provider License Number_1",
-    "Provider License Number State Code_1",
-    "Healthcare Provider Primary Taxonomy Switch_1",
-    "Healthcare Provider Taxonomy Code_2",
-    "Healthcare Provider Primary Taxonomy Switch_2",
-    "Healthcare Provider Taxonomy Code_3",
-    "Healthcare Provider Primary Taxonomy Switch_3",
-    "Healthcare Provider Taxonomy Code_4",
-    "Healthcare Provider Primary Taxonomy Switch_4",
-    "Healthcare Provider Taxonomy Code_5",
-    "Healthcare Provider Primary Taxonomy Switch_5",
-    "Healthcare Provider Taxonomy Code_6",
-    "Healthcare Provider Primary Taxonomy Switch_6",
-    "Healthcare Provider Taxonomy Code_7",
-    "Healthcare Provider Primary Taxonomy Switch_7",
-    "Healthcare Provider Taxonomy Code_8",
-    "Healthcare Provider Primary Taxonomy Switch_8",
-    "Healthcare Provider Taxonomy Code_9",
-    "Healthcare Provider Primary Taxonomy Switch_9",
-    "Healthcare Provider Taxonomy Code_10",
-    "Healthcare Provider Primary Taxonomy Switch_10",
-    "Healthcare Provider Taxonomy Code_11",
-    "Healthcare Provider Primary Taxonomy Switch_11",
-    "Healthcare Provider Taxonomy Code_12",
-    "Healthcare Provider Primary Taxonomy Switch_12",
-    "Healthcare Provider Taxonomy Code_13",
-    "Healthcare Provider Primary Taxonomy Switch_13",
-    "Healthcare Provider Taxonomy Code_14",
-    "Healthcare Provider Primary Taxonomy Switch_14",
-    "Healthcare Provider Taxonomy Code_15",
-    "Healthcare Provider Primary Taxonomy Switch_15"
-]
-
 
 app = func.FunctionApp(http_auth_level=func.AuthLevel.ANONYMOUS)
 
@@ -212,3 +151,25 @@ def clear_bytes(start, lines, bytes_to_fetch, chunk_num, bytes_remaining):
     start += bytes_utilized
     chunk_num+=1
     return start, chunk_num, bytes_remaining
+
+
+@app.route(route="http_trigger", auth_level=func.AuthLevel.ANONYMOUS)
+def http_trigger(req: func.HttpRequest) -> func.HttpResponse:
+    logging.info('Python HTTP trigger function processed a request.')
+
+    name = req.params.get('name')
+    if not name:
+        try:
+            req_body = req.get_json()
+        except ValueError:
+            pass
+        else:
+            name = req_body.get('name')
+
+    if name:
+        return func.HttpResponse(f"Hello, {name}. This HTTP triggered function executed successfully.")
+    else:
+        return func.HttpResponse(
+             "This HTTP triggered function executed successfully. Pass a name in the query string or in the request body for a personalized response.",
+             status_code=200
+        )
