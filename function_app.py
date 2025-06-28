@@ -1,18 +1,16 @@
 import azure.functions as func
 from azure.storage.blob import BlobServiceClient
 import logging
-import test
 import os
 import pandas as pd
 import io
-import sqlalchemy
 from ticktock import tick
 import csv
 STORAGE_CONNECTION_STRING = os.getenv("AZURE_STORAGE_CONNECTION_STRING")
 CONTAINER_NAME = os.getenv("AZURE_CONTAINER_NAME")
 FILE_NAME = os.getenv("AZURE_STORAGE_BLOB_NAME_SAMPLE")
 POSTGRES_CONN_STRING = f"postgresql://{os.getenv('PG_USER')}:{os.getenv('PG_PASSWORD')}@{os.getenv('PG_HOST')}:{os.getenv('PG_PORT')}/{os.getenv('PG_DB')}"
-TABLE_NAME = "nppes_sample"
+TABLE_NAME = "nppes"
 
 columns_to_keep = [
     "NPI",
@@ -75,10 +73,7 @@ columns_to_keep = [
     "Healthcare Provider Primary Taxonomy Switch_15"
 ]
 
-
 app = func.FunctionApp(http_auth_level=func.AuthLevel.ANONYMOUS)
-
-
 @app.route(route="load_sample_nppes", methods=["GET", "POST"])
 def load_sample_nppes(req: func.HttpRequest) -> func.HttpResponse:
     logging.info('HTTP trigger function for debugging started')
@@ -91,8 +86,7 @@ def load_sample_nppes(req: func.HttpRequest) -> func.HttpResponse:
         #clock = tick()
         process_nppes_data(blob_client)
         #clock.tock()  
-    except Exception as e:
-        
+    except Exception as e:  
         return func.HttpResponse(
             f"An error occurred: {e}",
             status_code=500
@@ -105,7 +99,6 @@ def process_nppes_data(blob_client, chunk_size=10*1024*1024):
     bytes_remaining = blob_size
     last_chunk = blob_size//chunk_size +1
     chunk_num =1 
-    
     data_headers = []
     while bytes_remaining > 0:
         if bytes_remaining < chunk_size:
@@ -113,7 +106,6 @@ def process_nppes_data(blob_client, chunk_size=10*1024*1024):
         else:
             bytes_to_fetch = chunk_size 
         downloader = blob_client.download_blob(start, bytes_to_fetch)
-        
         blob_data = downloader.read()
         text_read = blob_data.decode('utf-8')
         reader = csv.reader(io.StringIO(text_read))
@@ -121,55 +113,68 @@ def process_nppes_data(blob_client, chunk_size=10*1024*1024):
         if chunk_num == 1:
             headers = values_list[0]
             data_headers.append(headers)
-            values = values_list[1:-1]
+            values = values_list[1:-1]   
+            values = check_first_row(values)         
             chunk_df = pd.DataFrame(values, columns=data_headers)
+            chunk_df.columns = [fix_column_names(col) for col in chunk_df.columns]
+            load_header(chunk_df, TABLE_NAME, POSTGRES_CONN_STRING)
+            load_data(chunk_df, TABLE_NAME, POSTGRES_CONN_STRING)
+            logging.info(f"Header loaded into {TABLE_NAME} table successfully.")
+            # Process and load the first chunk
             data_returned = process_and_load(chunk_df)
-            start, chunk_num, bytes_remaining = clear_bytes(start,values_list,bytes_to_fetch,chunk_num, bytes_remaining)
         elif chunk_num < last_chunk:
-            values = list(values_list)[0:-1]
+            values = values_list[:-1]
+            values = check_first_row(values)
             chunk_df = pd.DataFrame(values, columns=data_headers)
-            data_returned = process_and_load(chunk_df)
-            start, chunk_num, bytes_remaining = clear_bytes(start,values_list,bytes_to_fetch,chunk_num, bytes_remaining)        
+            data_returned = process_and_load(chunk_df)        
         else:
-            values = values_list
+            values = check_first_row(values_list)
             chunk_df = pd.DataFrame(values, columns=data_headers)
             data_returned = process_and_load(chunk_df)
-            start, chunk_num, bytes_remaining = clear_bytes(start,values_list,bytes_to_fetch,chunk_num, bytes_remaining)
-
+                
+        logging.info(f"Chunk {chunk_num} processed with {len(data_returned)} rows.")
+        start, chunk_num, bytes_remaining = clear_bytes(start, values_list, bytes_to_fetch, chunk_num, bytes_remaining)
 
 def process_and_load(df):
     filtered_df = df[columns_to_keep]
-    # print(filtered_df)
     return filtered_df
     
     
 def clear_bytes(start, lines, bytes_to_fetch, chunk_num, bytes_remaining):
     last_line = lines[-1]
-    last_line_bytes = len(','.join(last_line).encode('utf-8'))
+    # last_line_str = ','.join(str(cell) for cell in last_line) + '\n'
+    
+    last_line_bytes = len(str(last_line).encode('utf-8'))
+    
     bytes_utilized = bytes_to_fetch-last_line_bytes    
     bytes_remaining -= bytes_utilized
     start += bytes_utilized
     chunk_num+=1
     return start, chunk_num, bytes_remaining
 
+def check_first_row(values:list):
+    if not any(values[0]):
+        values = values[1:]
+    return values
 
-@app.route(route="http_trigger", auth_level=func.AuthLevel.ANONYMOUS)
-def http_trigger(req: func.HttpRequest) -> func.HttpResponse:
-    logging.info('Python HTTP trigger function processed a request.')
+def load_header(data:pd.DataFrame, table_name:str, engine):
+    data.head(0).to_sql(
+        name = table_name,
+        con=engine,
+        if_exists='replace',
+        index=False
+    )
+    logging.info(f"Header loaded into {table_name} table successfully.")
 
-    name = req.params.get('name')
-    if not name:
-        try:
-            req_body = req.get_json()
-        except ValueError:
-            pass
-        else:
-            name = req_body.get('name')
-
-    if name:
-        return func.HttpResponse(f"Hello, {name}. This HTTP triggered function executed successfully.")
-    else:
-        return func.HttpResponse(
-             "This HTTP triggered function executed successfully. Pass a name in the query string or in the request body for a personalized response.",
-             status_code=200
-        )
+def load_data(data:pd.DataFrame, table_name:str, engine):
+    data.to_sql(
+        name = table_name,
+        con=engine,
+        if_exists='append',
+        index=False
+    )
+    logging.info(f"Data loaded into {table_name} table successfully.")
+    
+def fix_column_names(name):
+    name = name.replace(' ', '_').lower().strip()
+    return name
