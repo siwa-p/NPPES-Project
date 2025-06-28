@@ -5,11 +5,75 @@ import test
 import os
 import pandas as pd
 import io
+import sqlalchemy
 from ticktock import tick
 import csv
 STORAGE_CONNECTION_STRING = os.getenv("AZURE_STORAGE_CONNECTION_STRING")
 CONTAINER_NAME = os.getenv("AZURE_CONTAINER_NAME")
 FILE_NAME = os.getenv("AZURE_STORAGE_BLOB_NAME_SAMPLE")
+POSTGRES_CONN_STRING = f"postgresql://{os.getenv('PG_USER')}:{os.getenv('PG_PASSWORD')}@{os.getenv('PG_HOST')}:{os.getenv('PG_PORT')}/{os.getenv('PG_DB')}"
+TABLE_NAME = "nppes_sample"
+
+columns_to_keep = [
+    "NPI",
+    "Entity Type Code",
+    "Employer Identification Number (EIN)",
+    "Provider Organization Name (Legal Business Name)",
+    "Provider Last Name (Legal Name)",
+    "Provider First Name",
+    "Provider Middle Name",
+    "Provider Name Prefix Text",
+    "Provider Name Suffix Text",
+    "Provider Credential Text",
+    "Provider Other Organization Name",
+    "Provider Other Organization Name Type Code",
+    "Provider Other Last Name",
+    "Provider Other First Name",
+    "Provider Other Middle Name",
+    "Provider Other Name Prefix Text",
+    "Provider Other Name Suffix Text",
+    "Provider Other Credential Text",
+    "Provider Other Last Name Type Code",
+    "Provider First Line Business Practice Location Address",
+    "Provider Second Line Business Practice Location Address",
+    "Provider Business Practice Location Address City Name",
+    "Provider Business Practice Location Address State Name",
+    "Provider Business Practice Location Address Postal Code",
+    "Provider Business Practice Location Address Country Code (If outside U.S.)",
+    "Provider Business Practice Location Address Telephone Number",
+    "Provider Business Practice Location Address Fax Number",
+    "Provider License Number_1",
+    "Provider License Number State Code_1",
+    "Healthcare Provider Primary Taxonomy Switch_1",
+    "Healthcare Provider Taxonomy Code_2",
+    "Healthcare Provider Primary Taxonomy Switch_2",
+    "Healthcare Provider Taxonomy Code_3",
+    "Healthcare Provider Primary Taxonomy Switch_3",
+    "Healthcare Provider Taxonomy Code_4",
+    "Healthcare Provider Primary Taxonomy Switch_4",
+    "Healthcare Provider Taxonomy Code_5",
+    "Healthcare Provider Primary Taxonomy Switch_5",
+    "Healthcare Provider Taxonomy Code_6",
+    "Healthcare Provider Primary Taxonomy Switch_6",
+    "Healthcare Provider Taxonomy Code_7",
+    "Healthcare Provider Primary Taxonomy Switch_7",
+    "Healthcare Provider Taxonomy Code_8",
+    "Healthcare Provider Primary Taxonomy Switch_8",
+    "Healthcare Provider Taxonomy Code_9",
+    "Healthcare Provider Primary Taxonomy Switch_9",
+    "Healthcare Provider Taxonomy Code_10",
+    "Healthcare Provider Primary Taxonomy Switch_10",
+    "Healthcare Provider Taxonomy Code_11",
+    "Healthcare Provider Primary Taxonomy Switch_11",
+    "Healthcare Provider Taxonomy Code_12",
+    "Healthcare Provider Primary Taxonomy Switch_12",
+    "Healthcare Provider Taxonomy Code_13",
+    "Healthcare Provider Primary Taxonomy Switch_13",
+    "Healthcare Provider Taxonomy Code_14",
+    "Healthcare Provider Primary Taxonomy Switch_14",
+    "Healthcare Provider Taxonomy Code_15",
+    "Healthcare Provider Primary Taxonomy Switch_15"
+]
 
 columns_to_keep = [
     "NPI",
@@ -85,17 +149,16 @@ def load_sample_nppes(req: func.HttpRequest) -> func.HttpResponse:
             container=CONTAINER_NAME,
             blob=FILE_NAME
         )
-        clock = tick()
+        #clock = tick()
         process_nppes_data(blob_client)
-        clock.tock()  
+        #clock.tock()  
     except Exception as e:
         
         return func.HttpResponse(
             f"An error occurred: {e}",
             status_code=500
         )
-
-
+      
 def process_nppes_data(blob_client, chunk_size=10*1024*1024):
     start = 0
     blob_properties = blob_client.get_blob_properties()
@@ -103,6 +166,7 @@ def process_nppes_data(blob_client, chunk_size=10*1024*1024):
     bytes_remaining = blob_size
     last_chunk = blob_size//chunk_size +1
     chunk_num =1 
+    
     data_headers = []
     while bytes_remaining > 0:
         if bytes_remaining < chunk_size:
@@ -110,6 +174,7 @@ def process_nppes_data(blob_client, chunk_size=10*1024*1024):
         else:
             bytes_to_fetch = chunk_size 
         downloader = blob_client.download_blob(start, bytes_to_fetch)
+        
         blob_data = downloader.read()
         text_read = blob_data.decode('utf-8')
         reader = csv.reader(io.StringIO(text_read))
@@ -147,8 +212,3 @@ def clear_bytes(start, lines, bytes_to_fetch, chunk_num, bytes_remaining):
     start += bytes_utilized
     chunk_num+=1
     return start, chunk_num, bytes_remaining
-
-            
-    
-    # need to add the remaining data to the next chunk!
-    
