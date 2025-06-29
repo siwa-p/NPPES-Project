@@ -11,7 +11,6 @@ CONTAINER_NAME = os.getenv("AZURE_CONTAINER_NAME")
 FILE_NAME = os.getenv("AZURE_STORAGE_BLOB_NAME_SAMPLE")
 POSTGRES_CONN_STRING = f"postgresql://{os.getenv('PG_USER')}:{os.getenv('PG_PASSWORD')}@{os.getenv('PG_HOST')}:{os.getenv('PG_PORT')}/{os.getenv('PG_DB')}"
 TABLE_NAME = "nppes"
-
 columns_to_keep = [
     "NPI",
     "Entity Type Code",
@@ -83,24 +82,27 @@ def load_sample_nppes(req: func.HttpRequest) -> func.HttpResponse:
             container=CONTAINER_NAME,
             blob=FILE_NAME
         )
-        #clock = tick()
         process_nppes_data(blob_client)
-        #clock.tock()  
+        
+        return func.HttpResponse(
+            "NPPES sample data processing completed successfully.",
+            status_code=200
+        )
     except Exception as e:  
         return func.HttpResponse(
             f"An error occurred: {e}",
             status_code=500
         )
       
-def process_nppes_data(blob_client, chunk_size=10*1024*1024):
+def process_nppes_data(blob_client, chunk_size=1*200*1024):
     start = 0
     blob_properties = blob_client.get_blob_properties()
     blob_size = blob_properties.size
     bytes_remaining = blob_size
     last_chunk = blob_size//chunk_size +1
     chunk_num =1 
-    data_headers = []
     while bytes_remaining > 0:
+        start_time = tick()
         if bytes_remaining < chunk_size:
             bytes_to_fetch = bytes_remaining
         else:
@@ -108,54 +110,42 @@ def process_nppes_data(blob_client, chunk_size=10*1024*1024):
         downloader = blob_client.download_blob(start, bytes_to_fetch)
         blob_data = downloader.read()
         text_read = blob_data.decode('utf-8')
-        reader = csv.reader(io.StringIO(text_read))
-        values_list = list(reader)
+        lines = text_read.split("\n")
+        if chunk_num < last_chunk and not text_read.endswith('\n'):
+            left_over = lines.pop()
+        clean_text = '\n'.join(lines)
         if chunk_num == 1:
-            headers = values_list[0]
-            data_headers.append(headers)
-            values = values_list[1:-1]   
-            values = check_first_row(values)         
-            chunk_df = pd.DataFrame(values, columns=data_headers)
-            chunk_df.columns = [fix_column_names(col) for col in chunk_df.columns]
-            load_header(chunk_df, TABLE_NAME, POSTGRES_CONN_STRING)
-            load_data(chunk_df, TABLE_NAME, POSTGRES_CONN_STRING)
-            logging.info(f"Header loaded into {TABLE_NAME} table successfully.")
-            # Process and load the first chunk
-            data_returned = process_and_load(chunk_df)
-        elif chunk_num < last_chunk:
-            values = values_list[:-1]
-            values = check_first_row(values)
-            chunk_df = pd.DataFrame(values, columns=data_headers)
-            data_returned = process_and_load(chunk_df)        
+            chunk_df = pd.read_csv(io.StringIO(clean_text), usecols = columns_to_keep, index_col=False)
+            data_returned, headers = process_and_load(chunk_df)
+            data_returned.to_csv(f'src/{chunk_num}_chunk.csv', index=False)
+            load_header(data_returned, TABLE_NAME, POSTGRES_CONN_STRING)
+            load_data(data_returned, TABLE_NAME, POSTGRES_CONN_STRING)
         else:
-            values = check_first_row(values_list)
-            chunk_df = pd.DataFrame(values, columns=data_headers)
-            data_returned = process_and_load(chunk_df)
+            if chunk_num > last_chunk:
+                break
+            chunk_df = pd.read_csv(io.StringIO(clean_text), header=None, names=headers, usecols = headers)
+            chunk_df.to_csv(f'src/{chunk_num}_chunk.csv', index=False)
+            load_data(data_returned, TABLE_NAME, POSTGRES_CONN_STRING)      
                 
         logging.info(f"Chunk {chunk_num} processed with {len(data_returned)} rows.")
-        start, chunk_num, bytes_remaining = clear_bytes(start, values_list, bytes_to_fetch, chunk_num, bytes_remaining)
+        start, chunk_num, bytes_remaining = clear_bytes(start, left_over, bytes_to_fetch, chunk_num, bytes_remaining)
+        start_time.tock()
 
 def process_and_load(df):
-    filtered_df = df[columns_to_keep]
-    return filtered_df
+    headers = df.columns.tolist()
+    headers_new = fix_column_names(headers)
+    df.columns = headers_new
+    return df, headers_new
     
     
-def clear_bytes(start, lines, bytes_to_fetch, chunk_num, bytes_remaining):
-    last_line = lines[-1]
-    # last_line_str = ','.join(str(cell) for cell in last_line) + '\n'
-    
-    last_line_bytes = len(str(last_line).encode('utf-8'))
-    
-    bytes_utilized = bytes_to_fetch-last_line_bytes    
+def clear_bytes(start, left_over, bytes_to_fetch, chunk_num, bytes_remaining):
+    left_over_bytes = len(left_over.encode('utf-8'))
+    bytes_utilized = bytes_to_fetch-left_over_bytes    
     bytes_remaining -= bytes_utilized
     start += bytes_utilized
     chunk_num+=1
     return start, chunk_num, bytes_remaining
 
-def check_first_row(values:list):
-    if not any(values[0]):
-        values = values[1:]
-    return values
 
 def load_header(data:pd.DataFrame, table_name:str, engine):
     data.head(0).to_sql(
@@ -175,6 +165,6 @@ def load_data(data:pd.DataFrame, table_name:str, engine):
     )
     logging.info(f"Data loaded into {table_name} table successfully.")
     
-def fix_column_names(name):
-    name = name.replace(' ', '_').lower().strip()
-    return name
+def fix_column_names(column_name:list):
+    new_column = [name.replace(' ', '_').lower().strip() for name in column_name]
+    return new_column
