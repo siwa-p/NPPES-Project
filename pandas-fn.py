@@ -1,11 +1,11 @@
 import azure.functions as func
 from azure.storage.blob import BlobServiceClient
+import logging
 import os
+import pandas as pd
 import io
 from sqlalchemy import create_engine
-import polars as pl
-from sqlalchemy.orm import sessionmaker
-import pandas as pd
+
 
 STORAGE_CONNECTION_STRING = os.getenv("AZURE_STORAGE_CONNECTION_STRING")
 CONTAINER_NAME = os.getenv("AZURE_CONTAINER_NAME")
@@ -13,7 +13,6 @@ FILE_NAME = os.getenv("AZURE_STORAGE_BLOB_NAME_SAMPLE")
 POSTGRES_CONN_STRING = f"postgresql://{os.getenv('PG_USER')}:{os.getenv('PG_PASSWORD')}@{os.getenv('PG_HOST')}:{os.getenv('PG_PORT')}/{os.getenv('PG_DB')}"
 TABLE_NAME = "nppes"
 engine = create_engine(POSTGRES_CONN_STRING)
-
 columns_to_keep = [
     "NPI",
     "Entity Type Code",
@@ -76,8 +75,9 @@ columns_to_keep = [
 ]
 
 app = func.FunctionApp(http_auth_level=func.AuthLevel.ANONYMOUS)
-@app.route(route="load_nppes", auth_level=func.AuthLevel.ANONYMOUS)
-def load_nppes(req: func.HttpRequest) -> func.HttpResponse:
+@app.route(route="load_sample_nppes", methods=["GET", "POST"])
+def load_sample_nppes(req: func.HttpRequest) -> func.HttpResponse:
+    logging.info('HTTP trigger function for debugging started')
     try:    
         blob_service_client = BlobServiceClient.from_connection_string(STORAGE_CONNECTION_STRING)
         blob_client = blob_service_client.get_blob_client(
@@ -95,59 +95,62 @@ def load_nppes(req: func.HttpRequest) -> func.HttpResponse:
             f"An error occurred: {e}",
             status_code=500
         )
-        
+      
+def process_nppes_data(blob_client, chunk_size=200*1024*1024):
+    start, chunk_num = 0, 1
+    blob_size = blob_client.get_blob_properties().size
+    bytes_remaining = blob_size
+    last_chunk = blob_size // chunk_size + 1
+    headers = None 
 
-def process_nppes_data(blob_client):
-    downloader = blob_client.download_blob()
-    reader = downloader.readall()
-    query = pl.scan_csv(io.BytesIO(reader), ignore_errors=True)
+    while bytes_remaining > 0:
+        bytes_to_fetch = min(bytes_remaining, chunk_size)
+        downloader = blob_client.download_blob(start, bytes_to_fetch)
+        text_read = downloader.readall().decode('utf-8')
+        lines = text_read.split('\n')
+
+        if chunk_num < last_chunk and not text_read.endswith('\n'):
+            left_over = lines.pop()
+            bytes_remaining -= bytes_to_fetch - len(left_over.encode('utf-8'))
+        else:
+            left_over = None
+            bytes_remaining -= bytes_to_fetch
+
+        clean_text = '\n'.join(lines)
+        if chunk_num == 1:
+            chunk_df = pd.read_csv(io.StringIO(clean_text), usecols=columns_to_keep, index_col=False,dtype=str)
+            chunk_df, headers = process_and_load(chunk_df)
+            load_header(chunk_df, TABLE_NAME, engine)
+        else:
+            chunk_df = pd.read_csv(io.StringIO(clean_text), header=None, names=headers, usecols=headers, dtype=str)
+
+        load_data(chunk_df, TABLE_NAME, engine)
+        logging.info(f"Chunk {chunk_num} processed with {len(chunk_df)} rows.")
+        start += bytes_to_fetch - len(left_over.encode('utf-8')) if left_over else bytes_to_fetch
+        chunk_num += 1
+
+
+def process_and_load(df):
+    df.columns = fix_column_names(df.columns)
+    return df, df.columns.tolist()
     
-    query = query.select(columns_to_keep)
-    # query.explain(streaming=True)
-    result_df = query.collect(streaming = True)
-    result_df.columns = fix_column_names(result_df.columns)
-    
-    insert_using_copy_with_sqlalchemy(result_df)
-    
-    # write database in chunk : takes longer than copy
-    # for idx, frame in enumerate(result_df.iter_slices()):
-    #     # print(idx)
-    #     # print(frame)
-    #     frame.write_database(
-    #         table_name = TABLE_NAME,
-    #         connection = engine,
-    #         if_table_exists = 'append'
-    #     )
-    
-def insert_using_copy_with_sqlalchemy(df:pl.DataFrame):
-    with sessionmaker(bind=engine)() as session:
-        load_header(df, table_name=TABLE_NAME, engine=engine)
-        with session.connection().connection.cursor() as cursor:
-            with io.StringIO() as buffer:
-                df.write_csv(buffer, include_header=False)
-                buffer.seek(0)
-                cursor.copy_expert(
-                    f"COPY {TABLE_NAME} ({','.join(df.columns)}) FROM STDIN WITH (FORMAT CSV, DELIMITER ',')", buffer
-                )
-        session.commit()
-    return f"insert using copy with sqlalchemy completed"
+
+def load_header(data:pd.DataFrame, table_name:str, engine):
+    data.head(0).to_sql(
+        name = table_name,
+        con=engine,
+        if_exists='replace',
+        index=False
+    )
+
+def load_data(df: pd.DataFrame, table_name: str, engine):
+    df.to_sql(
+        name=table_name,
+        con=engine,
+        if_exists='append',
+        index=False
+    )
+
 
 def fix_column_names(cols):
-    return [
-        c.lower()
-         .strip()
-         .replace(' ', '_')
-         .replace('(', '')
-         .replace(')', '')
-         .replace('.', '')
-         .replace('-', '_')
-         .replace('/', '_')
-        for c in cols
-    ]
-
-def load_header(data:pl.DataFrame, table_name:str, engine):
-    data.head(0).write_database(
-        table_name = table_name,
-        connection =engine,
-        if_table_exists='replace'
-    )
+    return [c.lower().strip().replace(' ', '_') for c in cols]
