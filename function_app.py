@@ -9,9 +9,15 @@ import pandas as pd
 
 STORAGE_CONNECTION_STRING = os.getenv("AZURE_STORAGE_CONNECTION_STRING")
 CONTAINER_NAME = os.getenv("AZURE_CONTAINER_NAME")
-FILE_NAME = os.getenv("AZURE_STORAGE_BLOB_NAME_SAMPLE")
+
+FILE_NAME_NPPES = os.getenv("AZURE_STORAGE_BLOB_NAME_NPPES")
+FILE_NAME_NPPES_SAMPLE = os.getenv("AZURE_STORAGE_BLOB_NAME_NPPES_SAMPLE")
+FILE_NAME_NPPES_NUCC = os.getenv("AZURE_STORAGE_BLOB_NAME_NUCC")
+FILE_NAME_NPPES_FIPS = os.getenv("AZURE_STORAGE_BLOB_NAME_FIPS")
+FILE_NAME_NPPES_ZIP = os.getenv("AZURE_STORAGE_BLOB_NAME_ZIP")
+
 POSTGRES_CONN_STRING = f"postgresql://{os.getenv('PG_USER')}:{os.getenv('PG_PASSWORD')}@{os.getenv('PG_HOST')}:{os.getenv('PG_PORT')}/{os.getenv('PG_DB')}"
-TABLE_NAME = "nppes"
+
 engine = create_engine(POSTGRES_CONN_STRING)
 
 columns_to_keep = [
@@ -78,13 +84,40 @@ columns_to_keep = [
 app = func.FunctionApp(http_auth_level=func.AuthLevel.ANONYMOUS)
 @app.route(route="load_nppes", auth_level=func.AuthLevel.ANONYMOUS)
 def load_nppes(req: func.HttpRequest) -> func.HttpResponse:
+    filename = req.params.get('file')
+    if filename == 'nppes':
+        blob_name = FILE_NAME_NPPES
+        tablename = 'nppes'
+    elif filename == 'nucc':
+        blob_name = FILE_NAME_NPPES_NUCC
+        tablename = 'nucc'
+    elif filename == 'fips':
+        blob_name = FILE_NAME_NPPES_FIPS
+        tablename = 'fips'
+    elif filename == 'zip':
+        blob_name = FILE_NAME_NPPES_ZIP
+        tablename = 'zip'
+    else:
+        return FileNotFoundError
     try:    
         blob_service_client = BlobServiceClient.from_connection_string(STORAGE_CONNECTION_STRING)
         blob_client = blob_service_client.get_blob_client(
             container=CONTAINER_NAME,
-            blob=FILE_NAME
+            blob=blob_name
         )
-        process_nppes_data(blob_client)
+        if filename == 'nppes':
+            process_nppes_data(blob_client, tablename)
+        elif filename == 'nucc':
+            process_data(blob_client, tablename)
+            # pass
+        elif filename == 'fips':
+            process_data(blob_client, tablename)
+            # pass
+        elif filename == 'zip':
+            process_data(blob_client, tablename)           
+            # pass
+        else:
+            return func.HttpResponse("Invalid file type.", status_code=400)
         
         return func.HttpResponse(
             "NPPES sample data processing completed successfully.",
@@ -97,37 +130,41 @@ def load_nppes(req: func.HttpRequest) -> func.HttpResponse:
         )
         
 
-def process_nppes_data(blob_client):
+def process_nppes_data(blob_client, tablename):
     downloader = blob_client.download_blob()
     reader = downloader.readall()
     query = pl.scan_csv(io.BytesIO(reader), ignore_errors=True)
-    
     query = query.select(columns_to_keep)
-    # query.explain(streaming=True)
     result_df = query.collect(streaming = True)
     result_df.columns = fix_column_names(result_df.columns)
-    
-    insert_using_copy_with_sqlalchemy(result_df)
-    
-    # write database in chunk : takes longer than copy
-    # for idx, frame in enumerate(result_df.iter_slices()):
-    #     # print(idx)
-    #     # print(frame)
-    #     frame.write_database(
-    #         table_name = TABLE_NAME,
-    #         connection = engine,
-    #         if_table_exists = 'append'
-    #     )
-    
-def insert_using_copy_with_sqlalchemy(df:pl.DataFrame):
+    insert_using_copy_with_sqlalchemy(result_df, tablename)
+ 
+ 
+def process_data(blob_client, tablename):
+    downloader = blob_client.download_blob()
+    reader = downloader.readall()
+    query = pl.scan_csv(io.BytesIO(reader), ignore_errors=True)
+    result_df = query.collect(streaming = True)
+    result_df = result_df.fill_null("")
+    result_df.columns = fix_column_names(result_df.columns)
+    insert_with_pl(result_df, tablename)
+
+
+def insert_with_pl(df:pl.DataFrame, tablename, engine= engine):
     with sessionmaker(bind=engine)() as session:
-        load_header(df, table_name=TABLE_NAME, engine=engine)
+        load_data(df, table_name=tablename, engine=engine)
+        session.commit()
+    return f"inserted using pl write database"
+
+def insert_using_copy_with_sqlalchemy(df:pl.DataFrame, tablename):
+    with sessionmaker(bind=engine)() as session:
+        load_header(df, table_name=tablename, engine=engine)
         with session.connection().connection.cursor() as cursor:
             with io.StringIO() as buffer:
                 df.write_csv(buffer, include_header=False)
                 buffer.seek(0)
                 cursor.copy_expert(
-                    f"COPY {TABLE_NAME} ({','.join(df.columns)}) FROM STDIN WITH (FORMAT CSV, DELIMITER ',')", buffer
+                    f"COPY {tablename} ({','.join(df.columns)}) FROM STDIN WITH (FORMAT CSV, DELIMITER ',')", buffer
                 )
         session.commit()
     return f"insert using copy with sqlalchemy completed"
@@ -147,6 +184,13 @@ def fix_column_names(cols):
 
 def load_header(data:pl.DataFrame, table_name:str, engine):
     data.head(0).write_database(
+        table_name = table_name,
+        connection =engine,
+        if_table_exists='replace'
+    )
+    
+def load_data(data:pl.DataFrame, table_name:str, engine):
+    data.write_database(
         table_name = table_name,
         connection =engine,
         if_table_exists='replace'
