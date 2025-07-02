@@ -48,6 +48,7 @@ columns_to_keep = [
     "Provider Business Practice Location Address Country Code (If outside U.S.)",
     "Provider Business Practice Location Address Telephone Number",
     "Provider Business Practice Location Address Fax Number",
+    "Healthcare Provider Taxonomy Code_1",
     "Provider License Number_1",
     "Provider License Number State Code_1",
     "Healthcare Provider Primary Taxonomy Switch_1",
@@ -85,51 +86,41 @@ app = func.FunctionApp(http_auth_level=func.AuthLevel.ANONYMOUS)
 @app.route(route="load_nppes", auth_level=func.AuthLevel.ANONYMOUS)
 def load_nppes(req: func.HttpRequest) -> func.HttpResponse:
     filename = req.params.get('file')
-    if filename == 'nppes':
-        blob_name = FILE_NAME_NPPES
-        tablename = 'nppes'
-    elif filename == 'nucc':
-        blob_name = FILE_NAME_NPPES_NUCC
-        tablename = 'nucc'
-    elif filename == 'fips':
-        blob_name = FILE_NAME_NPPES_FIPS
-        tablename = 'fips'
-    elif filename == 'zip':
-        blob_name = FILE_NAME_NPPES_ZIP
-        tablename = 'zip'
-    else:
-        return FileNotFoundError
+    file_map = {
+    'nppes': (FILE_NAME_NPPES, 'nppes'),
+    'nucc': (FILE_NAME_NPPES_NUCC, 'nucc'),
+    'fips': (FILE_NAME_NPPES_FIPS, 'fips'),
+    'zip': (FILE_NAME_NPPES_ZIP, 'zip'),
+    }
+    params = file_map.get(filename)
+    if not params:
+        return func.HttpResponse("Invalid file type.", status_code=400)
+    blob_name, tablename = params
+    
     try:    
         blob_service_client = BlobServiceClient.from_connection_string(STORAGE_CONNECTION_STRING)
         blob_client = blob_service_client.get_blob_client(
             container=CONTAINER_NAME,
             blob=blob_name
         )
-        if filename == 'nppes':
-            process_nppes_data(blob_client, tablename)
-        elif filename == 'nucc':
-            process_data(blob_client, tablename)
-            # pass
-        elif filename == 'fips':
-            process_data(blob_client, tablename)
-            # pass
-        elif filename == 'zip':
-            process_data(blob_client, tablename)           
-            # pass
-        else:
+        process_map = {
+        'nppes': process_nppes_data,
+        'nucc': process_data,
+        'fips': process_data,
+        'zip': process_data,
+        }
+        process_func = process_map.get(filename)
+        if not process_func:
             return func.HttpResponse("Invalid file type.", status_code=400)
-        
-        return func.HttpResponse(
-            "NPPES sample data processing completed successfully.",
-            status_code=200
-        )
+
+        result = process_func(blob_client, tablename)
+        return func.HttpResponse(result,status_code=200)
     except Exception as e:  
         return func.HttpResponse(
             f"An error occurred: {e}",
             status_code=500
         )
         
-
 def process_nppes_data(blob_client, tablename):
     downloader = blob_client.download_blob()
     reader = downloader.readall()
@@ -138,6 +129,7 @@ def process_nppes_data(blob_client, tablename):
     result_df = query.collect(streaming = True)
     result_df.columns = fix_column_names(result_df.columns)
     insert_using_copy_with_sqlalchemy(result_df, tablename)
+    return "Data processing completed"
  
  
 def process_data(blob_client, tablename):
@@ -148,6 +140,7 @@ def process_data(blob_client, tablename):
     result_df = result_df.fill_null("")
     result_df.columns = fix_column_names(result_df.columns)
     insert_with_pl(result_df, tablename)
+    return "Data processing completed successfully."
 
 
 def insert_with_pl(df:pl.DataFrame, tablename, engine= engine):
@@ -195,3 +188,4 @@ def load_data(data:pl.DataFrame, table_name:str, engine):
         connection =engine,
         if_table_exists='replace'
     )
+    return f"Data loaded into the database"
