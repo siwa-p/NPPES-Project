@@ -1,147 +1,100 @@
+create or replace procedure createtable()
+language plpgsql
+as $$
+BEGIN
+    DROP TABLE IF EXISTS nppes_subset cascade;
+    create table nppes_subset (
+        npi bigint primary key not null,
+        entity_type_code integer,
+        entity_name varchar,
+        practice_address varchar,
+        postal_code varchar,
+        primary_taxonomy_code varchar  
+    );
 
-drop table if exists nppes_subset;
-CREATE TABLE nppes_subset AS
-SELECT
-    np."npi",
-    cast(nullif(np."entity_type_code", '') as integer) as entity_type_code,
-    np."provider_organization_name_legal_business_name",
-    np."provider_last_name_legal_name",
-    np."provider_first_name",
-    np."provider_middle_name",
-    np."provider_name_prefix_text",
-    np."provider_name_suffix_text",
-    np."provider_credential_text",
-    np."provider_first_line_business_practice_location_address",
-    np."provider_second_line_business_practice_location_address",
-    np."provider_business_practice_location_address_city_name",
-    np."provider_business_practice_location_address_state_name",
-    np."provider_business_practice_location_address_postal_code",
-    np."healthcare_provider_taxonomy_code_1",
-    np."healthcare_provider_primary_taxonomy_switch_1",
-    np."healthcare_provider_taxonomy_code_2",
-    np."healthcare_provider_primary_taxonomy_switch_2",
-    np."healthcare_provider_taxonomy_code_3",
-    np."healthcare_provider_primary_taxonomy_switch_3",
-    np."healthcare_provider_taxonomy_code_4",
-    np."healthcare_provider_primary_taxonomy_switch_4",
-    np."healthcare_provider_taxonomy_code_5",
-    np."healthcare_provider_primary_taxonomy_switch_5",
-    np."healthcare_provider_taxonomy_code_6",
-    np."healthcare_provider_primary_taxonomy_switch_6",
-    np."healthcare_provider_taxonomy_code_7",
-    np."healthcare_provider_primary_taxonomy_switch_7",
-    np."healthcare_provider_taxonomy_code_8",
-    np."healthcare_provider_primary_taxonomy_switch_8",
-    np."healthcare_provider_taxonomy_code_9",
-    np."healthcare_provider_primary_taxonomy_switch_9",
-    np."healthcare_provider_taxonomy_code_10",
-    np."healthcare_provider_primary_taxonomy_switch_10",
-    np."healthcare_provider_taxonomy_code_11",
-    np."healthcare_provider_primary_taxonomy_switch_11",
-    np."healthcare_provider_taxonomy_code_12",
-    np."healthcare_provider_primary_taxonomy_switch_12",
-    np."healthcare_provider_taxonomy_code_13",
-    np."healthcare_provider_primary_taxonomy_switch_13",
-    np."healthcare_provider_taxonomy_code_14",
-    np."healthcare_provider_primary_taxonomy_switch_14",
-    np."healthcare_provider_taxonomy_code_15",
-    np."healthcare_provider_primary_taxonomy_switch_15"
-FROM nppes np;
-
-
-ALTER TABLE nppes_subset ADD COLUMN primary_taxonomy_code varchar(32);
-
-UPDATE nppes_subset
-SET primary_taxonomy_code = COALESCE(
-    CASE WHEN healthcare_provider_primary_taxonomy_switch_1 = 'Y' THEN healthcare_provider_taxonomy_code_1 END,
-    CASE WHEN healthcare_provider_primary_taxonomy_switch_2 = 'Y' THEN healthcare_provider_taxonomy_code_2 END,
-    CASE WHEN healthcare_provider_primary_taxonomy_switch_3 = 'Y' THEN healthcare_provider_taxonomy_code_3 END,
-    CASE WHEN healthcare_provider_primary_taxonomy_switch_4 = 'Y' THEN healthcare_provider_taxonomy_code_4 END,
-    CASE WHEN healthcare_provider_primary_taxonomy_switch_5 = 'Y' THEN healthcare_provider_taxonomy_code_5 END,
-    CASE WHEN healthcare_provider_primary_taxonomy_switch_6 = 'Y' THEN healthcare_provider_taxonomy_code_6 END,
-    CASE WHEN healthcare_provider_primary_taxonomy_switch_7 = 'Y' THEN healthcare_provider_taxonomy_code_7 END,
-    CASE WHEN healthcare_provider_primary_taxonomy_switch_8 = 'Y' THEN healthcare_provider_taxonomy_code_8 END,
-    CASE WHEN healthcare_provider_primary_taxonomy_switch_9 = 'Y' THEN healthcare_provider_taxonomy_code_9 END,
-    CASE WHEN healthcare_provider_primary_taxonomy_switch_10 = 'Y' THEN healthcare_provider_taxonomy_code_10 END,
-    CASE WHEN healthcare_provider_primary_taxonomy_switch_11 = 'Y' THEN healthcare_provider_taxonomy_code_11 END,
-    CASE WHEN healthcare_provider_primary_taxonomy_switch_12 = 'Y' THEN healthcare_provider_taxonomy_code_12 END,
-    CASE WHEN healthcare_provider_primary_taxonomy_switch_13 = 'Y' THEN healthcare_provider_taxonomy_code_13 END,
-    CASE WHEN healthcare_provider_primary_taxonomy_switch_14 = 'Y' THEN healthcare_provider_taxonomy_code_14 END,
-    CASE WHEN healthcare_provider_primary_taxonomy_switch_15 = 'Y' THEN healthcare_provider_taxonomy_code_15 END
-);
-
--- drop all taxonomy switch and code columns 
-ALTER TABLE nppes_subset
-    DROP COLUMN healthcare_provider_taxonomy_code_1,
-    DROP COLUMN healthcare_provider_primary_taxonomy_switch_1,
-    DROP COLUMN healthcare_provider_taxonomy_code_2,
-    DROP COLUMN healthcare_provider_primary_taxonomy_switch_2,
-    DROP COLUMN healthcare_provider_taxonomy_code_3,
-    DROP COLUMN healthcare_provider_primary_taxonomy_switch_3,
-    DROP COLUMN healthcare_provider_taxonomy_code_4,
-    DROP COLUMN healthcare_provider_primary_taxonomy_switch_4,
-    DROP COLUMN healthcare_provider_taxonomy_code_5,
-    DROP COLUMN healthcare_provider_primary_taxonomy_switch_5,
-    DROP COLUMN healthcare_provider_taxonomy_code_6,
-    DROP COLUMN healthcare_provider_primary_taxonomy_switch_6,
-    DROP COLUMN healthcare_provider_taxonomy_code_7,
-    DROP COLUMN healthcare_provider_primary_taxonomy_switch_7,
-    DROP COLUMN healthcare_provider_taxonomy_code_8,
-    DROP COLUMN healthcare_provider_primary_taxonomy_switch_8,
-    DROP COLUMN healthcare_provider_taxonomy_code_9,
-    DROP COLUMN healthcare_provider_primary_taxonomy_switch_9,
-    DROP COLUMN healthcare_provider_taxonomy_code_10,
-    DROP COLUMN healthcare_provider_primary_taxonomy_switch_10,
-    DROP COLUMN healthcare_provider_taxonomy_code_11,
-    DROP COLUMN healthcare_provider_primary_taxonomy_switch_11,
-    DROP COLUMN healthcare_provider_taxonomy_code_12,
-    DROP COLUMN healthcare_provider_primary_taxonomy_switch_12,
-    DROP COLUMN healthcare_provider_taxonomy_code_13,
-    DROP COLUMN healthcare_provider_primary_taxonomy_switch_13,
-    DROP COLUMN healthcare_provider_taxonomy_code_14,
-    DROP COLUMN healthcare_provider_primary_taxonomy_switch_14,
-    DROP COLUMN healthcare_provider_taxonomy_code_15,
-    DROP COLUMN healthcare_provider_primary_taxonomy_switch_15;
-
-
-
--- create a new column with provider_last_name_legal_name if exists, 
--- if it doesn't take the prefix (if not null), first_name, middle name and last name and concatenate
-
-ALTER TABLE nppes_subset ADD COLUMN provider_full_name varchar(512);
-
-UPDATE nppes_subset
-SET provider_full_name = 
-    COALESCE(
-        NULLIF(provider_organization_name_legal_business_name, ''),
-        CONCAT_WS(
+    INSERT INTO nppes_subset (
+        npi,
+        entity_type_code,
+        entity_name,
+        practice_address,
+        postal_code,
+        primary_taxonomy_code
+    )
+    SELECT
+        np.npi,
+        CAST(NULLIF(np.entity_type_code, '') AS INTEGER),
+        COALESCE(
+            NULLIF(np.provider_organization_name_legal_business_name, ''),
+            CONCAT_WS(
                 ' ',
-                NULLIF(provider_name_prefix_text, ''),
-                NULLIF(provider_first_name, ''),
-                NULLIF(provider_middle_name, ''),
-                NULLIF(provider_last_name_legal_name, ''),
-                NULLIF(provider_name_suffix_text, ''),
-                NULLIF(provider_credential_text, '')
+                NULLIF(np.provider_name_prefix_text, ''),
+                NULLIF(np.provider_first_name, ''),
+                NULLIF(np.provider_middle_name, ''),
+                NULLIF(np.provider_last_name_legal_name, ''),
+                NULLIF(np.provider_name_suffix_text, ''),
+                NULLIF(np.provider_credential_text, '')
+            ),
+            nullif(np.provider_other_organization_name, ''),
+            concat_ws(
+                ' ',
+                nullif(np.provider_other_name_prefix_text, ''),
+                nullif(np.provider_other_first_name, ''),
+                nullif(np.provider_other_middle_name, ''),
+                nullif(np.provider_other_last_name, ''),
+                nullif(np.provider_other_name_suffix_text, '')
             )
-        );
+        ),
+        CONCAT_WS(
+            ' ',
+            NULLIF(np.provider_first_line_business_practice_location_address, ''),
+            NULLIF(np.provider_second_line_business_practice_location_address, ''),
+            NULLIF(np.provider_business_practice_location_address_city_name, ''),
+            NULLIF(np.provider_business_practice_location_address_state_name, '')
+        ),
+        np.provider_business_practice_location_address_postal_code,
+        COALESCE(
+            CASE WHEN np.healthcare_provider_primary_taxonomy_switch_1 = 'Y' THEN np.healthcare_provider_taxonomy_code_1 END,
+            CASE WHEN np.healthcare_provider_primary_taxonomy_switch_2 = 'Y' THEN np.healthcare_provider_taxonomy_code_2 END,
+            CASE WHEN np.healthcare_provider_primary_taxonomy_switch_3 = 'Y' THEN np.healthcare_provider_taxonomy_code_3 END,
+            CASE WHEN np.healthcare_provider_primary_taxonomy_switch_4 = 'Y' THEN np.healthcare_provider_taxonomy_code_4 END,
+            CASE WHEN np.healthcare_provider_primary_taxonomy_switch_5 = 'Y' THEN np.healthcare_provider_taxonomy_code_5 END,
+            CASE WHEN np.healthcare_provider_primary_taxonomy_switch_6 = 'Y' THEN np.healthcare_provider_taxonomy_code_6 END,
+            CASE WHEN np.healthcare_provider_primary_taxonomy_switch_7 = 'Y' THEN np.healthcare_provider_taxonomy_code_7 END,
+            CASE WHEN np.healthcare_provider_primary_taxonomy_switch_8 = 'Y' THEN np.healthcare_provider_taxonomy_code_8 END,
+            CASE WHEN np.healthcare_provider_primary_taxonomy_switch_9 = 'Y' THEN np.healthcare_provider_taxonomy_code_9 END,
+            CASE WHEN np.healthcare_provider_primary_taxonomy_switch_10 = 'Y' THEN np.healthcare_provider_taxonomy_code_10 END,
+            CASE WHEN np.healthcare_provider_primary_taxonomy_switch_11 = 'Y' THEN np.healthcare_provider_taxonomy_code_11 END,
+            CASE WHEN np.healthcare_provider_primary_taxonomy_switch_12 = 'Y' THEN np.healthcare_provider_taxonomy_code_12 END,
+            CASE WHEN np.healthcare_provider_primary_taxonomy_switch_13 = 'Y' THEN np.healthcare_provider_taxonomy_code_13 END,
+            CASE WHEN np.healthcare_provider_primary_taxonomy_switch_14 = 'Y' THEN np.healthcare_provider_taxonomy_code_14 END,
+            CASE WHEN np.healthcare_provider_primary_taxonomy_switch_15 = 'Y' THEN np.healthcare_provider_taxonomy_code_15 END
+        )
+    FROM nppes np;
+end
+$$;
+
+CREATE OR REPLACE PROCEDURE create_table_view()
+LANGUAGE plpgsql
+AS $$
+BEGIN
+    -- Create complete records view
+    CREATE OR REPLACE VIEW view_records AS
+    select nps.npi,
+        nps.entity_type_code,
+        nps.entity_name,
+        nps.practice_address,
+        nu.classification,
+        nu.grouping,
+        nu.specialization
+    from nppes_subset nps
+    left join nucc nu
+    on nu.code = nps.primary_taxonomy_code
+    order by nps.npi;
+    
+    RAISE NOTICE 'Created table views';
+END;
+$$;
 
 
-alter table nppes_subset
-    drop column provider_organization_name_legal_business_name,
-    drop column provider_last_name_legal_name,
-    drop column provider_first_name,
-    drop column provider_middle_name,
-    drop column provider_name_prefix_text,
-    drop column provider_name_suffix_text,
-    drop column provider_credential_text
 
-
-select * from nppes_subset
-order by npi
-limit 20;
-
-
-select column_name, data_type
-from information_schema.columns
-where table_name = 'nppes_subset'
-    and table_schema = 'public';
+select * from view_records

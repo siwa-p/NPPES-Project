@@ -2,7 +2,7 @@ import azure.functions as func
 from azure.storage.blob import BlobServiceClient
 import os
 import io
-from sqlalchemy import create_engine
+from sqlalchemy import create_engine, text
 import polars as pl
 from sqlalchemy.orm import sessionmaker
 import pandas as pd
@@ -120,6 +120,29 @@ def load_nppes(req: func.HttpRequest) -> func.HttpResponse:
             f"An error occurred: {e}",
             status_code=500
         )
+   
+   
+@app.route(route="parse_records")
+def parse_records(req) -> func.HttpResponse:
+    Session = sessionmaker(bind = engine)
+    session = Session()
+    try:
+        session.execute(text("CALL createtable()"))
+        session.execute(text("CALL create_table_view()"))
+        session.execute(text("CALL join_table_view()"))
+        session.commit()
+        return func.HttpResponse(
+            "Successfully parsed",
+            status_code=200
+        )
+    except Exception as e:
+        session.rollback()
+        return func.HttpResponse(
+            f"An error occurred: {e}",
+            status_code=500
+        )
+    finally:
+        session.close()
         
 def process_nppes_data(blob_client, tablename):
     downloader = blob_client.download_blob()
