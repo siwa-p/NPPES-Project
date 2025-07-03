@@ -8,7 +8,7 @@ BEGIN
         entity_type_code integer,
         entity_name varchar,
         practice_address varchar,
-        postal_code varchar,
+        zip_code varchar,
         primary_taxonomy_code varchar  
     );
 
@@ -17,7 +17,7 @@ BEGIN
         entity_type_code,
         entity_name,
         practice_address,
-        postal_code,
+        zip_code,
         primary_taxonomy_code
     )
     SELECT
@@ -51,7 +51,15 @@ BEGIN
             NULLIF(np.provider_business_practice_location_address_city_name, ''),
             NULLIF(np.provider_business_practice_location_address_state_name, '')
         ),
-        np.provider_business_practice_location_address_postal_code,
+        CASE 
+            WHEN length(np.provider_business_practice_location_address_postal_code) = 0
+                THEN NULL
+            WHEN length(np.provider_business_practice_location_address_postal_code) < 9
+                THEN LPAD(np.provider_business_practice_location_address_postal_code, 5, '0')
+            WHEN length(np.provider_business_practice_location_address_postal_code) = 9
+                THEN SUBSTRING(np.provider_business_practice_location_address_postal_code, 1, 5)
+            ELSE NULL
+        END AS zip_code,
         COALESCE(
             CASE WHEN np.healthcare_provider_primary_taxonomy_switch_1 = 'Y' THEN np.healthcare_provider_taxonomy_code_1 END,
             CASE WHEN np.healthcare_provider_primary_taxonomy_switch_2 = 'Y' THEN np.healthcare_provider_taxonomy_code_2 END,
@@ -73,28 +81,38 @@ BEGIN
 end
 $$;
 
-CREATE OR REPLACE PROCEDURE create_table_view()
-LANGUAGE plpgsql
-AS $$
-BEGIN
-    -- Create complete records view
-    CREATE OR REPLACE VIEW view_records AS
-    select nps.npi,
-        nps.entity_type_code,
-        nps.entity_name,
-        nps.practice_address,
+
+create or replace procedure merge_county()
+language plpgsql
+as $$
+begin
+    create or replace view view_county as
+
+    with ranked_zip as (select *, rank() over (partition by zip order by tot_ratio desc) as rank
+                    from zip)
+    select
+        np.npi,
+        np.entity_type_code,
+        np.entity_name,
+        np.practice_address,
+--         np.primary_taxonomy_code,
+--         z.zip,
+--         z.county,
+        f.countyname_fips as county_name,
         nu.classification,
         nu.grouping,
         nu.specialization
-    from nppes_subset nps
+    from nppes_subset np
     left join nucc nu
-    on nu.code = nps.primary_taxonomy_code
-    order by nps.npi;
-    
-    RAISE NOTICE 'Created table views';
-END;
+        on nu.code = np.primary_taxonomy_code
+    left join ranked_zip z
+        on z.zip = np.zip_code
+       and z.rank = 1
+    left join fips f
+        on f.fipscounty = z.county;
+
+end
 $$;
 
 
-
-select * from view_records
+-- select * from view_records

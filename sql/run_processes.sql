@@ -1,3 +1,5 @@
 call createtable();
 
-call create_table_view();
+
+
+call merge_county();
