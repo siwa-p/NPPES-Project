@@ -6,6 +6,7 @@ from sqlalchemy import create_engine, text
 import polars as pl
 from sqlalchemy.orm import sessionmaker
 import pandas as pd
+import csv
 
 STORAGE_CONNECTION_STRING = os.getenv("AZURE_STORAGE_CONNECTION_STRING")
 CONTAINER_NAME = os.getenv("AZURE_CONTAINER_NAME")
@@ -128,8 +129,14 @@ def parse_records(req) -> func.HttpResponse:
     session = Session()
     try:
         session.execute(text("CALL createtable()"))
-        session.execute(text("CALL create_table_view()"))
-        session.execute(text("CALL join_table_view()"))
+        session.execute(text("CALL merge_county()"))
+        result = session.execute(text("SELECT * FROM view_county LIMIT 1000"))
+        keys = result.keys()
+        rows = result.fetchall()   
+        with open("result.csv", 'w') as file:
+            writer = csv.writer(file, delimiter=',')
+            writer.writerow(keys)
+            writer.writerows(rows)
         session.commit()
         return func.HttpResponse(
             "Successfully parsed",
