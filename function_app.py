@@ -5,8 +5,8 @@ import io
 from sqlalchemy import create_engine, text
 import polars as pl
 from sqlalchemy.orm import sessionmaker
-import pandas as pd
 import csv
+import requests
 
 STORAGE_CONNECTION_STRING = os.getenv("AZURE_STORAGE_CONNECTION_STRING")
 CONTAINER_NAME = os.getenv("AZURE_CONTAINER_NAME")
@@ -88,40 +88,41 @@ app = func.FunctionApp(http_auth_level=func.AuthLevel.ANONYMOUS)
 def load_nppes(req: func.HttpRequest) -> func.HttpResponse:
     filename = req.params.get('file')
     file_map = {
-    'nppes': (FILE_NAME_NPPES, 'nppes'),
-    'nucc': (FILE_NAME_NPPES_NUCC, 'nucc'),
-    'fips': (FILE_NAME_NPPES_FIPS, 'fips'),
-    'zip': (FILE_NAME_NPPES_ZIP, 'zip'),
-    }
+        'nppes': (FILE_NAME_NPPES, 'nppes', 'blob'),
+        'nucc': (FILE_NAME_NPPES_NUCC, 'nucc', 'blob'),
+        'fips': (FILE_NAME_NPPES_FIPS, 'fips', 'blob'),
+        'zip': (FILE_NAME_NPPES_ZIP, 'zip', 'blob'),
+        'county_pop': (None, 'county_pop', 'api')
+    } 
     params = file_map.get(filename)
     if not params:
         return func.HttpResponse("Invalid file type.", status_code=400)
-    blob_name, tablename = params
-    
-    try:    
-        blob_service_client = BlobServiceClient.from_connection_string(STORAGE_CONNECTION_STRING)
-        blob_client = blob_service_client.get_blob_client(
-            container=CONTAINER_NAME,
-            blob=blob_name
-        )
-        process_map = {
-        'nppes': process_nppes_data,
-        'nucc': process_data,
-        'fips': process_data,
-        'zip': process_data,
-        }
-        process_func = process_map.get(filename)
-        if not process_func:
-            return func.HttpResponse("Invalid file type.", status_code=400)
-
-        result = process_func(blob_client, tablename)
-        return func.HttpResponse(result,status_code=200)
-    except Exception as e:  
+    blob_name, tablename, source_type = params
+    try:
+        if source_type == 'blob':
+            blob_service_client = BlobServiceClient.from_connection_string(STORAGE_CONNECTION_STRING)
+            blob_client = blob_service_client.get_blob_client(
+                container=CONTAINER_NAME,
+                blob=blob_name
+            )
+            process_map = {
+                'nppes': process_nppes_data,
+                'nucc': process_data,
+                'fips': process_data,
+                'zip': process_data,
+            }
+            process_func = process_map.get(filename)
+            if not process_func:
+                return func.HttpResponse("Invalid file type.", status_code=400)
+            result = process_func(blob_client, tablename)
+        elif source_type == 'api':
+            result = process_api(tablename)
+        return func.HttpResponse(result, status_code=200)
+    except Exception as e:
         return func.HttpResponse(
             f"An error occurred: {e}",
             status_code=500
         )
-   
    
 @app.route(route="parse_records")
 def parse_records(req) -> func.HttpResponse:
@@ -151,10 +152,25 @@ def parse_records(req) -> func.HttpResponse:
     finally:
         session.close()
         
+@app.route(route="get_data")
+def get_data(req) -> func.HttpResponse:
+    try:
+        process_api('county_pop')
+        return func.HttpResponse(
+            "Successfully parsed",
+            status_code=200
+        )
+    except Exception as e:
+        return func.HttpResponse(
+            f"An error occurred: {e}",
+            status_code=500
+        )
+        
 def process_nppes_data(blob_client, tablename):
     downloader = blob_client.download_blob()
     reader = downloader.readall()
     query = pl.scan_csv(io.BytesIO(reader), ignore_errors=True)
+    
     query = query.select(columns_to_keep)
     result_df = query.collect(streaming = True)
     result_df.columns = fix_column_names(result_df.columns)
@@ -219,3 +235,23 @@ def load_data(data:pl.DataFrame, table_name:str, engine):
         if_table_exists='replace'
     )
     return f"Data loaded into the database"
+
+
+def process_api(tablename):
+    keys_dict = {
+        'get': 'NAME,B01001_001E',
+        'for': 'county'
+    }
+    root_api = 'https://api.census.gov/data/2023/acs/acs5'
+    response = requests.get(root_api, params=keys_dict)
+    print(response)
+    print(response.url)
+    if response.status_code == 200:
+        data = response.json()
+        headers = data[0]
+        values = data[1:]
+        pop_df = pl.DataFrame(values, schema=headers)
+        insert_with_pl(pop_df, tablename)
+        return f"Data loaded into the database"
+    else:
+        return "Unauthorized access"
