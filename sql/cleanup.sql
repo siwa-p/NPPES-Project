@@ -86,8 +86,8 @@ create or replace procedure merge_county()
 language plpgsql
 as $$
 begin
+    ALTER TABLE county_pop RENAME COLUMN "B01001_001E" TO population;
     create or replace view view_county as
-
     WITH fips_with_population AS (
         SELECT f.fipscounty, f.countyname_fips, c.population
         FROM county_pop c
