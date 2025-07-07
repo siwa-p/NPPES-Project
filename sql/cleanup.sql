@@ -89,26 +89,25 @@ begin
     ALTER TABLE county_pop RENAME COLUMN "B01001_001E" TO population;
     create or replace view view_county as
     WITH fips_with_population AS (
-        SELECT f.fipscounty, f.countyname_fips, c.population
+        SELECT DISTINCT f.fipscounty, f.countyname_fips, c.population
         FROM county_pop c
         INNER JOIN fips f
             ON (c.state || c.county) = lpad(f.fipscounty::VARCHAR, 5, '0')
     ),
     ranked_zip AS (
-        SELECT z.zip, z.county, f.countyname_fips, f.population,
+        SELECT DISTINCT ON (z.zip)
+        z.zip, z.county, f.countyname_fips, f.population,
                rank() OVER (PARTITION BY z.zip ORDER BY f.population DESC) AS rank
         FROM zip z
         INNER JOIN fips_with_population f
             ON z.county = f.fipscounty
     )
-    SELECT
+    SELECT distinct on (np.npi)
         np.npi,
         np.entity_type_code,
         np.entity_name,
         np.practice_address,
-        np.zip_code,
         rz.countyname_fips AS county_name,
-        rz.population,
         nu.classification,
         nu.grouping,
         nu.specialization
@@ -121,4 +120,43 @@ begin
 end
 $$;
 
-select * from view_county;
+create or replace procedure county_diff()
+language plpgsql
+as $$
+begin
+    create or replace view county_dff as
+    with
+        fips_with_population AS (
+            SELECT f.fipscounty, f.countyname_fips, c.population
+            FROM county_pop c
+            INNER JOIN fips f
+                ON (c.state || c.county) = lpad(f.fipscounty::VARCHAR, 5, '0')
+        ),
+        ratio_ranked_zip as (select *, rank() over (partition by zip order by tot_ratio  desc) as rank
+                    from zip z
+                    inner join fips_with_population f
+                    on f.fipscounty = z.county),
+        pop_ranked_zip AS (
+        SELECT z.zip, z.county, f.countyname_fips, f.population,
+                rank() OVER (PARTITION BY z.zip ORDER BY f.population DESC) AS rank
+        FROM zip z
+        INNER JOIN fips_with_population f
+            ON z.county = f.fipscounty
+        )
+    select
+        r.zip,
+        r.county as ratio_county,
+        r.countyname_fips as ratio_county_name,
+        p.county as pop_county,
+        p.countyname_fips as pop_county_name
+    from
+        ratio_ranked_zip r
+    join
+        pop_ranked_zip p
+    on r.zip = p.zip
+    where
+        r.rank = 1
+        and p.rank = 1
+        and r.county <> p.county;
+end
+$$;

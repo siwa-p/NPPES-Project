@@ -6,5 +6,7 @@ azure-functions
 pandas
 jupyter
 azure-storage-blob
-py-ticktock
 sqlalchemy
+polars
+pyarrow
+pytest

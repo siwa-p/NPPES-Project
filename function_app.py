@@ -169,8 +169,7 @@ def get_data(req) -> func.HttpResponse:
 def process_nppes_data(blob_client, tablename):
     downloader = blob_client.download_blob()
     reader = downloader.readall()
-    query = pl.scan_csv(io.BytesIO(reader), ignore_errors=True)
-    
+    query = pl.scan_csv(io.BytesIO(reader), ignore_errors=True)    
     query = query.select(columns_to_keep)
     result_df = query.collect(streaming = True)
     result_df.columns = fix_column_names(result_df.columns)
@@ -191,12 +190,16 @@ def process_data(blob_client, tablename):
 
 def insert_with_pl(df:pl.DataFrame, tablename, engine= engine):
     with sessionmaker(bind=engine)() as session:
+        session.execute(text(f"DROP TABLE IF EXISTS {tablename} CASCADE"))
+        session.commit()
         load_data(df, table_name=tablename, engine=engine)
         session.commit()
     return f"inserted using pl write database"
 
 def insert_using_copy_with_sqlalchemy(df:pl.DataFrame, tablename):
     with sessionmaker(bind=engine)() as session:
+        session.execute(text(f"DROP TABLE IF EXISTS {tablename} CASCADE"))
+        session.commit()
         load_header(df, table_name=tablename, engine=engine)
         with session.connection().connection.cursor() as cursor:
             with io.StringIO() as buffer:
