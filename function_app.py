@@ -11,7 +11,7 @@ import requests
 STORAGE_CONNECTION_STRING = os.getenv("AZURE_STORAGE_CONNECTION_STRING")
 CONTAINER_NAME = os.getenv("AZURE_CONTAINER_NAME")
 
-FILE_NAME_NPPES = os.getenv("AZURE_STORAGE_BLOB_NAME_NPPES")
+FILE_NAME_NPPES = os.getenv("AZURE_STORAGE_BLOB_NAME_NPPES_P")
 FILE_NAME_NPPES_SAMPLE = os.getenv("AZURE_STORAGE_BLOB_NAME_NPPES_SAMPLE")
 FILE_NAME_NPPES_NUCC = os.getenv("AZURE_STORAGE_BLOB_NAME_NUCC")
 FILE_NAME_NPPES_FIPS = os.getenv("AZURE_STORAGE_BLOB_NAME_FIPS")
@@ -117,6 +117,8 @@ def load_nppes(req: func.HttpRequest) -> func.HttpResponse:
             result = process_func(blob_client, tablename)
         elif source_type == 'api':
             result = process_api(tablename)
+            
+        
         return func.HttpResponse(result, status_code=200)
     except Exception as e:
         return func.HttpResponse(
@@ -129,7 +131,7 @@ def parse_records(req) -> func.HttpResponse:
     Session = sessionmaker(bind = engine)
     session = Session()
     try:
-        session.execute(text("CALL createtable()"))
+        session.execute(text("CALL createtable()")) # f-strings for variables
         session.execute(text("CALL merge_county()"))
         result = session.execute(text("SELECT * FROM view_county LIMIT 1000"))
         keys = result.keys()
@@ -169,7 +171,7 @@ def get_data(req) -> func.HttpResponse:
 def process_nppes_data(blob_client, tablename):
     downloader = blob_client.download_blob()
     reader = downloader.readall()
-    query = pl.scan_csv(io.BytesIO(reader), ignore_errors=True)    
+    query = pl.scan_parquet(io.BytesIO(reader))    
     query = query.select(columns_to_keep)
     result_df = query.collect(streaming = True)
     result_df.columns = fix_column_names(result_df.columns)
@@ -190,16 +192,12 @@ def process_data(blob_client, tablename):
 
 def insert_with_pl(df:pl.DataFrame, tablename, engine= engine):
     with sessionmaker(bind=engine)() as session:
-        session.execute(text(f"DROP TABLE IF EXISTS {tablename} CASCADE"))
-        session.commit()
         load_data(df, table_name=tablename, engine=engine)
         session.commit()
     return f"inserted using pl write database"
 
 def insert_using_copy_with_sqlalchemy(df:pl.DataFrame, tablename):
     with sessionmaker(bind=engine)() as session:
-        session.execute(text(f"DROP TABLE IF EXISTS {tablename} CASCADE"))
-        session.commit()
         load_header(df, table_name=tablename, engine=engine)
         with session.connection().connection.cursor() as cursor:
             with io.StringIO() as buffer:
@@ -241,14 +239,13 @@ def load_data(data:pl.DataFrame, table_name:str, engine):
 
 
 def process_api(tablename):
+    
     keys_dict = {
-        'get': 'NAME,B01001_001E',
-        'for': 'county'
+        'get': f'NAME,B01001_001E',
+        'for': f'county'
     }
     root_api = 'https://api.census.gov/data/2023/acs/acs5'
     response = requests.get(root_api, params=keys_dict)
-    print(response)
-    print(response.url)
     if response.status_code == 200:
         data = response.json()
         headers = data[0]

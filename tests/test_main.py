@@ -25,6 +25,7 @@ POSTGRES_CONN_STRING = (
 metadata = MetaData()
 engine = create_engine(POSTGRES_CONN_STRING)
 Session = sessionmaker(bind=engine)
+
 def test_count():
     try:
         view_county = Table("view_county", metadata, autoload_with=engine)
@@ -39,7 +40,6 @@ def test_duplicates():
     try:
         metadata = MetaData()
         view_county = Table("view_county", metadata, autoload_with=engine)
-        
         stmt = (
             select(view_county.c.npi, func.count())
             .select_from(view_county)
@@ -47,13 +47,10 @@ def test_duplicates():
             .having(func.count() > 1)
         )
         with Session() as session:
-            duplicates = session.execute(stmt).all()
-            
+            duplicates = session.execute(stmt).all()  
         assert not duplicates, f"Duplicate npi entries found: {duplicates}"
-    
     except Exception as e:
         pytest.fail(f"Test failed with errors: {str(e)}")
-    
 
 if __name__ == "__main__":
     test_duplicates()
