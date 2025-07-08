@@ -66,7 +66,7 @@ This view allows stakeholders to query provider counts, specialties, and distrib
 
 ## 👥 Team
 
-Hakuna Madata – Data Engineering Bootcamp, Cohort 2025
+Hakuna Ma-Data – Data Engineering Bootcamp, Cohort 2025
 - **Neal Halper** ([nealhalper](https://github.com/nealhalper))
 - **Helen Esterman** ([HelenEsterman](https://github.com/HelenEsterman))
 - **Jana Ismail** ([Jana-Ismail](https://github.com/Jana-Ismail))

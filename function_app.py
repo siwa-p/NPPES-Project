@@ -136,7 +136,7 @@ def parse_records(req) -> func.HttpResponse:
         result = session.execute(text("SELECT * FROM view_county LIMIT 1000"))
         keys = result.keys()
         rows = result.fetchall()   
-        with open("result.csv", 'w') as file:
+        with open("data/processed/result.csv", 'w') as file:
             writer = csv.writer(file, delimiter=',')
             writer.writerow(keys)
             writer.writerows(rows)

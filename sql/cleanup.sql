@@ -121,3 +121,10 @@ $$;
 
 -- select * from view_county
 -- limit 20;
+
+-- drop table if exists nppes cascade;
+-- drop table if exists nppes_subset cascade;
+-- drop table if exists nucc cascade;
+-- drop table if exists zip cascade;
+-- drop table if exists fips cascade;
+-- drop table if exists county_pop cascade;
