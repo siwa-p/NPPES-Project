@@ -1,0 +1,1001 @@
+npi,entity_type_code,entity_name,practice_address,county_name,classification,grouping,specialization
+1003000100,1,GERARDO GOMEZ,108 W VICTORIA ST GARDENA CA,LOS ANGELES,Rehabilitation Practitioner,"Respiratory, Developmental, Rehabilitative and Restorative Service Providers",
+1003000118,2,STEVEN ENGEL PEDIATRICS,1700 NEUSE BLVD NEW BERN NC,PAMLICO,Pediatrics,Allopathic & Osteopathic Physicians,
+1003000126,1,ARDALAN ENKESHAFI M.D.,6410 ROCKLEDGE DR STE 304 BETHESDA MD,MONTGOMERY,Internal Medicine,Allopathic & Osteopathic Physicians,
+1003000134,1,DR. THOMAS LEE CIBULL M.D.,2650 RIDGE AVE EVANSTON HOSPITAL EVANSTON IL,COOK,Pathology,Allopathic & Osteopathic Physicians,Anatomic Pathology & Clinical Pathology
+1003000142,1,RASHID KHALIL M.D.,4126 N HOLLAND SYLVANIA RD SUITE 220 TOLEDO OH,LUCAS,Anesthesiology,Allopathic & Osteopathic Physicians,
+1003000159,1,MARSHA SUSAN VOGES FNP,4115 DORCHESTER ROAD CONCENTRA MEDICAL CENTER CHARLESTON SC,CHARLESTON,Nurse Practitioner,Physician Assistants & Advanced Practice Nursing Providers,Family
+1003000167,1,DR. JULIO EDGARDO ESCOBAR DDS,5 PINE CONE RD DAYTON NV,LYON,Dentist,Dental Providers,
+1003000175,1,DR. BELINDA REYES-VASQUEZ D.D.S.,322 N AZUSA AVE STE 202 LA PUENTE CA,LOS ANGELES,Dentist,Dental Providers,
+1003000183,1,MR. DENNIS JAMES CYPHERS L.M.P,6930 52ND AVE W TACOMA WA,PIERCE,Massage Therapist,"Respiratory, Developmental, Rehabilitative and Restorative Service Providers",
+1003000191,1,ALYSSA WELTMAN,113 HILLCREST DRE SANFORD NC,CHATHAM,Speech-Language Pathologist,"Speech, Language and Hearing Service Providers",
+1003000209,2,KOPELMAN FAMILY CHIROPRACTIC INC,411 MASS AVE SUITE 102 ACTON MA,MIDDLESEX,Chiropractor,Chiropractic Providers,
+1003000217,2,"TRI-STATE EYE CARE CENTER, LTD.",919 5TH AVE STE 100 HUNTINGTON WV,CABELL,Optometrist,Eye and Vision Services Providers,
+1003000225,1,DR. ANNA C. MORGAN MD,275 W MACARTHUR BLVD OAKLAND CA,ALAMEDA,Specialist,Other Service Providers,
+1003000233,2,ROBERT SELIS DDS.INC,3530 CAMINO DEL RIO N 109 SAN DIEGO CA,SAN DIEGO,Dentist,Dental Providers,
+1003000241,1,LESLIE A PATTERSON PTA,251 GEORGETOWN RD. BEAVER FALLS PA,BEAVER,Physical Therapy Assistant,"Respiratory, Developmental, Rehabilitative and Restorative Service Providers",
+1003000258,2,LODI PHARMACY INC,929 S CHEROKEE LN LODI CA,SAN JOAQUIN,Pharmacy,Suppliers,Community/Retail Pharmacy
+1003000266,1,BEVERLY BUDIG,3331 POWER INN RD SUITE 450 SACRAMENTO CA,SACRAMENTO,Case Management,Agencies,
+1003000274,2,"WAEL ALABDULKARIM, MD, APMC",201 RUE IBERVILLE STE 110 LAFAYETTE LA,LAFAYETTE,Psychiatry & Neurology,Allopathic & Osteopathic Physicians,Neurology
+1003000282,1,ROSIE K BLAKEMORE FNP,TENNESSEE PRISON FOR WOMEN 3881 STEWARTS LANE NASHVILLE TN,DAVIDSON,Nurse Practitioner,Physician Assistants & Advanced Practice Nursing Providers,Family
+1003000290,2,XCELLENT MEDICAL SERVICES INC,3900 W FLAGLER ST CORAL GABLES FL,MIAMI-DADE,Clinic/Center,Ambulatory Health Care Facilities,
+1003000308,2,"KEITH M DOCKERY, MD PC",1800 PEACHTREE ST NW SUITE 700 ATLANTA GA,FULTON,Audiologist,"Speech, Language and Hearing Service Providers",
+1003000316,2,"ALEXANDER J. TIKHTMAN, M.D., P.S.C.",1517 NICHOLASVILLE RD SUITE 403 LEXINGTON KY,FAYETTE,Psychiatry & Neurology,Allopathic & Osteopathic Physicians,Neurology
+1003000324,1,"MS. MARY COLLEEN RATH R.D., L.D., CNSC",9500 EUCLID AVE M17 CLEVELAND OH,CUYAHOGA,"Dietitian, Registered",Dietary & Nutritional Service Providers,
+1003000332,1,ESTHER Y THACH,2690 38TH AVE SAN FRANCISCO CA,SAN FRANCISCO,Case Manager/Care Coordinator,Other Service Providers,
+1003000340,1,TODD BLOWERS,13795 KENWOOD DR BAXTER MN,CROW WING,Speech-Language Pathologist,"Speech, Language and Hearing Service Providers",
+1003000357,2,"PODIATRY NETWORK SOLUTIONS OF LOUISIANA, LLC",7220 NW 36TH ST SUITE 103 MIAMI FL,MIAMI-DADE,Podiatrist,Podiatric Medicine & Surgery Service Providers,
+1003000365,2,NASHUA YOUTH COUNCIL INC,74 NORTHEASTERN BLVD STE 10A NASHUA NH,HILLSBOROUGH,Clinic/Center,Ambulatory Health Care Facilities,Adolescent and Children Mental Health
+1003000373,2,BROWARD COUNTY DEPARTMENT OF HEALTH,780 SW 24TH ST FORT LAUDERDALE FL,BROWARD,Public Health or Welfare,Agencies,
+1003000381,1,MR. LUTHER QUITORIANO BRAGANZA PT,134 N OLD DIXIE HWY LADY LAKE FL,LAKE,Physical Therapist,"Respiratory, Developmental, Rehabilitative and Restorative Service Providers",
+1003000399,2,"RECONSTRUCTIVE HAND TO SHOULDER OF INDIANA, LLC",13431 OLD MERIDIAN STREET SUITE 225 CARMEL IN,HAMILTON,Orthopaedic Surgery,Allopathic & Osteopathic Physicians,Hand Surgery
+1003000407,1,DAVID JAMES GIRARDI D.O.,306 PENN AVE PITTSBURGH PA,ALLEGHENY,Family Medicine,Allopathic & Osteopathic Physicians,
+1003000415,1,DR. MARSHALL DEAN WEBSTER D.C.,1478 SW SISTERS WELCOME RD LAKE CITY FL,COLUMBIA,Chiropractor,Chiropractic Providers,
+1003000423,1,JENNIFER A VELOTTA M.D.,11100 EUCLID AVE CLEVELAND OH,CUYAHOGA,Obstetrics & Gynecology,Allopathic & Osteopathic Physicians,
+1003000431,1,DR. MICHELLE SCHNABEL HORNER D.O.,5500 E LOMBARD ST BALTIMORE MD,BALTIMORE,Psychiatry & Neurology,Allopathic & Osteopathic Physicians,Child & Adolescent Psychiatry
+1003000449,1,JACLYN ANN EVANS PSY.D.,435 E MAIN ST ANSONIA CT,SOUTH CENTRAL CONNECTICUT,Counselor,Behavioral Health & Social Service Providers,Mental Health
+1003000456,1,"MS. STACIE ANN HOBAN MS, CCC-SLP",300 OCEAN AVE SPEECH AND LANGUAGE REVERE MA,SUFFOLK,Speech-Language Pathologist,"Speech, Language and Hearing Service Providers",
+1003000464,1,LAUREL WOLF P.T.,1837 RIDGE RD KLAMATH FALLS OR,KLAMATH,Physical Therapist,"Respiratory, Developmental, Rehabilitative and Restorative Service Providers",
+1003000472,1,MR. EDGAR FUENTES,5800 BELLAIRE BLVD STE 112 HOUSTON TX,HARRIS,Technician/Technologist,Eye and Vision Services Providers,Optician
+1003000480,1,KEVIN BRADLEY ROTHCHILD MD,12605 E 16TH AVE AURORA CO,ARAPAHOE,Surgery,Allopathic & Osteopathic Physicians,Trauma Surgery
+1003000498,2,BURDINE PHYSICAL THERAPY,"311 LONGWOOD DR, SW HUNTSVILLE AL",MADISON,Clinic/Center,Ambulatory Health Care Facilities,
+1003000506,1,"KEISHA L. BUTLER M.A., LPC",100 N CENTRAL EXPY SUITE 400-8 DALLAS TX,DALLAS,Counselor,Behavioral Health & Social Service Providers,Professional
+1003000514,2,SENIOR MANAGEMENT INC,660 E BIRCH AVE BARRON WI,BARRON,Skilled Nursing Facility,Nursing & Custodial Care Facilities,
+1003000522,1,DR. FREDERICK J WEIGAND MD,1565 SAXON BLVD SUITE 102 DELTONA FL,VOLUSIA,Family Medicine,Allopathic & Osteopathic Physicians,Adult Medicine
+1003000530,1,AMANDA MARIE SEMONCHE DO,1021 PARK AVE SUITE 203 QUAKERTOWN PA,BUCKS,Internal Medicine,Allopathic & Osteopathic Physicians,
+1003000548,1,PHILIP ARANDA PTA,855 E BASSE RD SAN ANTONIO TX,BEXAR,Physical Therapy Assistant,"Respiratory, Developmental, Rehabilitative and Restorative Service Providers",
+1003000555,1,MRS. MANISHA AJIT PATEL DPT,1401 E STATE ST ROCKFORD IL,WINNEBAGO,Physical Therapist,"Respiratory, Developmental, Rehabilitative and Restorative Service Providers",
+1003000563,2,"RICHARD B. D. CHUN, M.D. PROFESSIONAL CORPORATION",729 SUNRISE AVE STE 619 ROSEVILLE CA,PLACER,Clinic/Center,Ambulatory Health Care Facilities,Primary Care
+1003000571,2,HOUSE OF CARE CENTER,3744 BENTON BLVD KANSAS CITY MO,JACKSON,Psychiatric Residential Treatment Facility,Residential Treatment Facilities,
+1003000589,1,HOLLY A DAVIDSON,760 HARRISON ST SAN FRANCISCO CA,SAN FRANCISCO,Student in an Organized Health Care Education/Training Program,"Student, Health Care",
+1003000597,1,"DR. DAE Y KIM M.D., PH.D",1145 S UTICA AVE SUITE 202 TULSA OK,TULSA,Urology,Allopathic & Osteopathic Physicians,
+1003000605,1,MRS. DIANE ELIZABETH FREEMAN OTR,3058 N STATE RD STE E DAVISON MI,LAPEER,Occupational Therapist,"Respiratory, Developmental, Rehabilitative and Restorative Service Providers",Neurorehabilitation
+1003000613,2,"WHOLE HEALTH CHIROPRACTIC, PA",430 W. IOWA AVE. SUITE A NAMPA ID,CANYON,Chiropractor,Chiropractic Providers,
+1003000621,1,DR. DENNIS DULLANO D.C.,800 BUFFALO ST SUITE B FARMVILLE VA,CUMBERLAND,Chiropractor,Chiropractic Providers,
+1003000639,1,DR. PEYMAN BENHARASH MD,10833 LECONTE AVE ROOM 62-215 LOS ANGELES CA,LOS ANGELES,Surgery,Allopathic & Osteopathic Physicians,
+1003000647,1,"MS. NICOLE MARIE LEPORE MS, OTR",20 FEN CT MADISON NJ,MORRIS,Occupational Therapist,"Respiratory, Developmental, Rehabilitative and Restorative Service Providers",Pediatrics
+1003000654,1,DR. CAROLINE MARIE RHODES DDS,20821 US HWY 281 SUITE 310 STONE OAK MODERN DENTISTRY SAN ANTONIO TX,BEXAR,Dentist,Dental Providers,General Practice
+1003000662,1,KATHLEEN ANN BAKER,1001 ROHLWING RD ELK GROVE VILLAGE IL,DU PAGE,Counselor,Behavioral Health & Social Service Providers,Professional
+1003000670,2,"DR. JEFF SNYDER, LLC",1003A EGYPT ROAD OAKS PA,MONTGOMERY,Chiropractor,Chiropractic Providers,
+1003000688,2,HUSSKE CHIROPRACTIC CLINIC,1265 COFFEEN AVE SHERIDAN WY,SHERIDAN,Chiropractor,Chiropractic Providers,
+1003000696,2,ALMOND BANCROFT SCHOOL DISTRICT,1336 ELM ST ALMOND WI,PORTAGE,Local Education Agency (LEA),Agencies,
+1003000704,1,ZACHARY MARK GATTON M.D.,1330 COSHOCTON AVE MOUNT VERNON OH,KNOX,Anesthesiology,Allopathic & Osteopathic Physicians,
+1003000712,1,MS. SHEILA ORALLO MALLORY N. P.,1867 E FIR AVE STE 104 FRESNO CA,MADERA,Nurse Practitioner,Physician Assistants & Advanced Practice Nursing Providers,Family
+1003000720,1,DR. OTNIEL HERNANDEZ DNP,43 BARKLEY CIR STE 201 FORT MYERS FL,LEE,Nurse Practitioner,Physician Assistants & Advanced Practice Nursing Providers,Family
+1003000738,1,JULIETTE A. ZUMWALT P.A.,7401 S. MAIN HOUSTON TX,HARRIS,Physician Assistant,Physician Assistants & Advanced Practice Nursing Providers,
+1003000746,1,MIKE LEE GALLEGOS PHC,221 STATE HIGHWAY 165 A-4 PLACITAS NM,SANDOVAL,Pharmacist,Pharmacy Service Providers,
+1003000753,1,JAMES FRANCIS DEITLE PA-C,501 N GRAHAM ST SUITE #580 PORTLAND OR,MULTNOMAH,Physician Assistant,Physician Assistants & Advanced Practice Nursing Providers,
+1003000761,1,MS. PATRICIA LEON GUERRERO TAIMANGLO PHD,590 S MARINE CORPS DRIVE SUITE 219 GITC BLDG TAMUNING GU,,Psychologist,Behavioral Health & Social Service Providers,Clinical
+1003000779,2,MMC MEDICAL PARK AT 1635 POPLAR,MMC MEDICAL PARK AT 1635 POPLAR 1635 POPLAR STREET BRONX NY,BRONX,Clinic/Center,Ambulatory Health Care Facilities,Primary Care
+1003000787,1,CYNDI ANNE HYDE COTA,1485 INTERNATIONAL PKWY STE 2051 HEATHROW FL,SEMINOLE,Occupational Therapy Assistant,"Respiratory, Developmental, Rehabilitative and Restorative Service Providers",
+1003000795,1,MR. MICHAEL JOSEPH O'NEILL LICSW,1919 UNIVERSITY AVE W SAINT PAUL MN,RAMSEY,Social Worker,Behavioral Health & Social Service Providers,Clinical
+1003000803,2,"CAMPBELL MEDICAL GROUP, MD, PSC",303 PROFESSIONAL PARK DR GLASGOW KY,BARREN,Family Medicine,Allopathic & Osteopathic Physicians,
+1003000811,2,JOSEPH I KANG MD INC,3755 BEVERLY BLVD STE 301 LOS ANGELES CA,LOS ANGELES,Family Medicine,Allopathic & Osteopathic Physicians,
+1003000829,1,"MICHELLE RENEE KOCHANEK PT, DPT",1325 S COLORADO BLVD STE 206 DENVER CO,DENVER,Physical Therapist,"Respiratory, Developmental, Rehabilitative and Restorative Service Providers",
+1003000837,1,RICHARD L JOHN JR. APRN,1550 E MAIN ST MENTAL HEALTH SANTA MARIA CA,SANTA BARBARA,Nurse Practitioner,Physician Assistants & Advanced Practice Nursing Providers,Psychiatric/Mental Health
+1003000845,2,JAMES D.SCHLENKER MDSC,6311 W 95TH ST OAK LAWN IL,COOK,Specialist,Other Service Providers,
+1003000852,1,TRIONA COYLE PSY.D.,870 MARKET ST STE 659 SAN FRANCISCO CA,SAN FRANCISCO,Psychologist,Behavioral Health & Social Service Providers,
+1003000860,1,MRS. JANICE M BRENNAN APRN,1 MEDICAL CENTER DR DHMC DEPARTMENT OF OCCUPATION MEDICINE LEBANON NH,GRAFTON,Nurse Practitioner,Physician Assistants & Advanced Practice Nursing Providers,Family
+1003000878,1,MRS. ELLEN VEENSTRA M.A.,1540 E COLORADO ST GLENDALE CA,LOS ANGELES,Counselor,Behavioral Health & Social Service Providers,
+1003000886,1,MARGARET E ARMSTRONG LCSW,329 BATH RD BRUNSWICK ME,SAGADAHOC,Social Worker,Behavioral Health & Social Service Providers,Clinical
+1003000894,1,"SHANNON MARIE KEHLE-FORBES PH.D., L.P.",7201 METRO BLVD STE 550 EDINA MN,HENNEPIN,Psychologist,Behavioral Health & Social Service Providers,Clinical
+1003000902,1,JAIVANTI LOHANO MD,2215 PORTLAND AVE LOUISVILLE KY,JEFFERSON,Family Medicine,Allopathic & Osteopathic Physicians,
+1003000910,1,MS. MARTHA BROWNSTEIN BASS LICSW,16 WAYLAND HILLS RD WAYLAND MA,MIDDLESEX,Social Worker,Behavioral Health & Social Service Providers,Clinical
+1003000928,2,"LARISSA GUSHANSKY, DDS INC.",887 E 2ND ST SUITE B POMONA CA,LOS ANGELES,Dentist,Dental Providers,
+1003000936,1,MARK A STELLINGWORTH MD,701 MEDICAL PARK DR STE 301 HARTSVILLE SC,DARLINGTON,Internal Medicine,Allopathic & Osteopathic Physicians,Cardiovascular Disease
+1003000944,1,MS. ALANA J DUSCHANE,510 SW 3RD AVE STE 200 PORTLAND OR,MULTNOMAH,Psychologist,Behavioral Health & Social Service Providers,
+1003000951,1,MR. MACHEO KAHIL PAYNE,9736 LAWLOR ST OAKLAND CA,ALAMEDA,Counselor,Behavioral Health & Social Service Providers,
+1003000969,2,"FULCRUM HEALTH, INC.",3300 FERNBROOK LANE NORTH SUITE 150 PLYMOUTH MN,HENNEPIN,Exclusive Provider Organization,Managed Care Organizations,
+1003000977,1,BARBARA DANNER,423 AVE I CHILLICOTHE TX,HARDEMAN,Licensed Vocational Nurse,Nursing Service Providers,
+1003000985,1,MS. PATRICIA MAE GONSALVES RN,7171 BOWLING DR SUITE 800 SACRAMENTO CA,SACRAMENTO,Registered Nurse,Nursing Service Providers,
+1003000993,1,MR. STEPHEN EDWARD MCMANNIS,117 SW 160TH STREET BURIEN WA,KING,Pharmacist,Pharmacy Service Providers,
+1003001009,2,REGENTS OF UNIVERSITY OF CALIFORNIA,19262 JAMBOREE RD IRVINE CA,ORANGE,Psychologist,Behavioral Health & Social Service Providers,Clinical Child & Adolescent
+1003001017,1,DR. LAWRENCE MARTIN NICHOLS M.D,5471 LA PALMA AVE STE. 202 LA PALMA CA,LOS ANGELES,Dermatology,Allopathic & Osteopathic Physicians,
+1003001025,1,MARIA BASS,9499 W CHARLESTON #200 OSSM LAS VEGAS NV,CLARK,Physician Assistant,Physician Assistants & Advanced Practice Nursing Providers,Surgical
+1003001033,2,COUNTRY CARE INC,3980 E CASSIE LANE COTTONWOOD AZ,YAVAPAI,Assisted Living Facility,Nursing & Custodial Care Facilities,
+1003001041,1,KATHLEEN MILLER CRNA,1000 DUTCH RIDGE RD BEAVER PA,BEAVER,"Nurse Anesthetist, Certified Registered",Physician Assistants & Advanced Practice Nursing Providers,
+1003001058,1,MS. AYUMI E BELANGER PA-C,91 BRANSCOMB RD SUITE 3 GREEN COVE SPRINGS FL,PUTNAM,Physician Assistant,Physician Assistants & Advanced Practice Nursing Providers,Medical
+1003001066,2,WOMENS HEALTH SERVICES CHATTANOOGA PC,6845 MOUNTAIN VIEW RD OOLTEWAH TN,HAMILTON,Specialist,Other Service Providers,
+1003001074,1,DR. DALIA MATTIS ED D,5450 NW CENTRAL DR STE 109 HOUSTON TX,HARRIS,Counselor,Behavioral Health & Social Service Providers,
+1003001082,2,COMMUNITY BASED LEARNING ALTERNATIVES CENTER INC,212 BRIDGE ST SMITHFIELD NC,JOHNSTON,Community/Behavioral Health,Agencies,
+1003001090,2,EDWARD HAGUE,1501 N ELM ST DENTON TX,DENTON,Chiropractor,Chiropractic Providers,
+1003001108,2,GRACE HEALTHCARE SERVICES INC,11311 HARWIN DR SUITE 17 HOUSTON TX,HARRIS,Home Health,Agencies,
+1003001116,1,LYNNETTE DORTHEA SCOTT PHARMACIST,330 S STILLAGUAMISH AVE ARLINGTON WA,SNOHOMISH,Pharmacist,Pharmacy Service Providers,
+1003001124,1,MYLA T HOWELL LCSW,1605 EASTLAKE AVE LOS ANGELES CA,LOS ANGELES,Social Worker,Behavioral Health & Social Service Providers,Clinical
+1003001132,1,MICHAEL ANGELO VIGGIANELLI MD,HWY 1 CALIFORNIA MENS COLONY SAN LUIS OBISPO CA,SAN LUIS OBISPO,Family Medicine,Allopathic & Osteopathic Physicians,
+1003001140,1,MR. JON NICASTRO PT,400 N STEPHANIE ST STE 310 HENDERSON NV,CLARK,Physical Therapist,"Respiratory, Developmental, Rehabilitative and Restorative Service Providers",
+1003001157,1,DR. DAVID C KIM M.D.,2801 ATLANTIC AVE LONG BEACH CA,LOS ANGELES,Pediatrics,Allopathic & Osteopathic Physicians,Neonatal-Perinatal Medicine
+1003001165,1,"DR. LEE EDWIN GOLDSTEIN M.D., PH.D.",670 ALBANY ST BOSTON MA,SUFFOLK,Psychiatry & Neurology,Allopathic & Osteopathic Physicians,Psychiatry
+1003001173,2,UNIVERSITY OF NORTH TEXAS HEALTH SCIENCE CENTER OF FORT WORTH,855 MONTGOMERY ST FORT WORTH TX,TARRANT,Pathology,Allopathic & Osteopathic Physicians,Clinical Pathology/Laboratory Medicine
+1003001181,1,"THEO DICKINSON CHAPPELL H.H.P., L.M.B.T.",2 FAIRVIEW HILLS DR FAIRVIEW NC,BUNCOMBE,Massage Therapist,"Respiratory, Developmental, Rehabilitative and Restorative Service Providers",
+1003001199,2,EDGEMOOR,9065 EDGEMOOR DRIVE EDGEMOOR HOSPITAL SANTEE CA,SAN DIEGO,Skilled Nursing Facility,Nursing & Custodial Care Facilities,
+1003001207,1,DR. NILOO GORJI,359 MERROW ROAD TOLLAND CT,CAPITOL,Dentist,Dental Providers,General Practice
+1003001215,2,DAVITA OF GREENBRIER,129 SENECA TRL LEWISBURG WV,GREENBRIER,Nursing Care,Agencies,
+1003001223,1,MYCO FOY MS,141 E MAIN ST WATERBURY CT,NAUGATUCK VALLEY,Counselor,Behavioral Health & Social Service Providers,Mental Health
+1003001231,2,D & J HOME CARE,408 HEADQUARTERS DR SUITE 3-G MILLERSVILLE MD,ANNE ARUNDEL,Home Health,Agencies,
+1003001249,1,MR. RONNIE LEE DAY P.T.,3815 N VERMILION ST DANVILLE IL,VERMILION,Physical Therapist,"Respiratory, Developmental, Rehabilitative and Restorative Service Providers",
+1003001256,1,JENNIFER A CARAGOL MD,2930 11TH AVE EVANS CO,WELD,Family Medicine,Allopathic & Osteopathic Physicians,
+1003001264,1,MRS. NANCY ANN CARNATHAN-CRIBBS MA,170 17TH ST SUITE B PACIFIC GROVE CA,MONTEREY,Marriage & Family Therapist,Behavioral Health & Social Service Providers,
+1003001272,1,MRS. DEANNE E OCHOA-DURRELL LCSW,125 FRANKLIN ST RUMFORD ME,OXFORD,Social Worker,Behavioral Health & Social Service Providers,Clinical
+1003001280,1,MRS. ERIN NELSON BROWN CCC-SLP,450 RADIO LN CULPEPER VA,CULPEPER,Speech-Language Pathologist,"Speech, Language and Hearing Service Providers",
+1003001298,1,KASEY WARREN O.D.,5401 SOUTH FM 1626 SUITE 135 KYLE TX,CALDWELL,Optometrist,Eye and Vision Services Providers,
+1003001306,1,DR. JANE LIAW-GRAY PSYD,410 BELLEVUE WAY SE SUITE 303 BELLEVUE WA,KING,Psychologist,Behavioral Health & Social Service Providers,Clinical
+1003001314,,,,,,,
+1003001322,2,NODAWAY COUNTY HEALTH CENTER,515 N MAIN ST MARYVILLE MO,NODAWAY,Public Health or Welfare,Agencies,
+1003001330,1,"BESS LYONS CERESA M.S., L.M.F.T.",18809 W CATAWBA AVE SUITE 202 CORNELIUS NC,MECKLENBURG,Marriage & Family Therapist,Behavioral Health & Social Service Providers,
+1003001348,1,CHRISTY NOEL MEYER-HEINZMAN MFT INTERN ASSOCIATE,220 10TH AVE S NAMPA ID,CANYON,Counselor,Behavioral Health & Social Service Providers,Mental Health
+1003001355,1,KRISTIN GORNING MA DT,715 W ARMITAGE AVE # 2 CHICAGO IL,COOK,Developmental Therapist,"Respiratory, Developmental, Rehabilitative and Restorative Service Providers",
+1003001363,1,DR. CHARLES RAYMOND STEVENS M.D.,1665 S IMPERIAL AVE STE D EL CENTRO CA,IMPERIAL,Anesthesiology,Allopathic & Osteopathic Physicians,Pain Medicine
+1003001371,1,DAVID M KANTER MD,750 E ADAMS ST SYRACUSE NY,ONONDAGA,Physical Medicine & Rehabilitation,Allopathic & Osteopathic Physicians,
+1003001389,1,KRYSTAL PABROS AOAY,1801 VICENTE ST SAN FRANCISCO CA,SAN FRANCISCO,Counselor,Behavioral Health & Social Service Providers,
+1003001397,2,MMC AT AECOM,1300 MORRIS PARK AVENUE MMC AT AECOM BRONX NY,BRONX,Clinic/Center,Ambulatory Health Care Facilities,Multi-Specialty
+1003001405,1,"KELLY L DEVINE MS, RDN,  LDN",7224 W COLLEGE DR PALOS HEIGHTS IL,COOK,"Dietitian, Registered",Dietary & Nutritional Service Providers,
+1003001413,1,MISS GINA MARIE RABBITT M.S.,172 LAFAYETTE ST SALEM MA,ESSEX,Counselor,Behavioral Health & Social Service Providers,Mental Health
+1003001421,2,TRINITY HEALTHCARE SERVICES INCORPORATED,4701 BELAIR RD BALTIMORE MD,BALTIMORE,Community/Behavioral Health,Agencies,
+1003001439,2,REGENTS OF THE UNIVERSITY OF UC,9415 CAMPUS POINT DR LA JOLLA CA,SAN DIEGO,Eyewear Supplier,Suppliers,
+1003001447,2,THE LIFE COUNSELING CENTER PA,124 LIFE WAY CLYDE NC,HAYWOOD,Clinic/Center,Ambulatory Health Care Facilities,Mental Health (Including Community Mental Health Center)
+1003001454,2,VP GLOBAL ENTERPRISE INC.,13207 14TH AVE COLLEGE POINT NY,QUEENS,Technician/Technologist,Eye and Vision Services Providers,Optometric Assistant
+1003001462,1,MICHAL J. WOLSKI MD,2380 S. I-35E WAXAHACHIE TX,ELLIS,Radiology,Allopathic & Osteopathic Physicians,Radiation Oncology
+1003001470,1,EMILY ANN FARMER LPC,3305 20TH ST LUBBOCK TX,LUBBOCK,Counselor,Behavioral Health & Social Service Providers,
+1003001488,2,FRED L SIMON MD PA,4665 S CONGRESS AVE SUITE 102 LAKE WORTH FL,PALM BEACH,Surgery,Allopathic & Osteopathic Physicians,
+1003001496,1,"LUIS SOSTRE JR. MSW, CAGS",511 E COLUMBUS AVE SPRINGFIELD MA,HAMPDEN,Social Worker,Behavioral Health & Social Service Providers,
+1003001504,1,"MS. SHIRLEY ANN WELLS M.ED., LPC",3309 S. KINGSHIGHWAY BLVD FAMILY RESOURCE CENTER SAINT LOUIS MO,ST. LOUIS CITY,Counselor,Behavioral Health & Social Service Providers,Professional
+1003001512,1,NANCY ALLANOFF BRAVEMAN PSY.D.,34TH STREET & CIVIC CENTER BLVD PHILADELPHIA PA,PHILADELPHIA,Psychologist,Behavioral Health & Social Service Providers,Clinical
+1003001520,1,MRS. MICHELLE LYNN BUETHE LMSW,1404 NW CALISTA ST. GRIMES IA,POLK,Social Worker,Behavioral Health & Social Service Providers,
+1003001538,2,MIDWEST INTERNAL MEDICINE ASSOCIATES LLC,1728 MARION WALDO RD MARION OH,UNION,Internal Medicine,Allopathic & Osteopathic Physicians,
+1003001546,1,ANN-MARIE BRAGANO P.T.A.,1331 MEDICAL CENTER DR ROHNERT PARK CA,SONOMA,Physical Therapy Assistant,"Respiratory, Developmental, Rehabilitative and Restorative Service Providers",
+1003001553,2,OGDEN INTERNAL MEDICINE & UROLOGY LLC,5405 S 500 E STE 203 OGDEN UT,DAVIS,Internal Medicine,Allopathic & Osteopathic Physicians,
+1003001561,1,MRS. THERESA ANN HAGMAN PTA,1818 N MEADE ST APPLETON WI,OUTAGAMIE,Physical Therapy Assistant,"Respiratory, Developmental, Rehabilitative and Restorative Service Providers",
+1003001579,2,KEVIN LANE DO PA,4103 WILBARGER ST VERNON TX,WILBARGER,Family Medicine,Allopathic & Osteopathic Physicians,
+1003001587,1,MARY CHAU TRAN PA-C,400 SAYBROOK RD STE 205 MIDDLETOWN CT,LOWER CONNECTICUT RIVER VALLEY,Physician Assistant,Physician Assistants & Advanced Practice Nursing Providers,
+1003001595,1,DR. NEREIDA IRENE HILLYER-WRIGHT PH.D.,2 TORRANCE CT KENSINGTON MD,MONTGOMERY,Speech-Language Pathologist,"Speech, Language and Hearing Service Providers",
+1003001603,,,,,,,
+1003001611,,,,,,,
+1003001629,2,HARMONY CHIROPRACTIC PC,1820 S BOULEVARD EDMOND OK,OKLAHOMA,Chiropractor,Chiropractic Providers,
+1003001637,1,CLARA MARIE BAILEY,831 S CHUGACH ST PALMER AK,MATANUSKA-SUSITNA,Case Manager/Care Coordinator,Other Service Providers,
+1003001645,1,VINOD TRIVEDI MD,1508 ALHAMBRA BLVD STE 200 SACRAMENTO CA,SACRAMENTO,Internal Medicine,Allopathic & Osteopathic Physicians,Infectious Disease
+1003001652,2,"DALIP K. KHURANA, M.D., PLLC",15 COMMERCE DR SPRINGVILLE NY,ERIE,Obstetrics & Gynecology,Allopathic & Osteopathic Physicians,
+1003001660,,,,,,,
+1003001678,1,REBECCA EIRICH NP,188 FRIES MILL RD SUITE A-2 TURNERSVILLE NJ,CAMDEN,Nurse Practitioner,Physician Assistants & Advanced Practice Nursing Providers,Obstetrics & Gynecology
+1003001686,1,JENNIFER DAWN TROST NNP,2213 CHERRY ST TOLEDO OH,LUCAS,Nurse Practitioner,Physician Assistants & Advanced Practice Nursing Providers,Neonatal
+1003001694,1,JULIE MAE SCHMITT,13 SEVENTH AVENUE NEW GLARUS WI,DANE,Chiropractor,Chiropractic Providers,
+1003001702,2,CENTRAL MAINE FAMILY COUNSELING PA,300 PINE ST LEWISTON ME,ANDROSCOGGIN,Community/Behavioral Health,Agencies,
+1003001710,2,"COMPLETE SMILES, INC.",1133 N MAIN ST BLUFFTON IN,ADAMS,Dentist,Dental Providers,General Practice
+1003001728,2,KAREN L . VAUSE MD INC,16677 CALNEVA DR ENCINO CA,LOS ANGELES,Psychiatry & Neurology,Allopathic & Osteopathic Physicians,Psychiatry
+1003001736,1,MR. ROLANDO DELGADO D.O.,CARR.128 K.M.2.2 BO.SUSUA BAJA SUITE 106 YAUCO GALLERY YAUCO PR,YAUCO,Optometrist,Eye and Vision Services Providers,
+1003001744,1,RONNY ALAN WALDEN,2416 SHELLEY LN CLARKSTON WA,WHITMAN,Counselor,Behavioral Health & Social Service Providers,Mental Health
+1003001751,1,JASON ALAN CHRISTENSEN PHARMD,600 HIGHLAND AVE COMPLIANCE MAIL CODE 2433 MADISON WI,DANE,Pharmacist,Pharmacy Service Providers,
+1003001769,2,THE GRAND RIVER HEALTH SYSTEM CORPORATION,498 PARK LN CHILLICOTHE MO,DAVIESS,Registered Nurse,Nursing Service Providers,Community Health
+1003001777,1,CARMEN L LUK DPT,2305 HISTORIC DECATUR RD STE 100 SAN DIEGO CA,SAN DIEGO,Physical Therapist,"Respiratory, Developmental, Rehabilitative and Restorative Service Providers",
+1003001785,1,DR. JACLYN CINDA JONES D.O.,1245 S UTICA AVE TULSA OK,TULSA,Orthopaedic Surgery,Allopathic & Osteopathic Physicians,
+1003001793,,,,,,,
+1003001801,2,"FAMILY CARE AND COUNSELING SERVICES, INC",1105 PALMER RD LITHONIA GA,GWINNETT,Community/Behavioral Health,Agencies,
+1003001819,1,SARA M TAVORA LMSW,520 SUPERIOR ST PORT HURON MI,ST. CLAIR,Social Worker,Behavioral Health & Social Service Providers,Clinical
+1003001827,2,FLUSHING URGENT CARE PC,1429 FLUSHING RD FLUSHING MI,SHIAWASSEE,Internal Medicine,Allopathic & Osteopathic Physicians,
+1003001835,1,"MRS. EDITH LEWIS ANDERSON R. N., B. S. N.",3708 MAIN ST BELLE CHASSE LA,PLAQUEMINES,Registered Nurse,Nursing Service Providers,
+1003001843,1,MS. INGE C LUECHINGER APRNPMH,1269 PARKER RD SE CONYERS GA,ROCKDALE,Clinical Nurse Specialist,Physician Assistants & Advanced Practice Nursing Providers,Psychiatric/Mental Health
+1003001850,2,"MAIN MEDICAL-MYSTIC, LLC",23 CLARA DR SUITE 201 MYSTIC CT,SOUTHEASTERN CONNECTICUT,Internal Medicine,Allopathic & Osteopathic Physicians,
+1003001868,1,DR. PAMELA A. LINKER D.D.S.,5500 HIGHWAY 49 S SUITE 100 HARRISBURG NC,CABARRUS,Dentist,Dental Providers,
+1003001876,,,,,,,
+1003001884,1,LUCILLE T SAHA M.D.,1723 MAHAN CENTER BLVD TALLAHASSEE FL,LEON,Family Medicine,Allopathic & Osteopathic Physicians,Hospice and Palliative Medicine
+1003001892,1,MR. DAVID JAMEA LOKEY P.T.,13004 TUSCARORA DR POWAY CA,SAN DIEGO,Physical Therapist,"Respiratory, Developmental, Rehabilitative and Restorative Service Providers",
+1003001900,2,SLEEP DISORDER SOLUTIONS,6141 SUNSET DR SUITE 101 SOUTH MIAMI FL,MIAMI-DADE,Clinic/Center,Ambulatory Health Care Facilities,Sleep Disorder Diagnostic
+1003001918,1,KAREN KAY GOAD PT,1162 HWY 327 EAST SILSBEE TX,HARDIN,Physical Therapist,"Respiratory, Developmental, Rehabilitative and Restorative Service Providers",
+1003001926,1,CRAIG PATRICK SEINA L.M.T. N.M.T. M.F.T.,9015 ARBOR ST SUITE 118 OMAHA NE,DOUGLAS,Massage Therapist,"Respiratory, Developmental, Rehabilitative and Restorative Service Providers",
+1003001934,2,YI RUI INTERNATIONAL CORP,4307 8TH AVE BROOKLYN NY,KINGS,Pharmacy,Suppliers,Community/Retail Pharmacy
+1003001942,1,"MARIA I QUINTERO M.S., CCC/SLP",2715 W TRENTON RD EDINBURG TX,HIDALGO,Speech-Language Pathologist,"Speech, Language and Hearing Service Providers",
+1003001959,2,"KEVIN R DUKE, DO, PC",382 W 280 N PROVIDENCE UT,CACHE,Clinic/Center,Ambulatory Health Care Facilities,Health Service
+1003001967,2,ROXBURY CLINIC AND SURGERY CENTER INC,465 N ROXBURY DR SUITE 1001 BEVERLY HILLS CA,LOS ANGELES,Clinic/Center,Ambulatory Health Care Facilities,Ambulatory Surgical
+1003001975,1,SHANNON DIANE CHRISTIANSON DPT,3900 E PACIFIC COAST HWY LONG BEACH CA,LOS ANGELES,Clinic/Center,Ambulatory Health Care Facilities,Physical Therapy
+1003001983,1,MRS. RORIE SADDHRA PT,2125 E WASHINGTON AVE STE C VINTON VA,ROANOKE CITY,Physical Therapist,"Respiratory, Developmental, Rehabilitative and Restorative Service Providers",
+1003001991,2,ALEXANDER E LOSCIALPO MD INC,3801 KATELLA AVE SUITE 201 LOS ALAMITOS CA,ORANGE,Allergy & Immunology,Allopathic & Osteopathic Physicians,Allergy
+1003002007,1,MRS. SANDRA FELTNER MA MFT,165 ARCH ST REDWOOD CITY CA,SAN MATEO,Counselor,Behavioral Health & Social Service Providers,Mental Health
+1003002015,1,DR. KRISTEN M. OHLENFORST PH.D.,12800 HILLCREST RD # A124 DALLAS TX,DALLAS,Psychologist,Behavioral Health & Social Service Providers,Clinical
+1003002023,2,"ARNO H. HANEL, MD A MEDICAL CORPORATION",23625 HOLMAN HWY MONTEREY CA,MONTEREY,Anesthesiology,Allopathic & Osteopathic Physicians,
+1003002031,2,CHRISTOPHER P MUENZEN MD PA,59 E MILL RD LONG VALLEY NJ,MORRIS,Internal Medicine,Allopathic & Osteopathic Physicians,
+1003002049,1,DR. LAKSHMI SRINIVASAN MD,3200 KEARNEY ST FREMONT CA,ALAMEDA,Internal Medicine,Allopathic & Osteopathic Physicians,"Endocrinology, Diabetes & Metabolism"
+1003002056,1,MAY OUANO PT,7236 STATE ROAD 52 SUITE 4 BAYONET POINT FL,PASCO,Physical Therapist,"Respiratory, Developmental, Rehabilitative and Restorative Service Providers",
+1003002064,1,CARRIE GUNN TURNER NURSE PRACTITIONER,3300 RIVERMONT AVE INTENSIVE CARE NURSERY LYNCHBURG VA,BEDFORD,Nurse Practitioner,Physician Assistants & Advanced Practice Nursing Providers,Neonatal
+1003002072,1,DR. ALEXANDER GOTESMAN M.D.,1374 WHITEHORSE HAMILTON SQUARE RD HAMILTON NJ,MERCER,Urology,Allopathic & Osteopathic Physicians,
+1003002080,2,"MAXIM HABILITATION SERVICES, LLC",102 BROAD ST OXFORD NC,GRANVILLE,"Day Training, Developmentally Disabled Services",Agencies,
+1003002098,1,DR. CHRISTOPHER J DEVENS D.C.,35104 EUCLID AVE WILLOUGHBY OH,GEAUGA,Chiropractor,Chiropractic Providers,Nutrition
+1003002106,1,JUAN LUIS CASTRO CORDOBA MD,10301 HAGEN RANCH RD STE B200 BOYNTON BEACH FL,PALM BEACH,Psychiatry & Neurology,Allopathic & Osteopathic Physicians,Psychiatry
+1003002114,1,BARBARA JEAN PATSCHKE ISW,855 A AVE NE CEDAR RAPIDS IA,LINN,Social Worker,Behavioral Health & Social Service Providers,Clinical
+1003002122,2,"CULEBRA INJURY & PAIN CLINIC, LLC",1430 CULEBRA RD SAN ANTONIO TX,BEXAR,Chiropractor,Chiropractic Providers,
+1003002130,1,MRS. CHERYL MARIE CARROLL PT,4 FARM RD SHOREHAM NY,SUFFOLK,Physical Therapist,"Respiratory, Developmental, Rehabilitative and Restorative Service Providers",
+1003002148,1,DR. JUSTIN MICHAEL OWENS M.D.,243 CURTISS RD STE 100 BARKSDALE AFB LA,BOSSIER,Preventive Medicine,Allopathic & Osteopathic Physicians,Aerospace Medicine
+1003002155,2,HARVARD SQUARE EYE CARE P.C.,19 DUNSTER ST CAMBRIDGE MA,MIDDLESEX,Optometrist,Eye and Vision Services Providers,
+1003002163,2,"CHARLES COUNTY SURGICAL ASSOCIATES, LLC",4225 ALTAMONT PL UNIT 3 WHITE PLAINS MD,CHARLES,Dermatology,Allopathic & Osteopathic Physicians,MOHS-Micrographic Surgery
+1003002171,1,"LIZA BRINCEFIELD PHILLIPS MA, CCC-SLP",185 CHARLOIS BLVD WINSTON SALEM NC,FORSYTH,Speech-Language Pathologist,"Speech, Language and Hearing Service Providers",
+1003002189,1,REBECCA I OLATUNJI RN,720 N SAINT ASAPH ST ALEXANDRIA VA,ALEXANDRIA CITY,Registered Nurse,Nursing Service Providers,
+1003002197,1,EUNHWA YOUN REGISTERED ASW,520 SO. LAFAYETTE PARK PLACE 3RD FLOOR LOS ANGELES CA,LOS ANGELES,Social Worker,Behavioral Health & Social Service Providers,
+1003002205,1,MRS. CHARITY CABRERA MAGCALAS CRNA,12222 MERIT DR STE 600 DALLAS TX,DALLAS,"Nurse Anesthetist, Certified Registered",Physician Assistants & Advanced Practice Nursing Providers,
+1003002213,1,DANNA COBBLE LPC,624 NW 5TH ST MOORE OK,OKLAHOMA,Counselor,Behavioral Health & Social Service Providers,Professional
+1003002221,1,PRISTA CHARUWORN MD,"300 PASTEUR DR ALWAY BUILD M211, MC 5187 STANFORD CA",SANTA CLARA,Internal Medicine,Allopathic & Osteopathic Physicians,Gastroenterology
+1003002239,2,YANKO A YANKOV MD PA,2395 BULVERDE RD SUITE 101-B BULVERDE TX,BEXAR,Psychiatry & Neurology,Allopathic & Osteopathic Physicians,Neurology
+1003002247,1,MRS. KRYSTAL TEMPLES GAITHER MED. CCC-SLP,736 HIGHLAND CIR NASHVILLE GA,BERRIEN,Speech-Language Pathologist,"Speech, Language and Hearing Service Providers",
+1003002254,2,WALGREEN CO,5104 BOBBY HICKS HWY GRAY TN,SULLIVAN,Pharmacy,Suppliers,
+1003002262,2,"BRADLEY E. SAMUELSON, MD PA",1004 BROOK AVE WICHITA FALLS TX,WICHITA,Internal Medicine,Allopathic & Osteopathic Physicians,Cardiovascular Disease
+1003002270,2,"SANDUSKY GASTROENTEROLOGISTS, INC.",1410 MILAN RD SANDUSKY OH,ERIE,Internal Medicine,Allopathic & Osteopathic Physicians,Gastroenterology
+1003002288,1,STEVE GICHURU PA-C,409 E MERCED AVE STE A WEST COVINA CA,LOS ANGELES,Physician Assistant,Physician Assistants & Advanced Practice Nursing Providers,Medical
+1003002296,2,"DUPUIS OPTOMETRY, INC.",1836 30TH ST BOULDER CO,BOULDER,Optometrist,Eye and Vision Services Providers,Corneal and Contact Management
+1003002304,,,,,,,
+1003002312,1,PATRICIA T HOPKINS M.D.,571 MAIN ST WEYMOUTH MA,NORFOLK,Internal Medicine,Allopathic & Osteopathic Physicians,
+1003002320,1,D. JASON EKLUND D.M.D. P.A.,2701 OLD BRANDON RD PEARL MS,RANKIN,Dentist,Dental Providers,General Practice
+1003002338,1,MRS. THERESE KEPLER,22 TOMPKINS ST WATERBURY CT,NAUGATUCK VALLEY,Physical Therapist,"Respiratory, Developmental, Rehabilitative and Restorative Service Providers",
+1003002346,1,SUSAN C. MORDENTE RN,2007 ROCK SPRING RD FOREST HILL MD,HARFORD,Registered Nurse,Nursing Service Providers,Registered Nurse First Assistant
+1003002353,2,SAN JOAQUIN COUNTY BEHAVIORAL HEALTH SERVICES,1212 N CALIFORNIA ST STOCKTON CA,SAN JOAQUIN,Clinic/Center,Ambulatory Health Care Facilities,Mental Health (Including Community Mental Health Center)
+1003002361,1,DR. MICHAEL ENON KING DDS,16689 RIVER RIDGE BLVD WOODBRIDGE VA,PRINCE WILLIAM,Dentist,Dental Providers,General Practice
+1003002379,1,SALONA SHRESTHA MD,4805 NE GLISAN ST PORTLAND OR,MULTNOMAH,Internal Medicine,Allopathic & Osteopathic Physicians,
+1003002387,1,SHANNON CRIADO DPT,200 12TH ST FRANKLIN PA,VENANGO,Physical Therapist,"Respiratory, Developmental, Rehabilitative and Restorative Service Providers",
+1003002395,1,EDITH R GARAY BSW,701 SW 27TH AVE ROOM 920 MIAMI FL,MIAMI-DADE,Social Worker,Behavioral Health & Social Service Providers,
+1003002403,1,TAMMY A GARZA LMT,4339 W KENNEWICK AVE KENNEWICK WA,BENTON,Massage Therapist,"Respiratory, Developmental, Rehabilitative and Restorative Service Providers",
+1003002411,1,VIRGINIA ANIKWATA LPN,3300 N RIDGE RD SUITE 175 ELLICOTT CITY MD,BALTIMORE,Licensed Practical Nurse,Nursing Service Providers,
+1003002429,2,HURLEY PHO OF MID - MICHIGAN,701 W 8TH AVE FLINT MI,GENESEE,General Practice,Allopathic & Osteopathic Physicians,
+1003002437,1,SALLY ROSS BROWN,15449C FOREST BLVD N HUGO MN,RAMSEY,Durable Medical Equipment & Medical Supplies,Suppliers,
+1003002445,2,BETHEL VISION CENTER,1960 BETHEL RD SUITE 150 COLUMBUS OH,FRANKLIN,Optometrist,Eye and Vision Services Providers,
+1003002452,1,KAITLYN MY-TU LAM MBBS,MASSACHUSETTS GENERAL HOSPITAL 55 FRUIT STREET BOSTON MA,SUFFOLK,Internal Medicine,Allopathic & Osteopathic Physicians,Cardiovascular Disease
+1003002460,,,,,,,
+1003002478,2,"SMITH INTERNAL MEDICINE, P.A.",3260 KIMBALL AVE MANHATTAN KS,RILEY,Internal Medicine,Allopathic & Osteopathic Physicians,
+1003002486,1,MS. MEGAN KATHLEEN MINNER DC,1115 E 5TH ST WASHINGTON MO,FRANKLIN,Chiropractor,Chiropractic Providers,
+1003002494,1,JOSEPH MICHAEL ANDERSON M.D.,802 B ST SAN RAFAEL CA,MARIN,Pathology,Allopathic & Osteopathic Physicians,Anatomic Pathology
+1003002502,1,CAROL G ADKINS PT,1605 SCHERM RD OWENSBORO KY,MC LEAN,Physical Therapist,"Respiratory, Developmental, Rehabilitative and Restorative Service Providers",
+1003002510,1,DR. THOMAS RICHARD DEGRAFF III D.O.,101 CMS WILLIAMS DRIVE LITTLE ROCK AFB AR,PULASKI,General Practice,Allopathic & Osteopathic Physicians,
+1003002528,1,DR. KATHERINE MICHELE ROGERS PHARM.D.,110 E DUPONT HWY MILLSBORO DE,SUSSEX,Pharmacist,Pharmacy Service Providers,
+1003002536,1,SUSAN BEGIN BURNS M.A.,2370 130TH AVE NE STE 106 BELLEVUE WA,KING,Counselor,Behavioral Health & Social Service Providers,Mental Health
+1003002544,1,JACQUELINE HYDE,10151 MAJESTIC CANYON RD SANDY UT,SALT LAKE,Counselor,Behavioral Health & Social Service Providers,Professional
+1003002551,1,REBECCA L BASSETT,885 MACBETH DR MONROEVILLE PA,WESTMORELAND,Physical Therapy Assistant,"Respiratory, Developmental, Rehabilitative and Restorative Service Providers",
+1003002569,1,KENNETH E CLIFTON MS,MADIGAN ARMY MEDICAL CENTER 9040 JACKSON AVE TACOMA WA,PIERCE,Social Worker,Behavioral Health & Social Service Providers,Clinical
+1003002577,2,DENARDIN FAMILY PRACTICE PLLC,4949 HARLEM RD AMHERST NY,ERIE,Family Medicine,Allopathic & Osteopathic Physicians,
+1003002585,2,MICHAEL P RADE MD PC,550 CENTER RD WEST SENECA NY,ERIE,Specialist,Other Service Providers,
+1003002593,2,CLINICAL SOCIAL WORK SERVICES,3005 AVENUE H NEDERLAND TX,JEFFERSON,Social Worker,Behavioral Health & Social Service Providers,Clinical
+1003002601,1,SUSAN P NURSE LPN,13319 CHAPMAN CORNERS RD RED CREEK NY,WAYNE,Licensed Practical Nurse,Nursing Service Providers,
+1003002619,1,MS. DANIELLE N MILES PTA,383 GOODYEAR AVE BUFFALO NY,ERIE,Occupational Therapist,"Respiratory, Developmental, Rehabilitative and Restorative Service Providers",
+1003002627,1,DR. SAMATHA KRISHNA KADIYALA M.D.,506 THIS WAY ST LAKE JACKSON TX,BRAZORIA,Obstetrics & Gynecology,Allopathic & Osteopathic Physicians,
+1003002635,1,DR. JOHN ANTHONY FRANCONERI DMD,1038 BROADWAY BAYONNE NJ,HUDSON,Dentist,Dental Providers,
+1003002643,1,CARIE E BRADT RPA-C,601 ELMWOOD AVE ROCHESTER NY,MONROE,Physician Assistant,Physician Assistants & Advanced Practice Nursing Providers,
+1003002650,2,CHURCHVIEW SUPPORTIVE LIVING COMMUNITY,2626 W 63RD ST CHICAGO IL,COOK,Assisted Living Facility,Nursing & Custodial Care Facilities,
+1003002668,1,DEBORAH ROCHELLE-ARTMANN L.C.S.W.,3021TELEGRAPH AVE SUITE B BERKLEY CA,ALAMEDA,Social Worker,Behavioral Health & Social Service Providers,Clinical
+1003002676,1,DANIELLE L DEMARIA,1322 N ACADEMY BLVD STE. 202 COLORADO SPRINGS CO,EL PASO,Marriage & Family Therapist,Behavioral Health & Social Service Providers,
+1003002684,1,CARRIE COOK LATT LISW-S,1010 VALLEY ST DAYTON OH,MONTGOMERY,Social Worker,Behavioral Health & Social Service Providers,Clinical
+1003002692,1,DANEE LAJOY WILLIAMS,3282 ADELINE ST BERKELEY CA,ALAMEDA,Counselor,Behavioral Health & Social Service Providers,Mental Health
+1003002700,,,,,,,
+1003002718,1,DR. TRANG H. LA MD,275 W MACARTHUR BLVD OAKLAND CA,ALAMEDA,Radiology,Allopathic & Osteopathic Physicians,Radiation Oncology
+1003002726,1,MR. ROBERT DIAMOND LCSW-R,271 MADISON AVE STE 1102 NEW YORK NY,NEW YORK,Social Worker,Behavioral Health & Social Service Providers,Clinical
+1003002734,1,JONATHAN MCCOLLUM LCSW,210 SIMMONS ST MARYVILLE TN,LOUDON,Social Worker,Behavioral Health & Social Service Providers,Clinical
+1003002742,1,BRETT C. LOCKMAN DO,19468 VILLAGE DR STE 100 SONORA CA,TUOLUMNE,Pain Medicine,Allopathic & Osteopathic Physicians,Interventional Pain Medicine
+1003002759,2,MOBILE PHYSICIAN SERVICES INC.,6804 CECELIA DR NEW PORT RICHEY FL,PASCO,Internal Medicine,Allopathic & Osteopathic Physicians,Hospice and Palliative Medicine
+1003002767,2,THOMAS J MCELLIGOTT MD PC,2415 WALL ST SE SUITE B CONYERS GA,ROCKDALE,Orthopaedic Surgery,Allopathic & Osteopathic Physicians,
+1003002775,,,,,,,
+1003002783,1,DR. MATTHEW SCOTT HARTMAN M.D.,320 E NORTH AVE PITTSBURGH PA,ALLEGHENY,Radiology,Allopathic & Osteopathic Physicians,Diagnostic Radiology
+1003002791,1,ELIZABETH MARY ROLLE RDH,323 W ALDER ST MISSOULA MT,MISSOULA,Dental Hygienist,Dental Providers,
+1003002809,1,DR. VINCENT GRAZIANO MD,45 W 11TH ST APT 1A NEW YORK NY,NEW YORK,Radiology,Allopathic & Osteopathic Physicians,Diagnostic Radiology
+1003002817,1,NAYVIS IGLESIAS MD,3650 NW 82ND AVE SUITE 502 DORAL FL,MIAMI-DADE,Family Medicine,Allopathic & Osteopathic Physicians,
+1003002825,2,HOPE-HELPING OTHER PEOPLE EVERYWHERE,79 WESTWIND WAY WESTAMPTON NJ,BURLINGTON,Case Management,Agencies,
+1003002833,1,ISELA MUNOZ,202 N 8TH ST EL CENTRO CA,IMPERIAL,Rehabilitation Counselor,"Respiratory, Developmental, Rehabilitative and Restorative Service Providers",
+1003002841,1,SAHER KARIM CHOUDHARY M.D.,109 PHYSICIANS DR STE C GREER SC,GREENVILLE,Psychiatry & Neurology,Allopathic & Osteopathic Physicians,Neurology
+1003002858,1,AMY R. GIBSON APN-C,1314 PARK AVE PLAINFIELD NJ,MIDDLESEX,Nurse Practitioner,Physician Assistants & Advanced Practice Nursing Providers,
+1003002866,1,SHARI A MYORAKU PT,333 N WILMOT RD STE 340 TUCSON AZ,PIMA,Physical Therapist,"Respiratory, Developmental, Rehabilitative and Restorative Service Providers",
+1003002874,,,,,,,
+1003002882,1,SHANNON MARIE KRUCKEBERG RDH,63407 130TH AVE CLAREMONT MN,STEELE,Dental Hygienist,Dental Providers,
+1003002890,1,DANIEL R HAMMAN M.D.,1606 PRAIRIE CENTER PKWY SUITE 170 BRIGHTON CO,ADAMS,Orthopaedic Surgery,Allopathic & Osteopathic Physicians,
+1003002908,1,DAVAUGHNDA SIMPSON,5905 FOREST PL SUITE 100 LITTLE ROCK AR,PULASKI,Case Manager/Care Coordinator,Other Service Providers,
+1003002916,,,,,,,
+1003002924,1,"MISS NANCY CAROL LEE LCSW-P, CMSW, MHA",508 FULTON ST SOCIAL WORK SERVICE (122) DURHAM NC,DURHAM,Social Worker,Behavioral Health & Social Service Providers,Clinical
+1003002932,1,DR. MICHAEL ANDREW GALUSKA MD,BUILDING H100 NAVAL HOSPITAL CAMP PENDLETON CAMP PENDLETON CA,SAN DIEGO,Emergency Medicine,Allopathic & Osteopathic Physicians,
+1003002940,1,MRS. SARAH AMY FOX MAURER,650 ELLIS OAK DR CHARLESTON SC,CHARLESTON,Physical Therapist,"Respiratory, Developmental, Rehabilitative and Restorative Service Providers",Orthopedic
+1003002957,1,MS. SUZANNE LUCAS L.AC.,12821 N CAVE CREEK RD SUITE 101 PHOENIX AZ,MARICOPA,Acupuncturist,Other Service Providers,
+1003002965,1,ELEANOR I EVANS R.PH.,5005 W OVERLAND RD BOISE ID,ADA,Pharmacist,Pharmacy Service Providers,
+1003002973,2,"BUFFALO ORTHOPEDIC BRACE, INC.",6140 TRANSIT RD DEPEW NY,ERIE,Prosthetic/Orthotic Supplier,Suppliers,
+1003002981,1,"KATHERINE KIMMERLING LIMHP, LADC",730 FORT CROOK RD N BELLEVUE NE,SARPY,Counselor,Behavioral Health & Social Service Providers,
+1003002999,,,,,,,
+1003003005,2,FINANCIAL DISTRICT SPORT AND SPINE PHYSICAL THERAPY,632 COMMERCIAL ST 4TH FLOOR SAN FRANCISCO CA,SAN FRANCISCO,Physical Therapist,"Respiratory, Developmental, Rehabilitative and Restorative Service Providers",Orthopedic
+1003003013,,,,,,,
+1003003021,1,JOSEPH ROBERT SWINEHART,609 PICKERAL LAKE DR NEWAYGO MI,MONTCALM,Physical Therapist,"Respiratory, Developmental, Rehabilitative and Restorative Service Providers",
+1003003039,1,MRS. MARY MUTHONI BARINE LPC,916 WINDEMERE LN WAKE FOREST NC,FRANKLIN,Counselor,Behavioral Health & Social Service Providers,Mental Health
+1003003047,2,SMITH CHIROPRACTIC CENTER P.C.,607 N SPARTA ST STEELEVILLE IL,RANDOLPH,Chiropractor,Chiropractic Providers,
+1003003054,1,JOHN F WYBLE,117 FOX PLAN DR #203 MONROEVILLE PA,WESTMORELAND,Dentist,Dental Providers,General Practice
+1003003062,1,MS. FATIMA WALIZADA,5005 W OVERLAND RD BOISE ID,ADA,Pharmacist,Pharmacy Service Providers,
+1003003070,1,ANITA GILL M.D.,11 OVERLOOK RD STE B110 SUMMIT NJ,UNION,Psychiatry & Neurology,Allopathic & Osteopathic Physicians,Neurology
+1003003088,1,"AVANI R VORA-SHAH MPT, DPT",3228 STATE ROUTE 27 SUITE 2A KENDALL PARK NJ,MIDDLESEX,Physical Therapist,"Respiratory, Developmental, Rehabilitative and Restorative Service Providers",
+1003003096,2,"JOSEPH G. HEINRICH, O.D., A.P.C.",32241 CAMINO CAPISTRANO STE A101 SAN JUAN CAPISTRANO CA,ORANGE,Optometrist,Eye and Vision Services Providers,
+1003003104,,,,,,,
+1003003112,1,"MRS. ALLISON P. KENNEDY M.A., CCC/A",5575 WARREN PKWY #104 FRISCO TX,DENTON,Audiologist,"Speech, Language and Hearing Service Providers",
+1003003120,2,"THE CARE GROUP, INC",3402 VINTAGE ST HOUSTON TX,HARRIS,Case Management,Agencies,
+1003003138,1,TRICIA L JOHNSON-FENTER LMP,119 UNION AVE SUITE B SNOHOMISH WA,SNOHOMISH,Massage Therapist,"Respiratory, Developmental, Rehabilitative and Restorative Service Providers",
+1003003146,2,THE INSTITUTE FOR REHABILITATION AND RESEARCH,1333 MOURSUND ST HOUSTON TX,HARRIS,Rehabilitation Hospital,Hospitals,
+1003003153,1,LAURA MORRISON MD,904 7TH AVE SEATTLE WA,KING,Dermatology,Allopathic & Osteopathic Physicians,
+1003003161,1,MR. KENNETH RANDY PINKERTON MPT,365 W 1ST ST TUSTIN CA,ORANGE,Physical Therapist,"Respiratory, Developmental, Rehabilitative and Restorative Service Providers",
+1003003179,2,B & K OPTICAL,3391 STATE ROUTE 27 FRANKLIN PARK NJ,MIDDLESEX,Durable Medical Equipment & Medical Supplies,Suppliers,
+1003003187,2,"FREDERICK L.STAFFORD M.D., INC.",25431 CABOT RD STE 107 LAGUNA HILLS CA,ORANGE,Personal Emergency Response Attendant,Emergency Medical Service Providers,
+1003003195,2,"AVENTURA DERMATOLOGY & COSMETIC CENTER, P.A.",5721 NE 27TH AVE FORT LAUDERDALE FL,BROWARD,Dermatology,Allopathic & Osteopathic Physicians,Procedural Dermatology
+1003003203,2,"ALL STAR CLINICS, LP",8208 BEDFORD EULESS RD NORTH RICHLAND HILLS TX,TARRANT,Chiropractor,Chiropractic Providers,Rehabilitation
+1003003211,1,ANTOINETTE DENISE GAMBLE N.P.,1670 CLAIRMONT RD. DECATUR GA,DE KALB,Nurse Practitioner,Physician Assistants & Advanced Practice Nursing Providers,Family
+1003003229,2,"JARMAN ORTHOPEDICS, P.C.",501 4TH ST AURORA IN,OHIO,Orthopaedic Surgery,Allopathic & Osteopathic Physicians,
+1003003237,2,KAREN VON HAAM MD PC,99 DAVIS STRAITS FALMOUTH MA,BARNSTABLE,Family Medicine,Allopathic & Osteopathic Physicians,
+1003003245,1,MRS. REBEKAH GOOD DOREAU M.A.,6110 SHALLOWFORD RD SUITE B CHATTANOOGA TN,HAMILTON,Counselor,Behavioral Health & Social Service Providers,Mental Health
+1003003252,2,DALLAS IMAGING SOLUTIONS,5787 S HAMPTON RD STE. 110 DALLAS TX,DALLAS,Clinic/Center,Ambulatory Health Care Facilities,Magnetic Resonance Imaging (MRI)
+1003003260,1,REGINA TEMPESTA LICSW,78 CLAPP RD SCITUATE MA,NORFOLK,Social Worker,Behavioral Health & Social Service Providers,Clinical
+1003003278,2,"MEDICAL SUPPLIES, INC",623 S LAKE ST MUNDELEIN IL,LAKE,Durable Medical Equipment & Medical Supplies,Suppliers,
+1003003286,2,RONDA FUCHS PSYD PA,975 W 41ST ST #206 MIAMI BEACH FL,MIAMI-DADE,Psychologist,Behavioral Health & Social Service Providers,Clinical
+1003003294,1,ERICA LIM,3751 STOCKER ST LOS ANGELES CA,LOS ANGELES,Student in an Organized Health Care Education/Training Program,"Student, Health Care",
+1003003302,2,"MARIA J. PRIETO, M.D. P.A.",4327 HEDGEWOOD AVE SPRING HILL FL,HERNANDO,General Practice,Allopathic & Osteopathic Physicians,
+1003003310,2,"WEST COLLEGE DERMATOLOGY & AESTHETICS, PA",11041 HAUSER ST LENEXA KS,JOHNSON,Dermatology,Allopathic & Osteopathic Physicians,
+1003003328,2,MEI MEDICAL CORPORATION,3751 KATELLA AVE LOS ALAMITOS CA,ORANGE,Anesthesiology,Allopathic & Osteopathic Physicians,
+1003003336,1,DR. ATTILA ZOLTAN NAGY DDS,823 S SANDUSKY AVE BUCYRUS OH,CRAWFORD,Dentist,Dental Providers,
+1003003344,1,MICHAEL SUGARMAN MSW,15400 FOOTHILL BLVD SAN LEANDRO CA,ALAMEDA,Social Worker,Behavioral Health & Social Service Providers,Clinical
+1003003351,2,MEDICINE PLLC,15103 CHESTNUT RIDGE CIR LOUISVILLE KY,JEFFERSON,Internal Medicine,Allopathic & Osteopathic Physicians,Infectious Disease
+1003003369,1,MRS. TATIANA MILDRED ZENTZ MSED.,422 N MAIN ST WARSAW NY,WYOMING,Counselor,Behavioral Health & Social Service Providers,Addiction (Substance Use Disorder)
+1003003377,1,"KATHLEEN PRENDERGAST OTR, LMT",210 E MAIN ST SPRINGVILLE NY,ERIE,Massage Therapist,"Respiratory, Developmental, Rehabilitative and Restorative Service Providers",
+1003003385,2,"HANDS ON PHYSICAL THERAPY, INC",530 W GANNON AVE ZEBULON NC,NASH,Clinic/Center,Ambulatory Health Care Facilities,Physical Therapy
+1003003393,2,ASSISTED LIVING CONCEPTS INC,101 CENTENNIAL BLVD GOOSE CREEK SC,BERKELEY,Assisted Living Facility,Nursing & Custodial Care Facilities,
+1003003401,2,"EDMUND FISHER, M.D.,INC",5301 TRUXTUN AVE SUITE 200 BAKERSFIELD CA,KERN,Clinic/Center,Ambulatory Health Care Facilities,Health Service
+1003003419,1,MS. NADINE LOUISE GARCIA LCSW,6522 CAMP BULLIS RD APT 5203 SAN ANTONIO TX,BEXAR,Social Worker,Behavioral Health & Social Service Providers,Clinical
+1003003427,1,JENNIFER MCEWAN PH.D.,2560 HUNTINGTON AVE STE 302 ALEXANDRIA VA,FAIRFAX,Psychologist,Behavioral Health & Social Service Providers,Clinical
+1003003435,2,"BRITTHAVEN, INC.",290 KEEL RD GRANTSBORO NC,PAMLICO,Nursing Facility/Intermediate Care Facility,Nursing & Custodial Care Facilities,
+1003003443,1,MRS. VIRGINIA DIANE COPAS RN.C.,904 FORDTOWN RD KINGSPORT TN,SULLIVAN,Registered Nurse,Nursing Service Providers,School
+1003003450,1,OMAR ANTONIO FABIAN,2717 ROLLINGWOOD TYLER TX,SMITH,Physical Therapy Assistant,"Respiratory, Developmental, Rehabilitative and Restorative Service Providers",
+1003003468,1,LINDA BESTE,392 S CHIEF AVE WHITERIVER AZ,NAVAJO,Speech-Language Pathologist,"Speech, Language and Hearing Service Providers",
+1003003476,2,"BUCK CHIROPRACTIC, LLC",8641 WATSON RD SAINT LOUIS MO,ST. LOUIS,Chiropractor,Chiropractic Providers,
+1003003484,2,POLICLINICA SAN PEDRO PSC,211 CALLE MORSE ARROYO PR,ARROYO,Clinic/Center,Ambulatory Health Care Facilities,Radiology
+1003003492,1,MRS. ANNEMARIE CULHANE R.N.,118 ENOCH CROSBY RD BREWSTER NY,WESTCHESTER,Registered Nurse,Nursing Service Providers,
+1003003500,1,MARY ENDSLEY,8505 E VALLEY VIEW RD SCOTTSDALE AZ,MARICOPA,Registered Nurse,Nursing Service Providers,School
+1003003518,1,THANH N HELTON M.ED,1203 AMERICAN GREETING CARD RD CORBIN KY,LAUREL,Counselor,Behavioral Health & Social Service Providers,Mental Health
+1003003526,,,,,,,
+1003003534,2,ETHERIDGE CHIROPRACTIC CLINIC INC,631 S 25TH STREET TERRE HAUTE IN,CLAY,Chiropractor,Chiropractic Providers,
+1003003542,2,EMQ HOLLYGROVE,815 N EL CENTRO AVE LOS ANGELES CA,LOS ANGELES,Community/Behavioral Health,Agencies,
+1003003559,2,DEBORAH S RUARK MD PC,44199 DEQUINDRE RD STE 509 TROY MI,MACOMB,Surgery,Allopathic & Osteopathic Physicians,
+1003003567,1,MS. BROOKE HALLIE REDMAN OTR,8333 CLAIREMONT MESA BLVD SUITE 203 SAN DIEGO CA,SAN DIEGO,Occupational Therapist,"Respiratory, Developmental, Rehabilitative and Restorative Service Providers",
+1003003575,2,COOPER CLINIC P A,7850 COLLIN MCKINNEY PKWY MCKINNEY TX,COLLIN,Preventive Medicine,Allopathic & Osteopathic Physicians,Public Health & General Preventive Medicine
+1003003583,,,,,,,
+1003003591,2,SUMMIT REHABILITATION LLC,231 AVENUE D SNOHOMISH WA,SNOHOMISH,Physical Therapist,"Respiratory, Developmental, Rehabilitative and Restorative Service Providers",
+1003003609,1,UMA B.R.K PAKKIVENKATA M.D.,9900 N CENTRAL EXPY STE 215 DALLAS TX,DALLAS,Internal Medicine,Allopathic & Osteopathic Physicians,Nephrology
+1003003617,2,OAKLAND FAMILY SERVICES,26862 WOODWARD AVE UNIT 103 ROYAL OAK MI,OAKLAND,Community/Behavioral Health,Agencies,
+1003003625,2,"HARRIS DIAGNOSTIC IMAGING CONSULTANTS, PA",224 E 2ND ST DUMAS TX,HARTLEY,Radiology,Allopathic & Osteopathic Physicians,Diagnostic Radiology
+1003003633,1,DR. LISA SLAUGHTER D.M.D.,311 ROUTE 108 SOMERSWORTH NH,STRAFFORD,Dentist,Dental Providers,
+1003003641,1,RYAN PARTNOFF D.D.S.,30 N LOS ROBLES AVE PASADENA CA,LOS ANGELES,Dentist,Dental Providers,
+1003003658,1,REEM KURDI CUTINELLO,15419 E 127TH ST LEMONT IL,DU PAGE,Social Worker,Behavioral Health & Social Service Providers,Clinical
+1003003666,2,"SINCLAIR CLINIC OF CHIROPRACTIC, INC",14644 WOODLEY FARM RD COKER AL,TUSCALOOSA,Clinic/Center,Ambulatory Health Care Facilities,
+1003003674,2,DR. JEFFERY R. GOSNEY,704 COLUMBIA RD EDGEFIELD SC,EDGEFIELD,Dentist,Dental Providers,General Practice
+1003003682,1,LAURIE F NICHOLSON O.D.,6010 S HOLLY ST GREENWOOD VILLAGE CO,DENVER,Optometrist,Eye and Vision Services Providers,
+1003003690,1,MARGARET JACKSON PSY.D.,3851 ROGER BROOKE DR FORT SAM HOUSTON TX,BEXAR,Psychologist,Behavioral Health & Social Service Providers,
+1003003708,,,,,,,
+1003003716,2,BLAU CHIROPRACTIC SC,641 LATTON LN PORTAGE WI,SAUK,Chiropractor,Chiropractic Providers,
+1003003724,1,DAMON RASHAD LEE,4401 SANTA ANITA AVE EL MONTE CA,LOS ANGELES,Counselor,Behavioral Health & Social Service Providers,Mental Health
+1003003732,1,DR. BRET GABRIEL KATZ D.C.,4530 S EASTERN AVE SUITE 6 LAS VEGAS NV,CLARK,Chiropractor,Chiropractic Providers,
+1003003740,1,CINDY ANNE PAILLANT MFT,1401 S FEDERAL HWY FT LAUDERDALE FL,BROWARD,Developmental Therapist,"Respiratory, Developmental, Rehabilitative and Restorative Service Providers",
+1003003757,2,"STEVEN M RICHARDSON, DDS APC",235 S FLOWER AVE BREA CA,ORANGE,Clinic/Center,Ambulatory Health Care Facilities,Dental
+1003003765,2,BRAVO CARE OF ROCKFORD INC,1660 S MULFORD RD ROCKFORD IL,BOONE,Skilled Nursing Facility,Nursing & Custodial Care Facilities,
+1003003773,1,"ANDREA RAINE CPM, LM",2108 CHURCH ST STEVENS POINT WI,PORTAGE,Midwife,Other Service Providers,
+1003003781,1,DR. SUPAK CHOTI DDS,38096 HIGHWAY 299 E BURNEY CA,SHASTA,Dentist,Dental Providers,
+1003003799,,,,,,,
+1003003807,1,MRS. KORENA AYN FINE RN,650 E INDIAN SCHOOL RD PHOENIX AZ,MARICOPA,Registered Nurse,Nursing Service Providers,
+1003003815,,,,,,,
+1003003823,2,PURE COMPOUNDING,3072 DICK POND RD STE 2 MYRTLE BEACH SC,HORRY,Pharmacy,Suppliers,Compounding Pharmacy
+1003003831,2,"EDWINA V. JOHNSON, D.D.S., P.C.",4200 HEMINGWAY DR OKLAHOMA CITY OK,OKLAHOMA,Dentist,Dental Providers,General Practice
+1003003849,1,ELENA SHARON LEVIN,150 W 20TH AVE SAN MATEO CA,SAN MATEO,Marriage & Family Therapist,Behavioral Health & Social Service Providers,
+1003003856,1,DR. CYNTHIA SANTIAGO M.D.,5 ROOSEVELT AVE PORT JEFFERSON STATION NY,SUFFOLK,Family Medicine,Allopathic & Osteopathic Physicians,
+1003003864,1,DR. BRUCE HOWARD LLOYD M. D.,"TRAVEL MEDICINE, 69-846 HIGHWAY 111, 92270-2857 SUITE D RANCHO MIRAGE CA",RIVERSIDE,Preventive Medicine,Allopathic & Osteopathic Physicians,Preventive Medicine/Occupational Environmental Medicine
+1003003872,2,"KAREN ESHRAGHI, MD LAKE OF THE OZARKS, LLC",5721 OSAGE BEACH PKWY STE 100 OSAGE BEACH MO,CAMDEN,Dermatology,Allopathic & Osteopathic Physicians,
+1003003880,1,DR. MADHU SHARMA MD,111 E 210TH ST MONTEFIORE MEDICAL CENTER BRONX NY,BRONX,Pediatrics,Allopathic & Osteopathic Physicians,Pediatric Cardiology
+1003003898,2,LUCI'S TROOP LTC LLC,920 W PINHOOK RD STE 338 LAFAYETTE LA,LAFAYETTE,In Home Supportive Care,Agencies,
+1003003906,1,MRS. MARY KAYE MALONEY CCC-SLP,100 SCHOOL STREET DORA CONSOLIDATED SCHOOLS DORA NM,ROOSEVELT,Speech-Language Pathologist,"Speech, Language and Hearing Service Providers",
+1003003914,1,DR. KENIA MARI RIVERA LLUVERAS PSY.D,CARR. 21 S3 LAS LOMAS BO. MONACILLOS OFFICE # 2 SAN JUAN PR,SAN JUAN,Psychologist,Behavioral Health & Social Service Providers,Clinical
+1003003922,2,GERALD B CALIA,162 RIDGEWAY CTR OAK RIDGE TN,ANDERSON,Podiatrist,Podiatric Medicine & Surgery Service Providers,Primary Podiatric Medicine
+1003003930,1,"SEAN M BEHAN MA, LPC, NCC",630 FITZWATERTOWN RD WILLOW GROVE PA,MONTGOMERY,Counselor,Behavioral Health & Social Service Providers,Professional
+1003003948,1,DR. DANIEL ANTHONY CHRISTENSEN PSY.D,190 5TH ST E SUITE 100 SAINT PAUL MN,RAMSEY,Psychologist,Behavioral Health & Social Service Providers,Clinical
+1003003955,1,MICHELLE DOYLE MCCARTHY PA,ELM AND CARLTON ST BUFFALO NY,ERIE,Physician Assistant,Physician Assistants & Advanced Practice Nursing Providers,
+1003003963,1,DR. CYRUS RICHARD FARAHANI M.D.,800 E HIGHWAY 71 SMITHVILLE TX,FAYETTE,Emergency Medicine,Allopathic & Osteopathic Physicians,
+1003003971,,,,,,,
+1003003989,1,MICHELLE LOREEN YOUNG,680 W NYE LN SUITE 102 CARSON CITY NV,CARSON CITY,Social Worker,Behavioral Health & Social Service Providers,
+1003003997,2,PATIENTS FIRST HEALTH CARE LLC,2066 VILLAGE LANE HERMANN MO,WARREN,Family Medicine,Allopathic & Osteopathic Physicians,
+1003004003,2,BUENA SALUD DAY TREATMENT CENTER,5415 SPRINGFIELD AVE 2B LAREDO TX,WEBB,Clinic/Center,Ambulatory Health Care Facilities,Mental Health (Including Community Mental Health Center)
+1003004011,1,MS. BARBARA LYNN WEBBER L.P.N.,221 S MAIN ST CORTLAND NY,CAYUGA,Licensed Practical Nurse,Nursing Service Providers,
+1003004029,2,MEDICAL CONSULTING CENTER INC,1671 W 37TH ST STE 3 HIALEAH FL,MIAMI-DADE,Clinic/Center,Ambulatory Health Care Facilities,Mental Health (Including Community Mental Health Center)
+1003004037,2,NORTHWEST NEW JERSEY URGENT CARE ALLIANCE PC,212 ROUTE 94 SUITE 1A VERNON NJ,SUSSEX,Clinic/Center,Ambulatory Health Care Facilities,Urgent Care
+1003004045,1,MS. JOAN L LANDO,802 BREWSTER AVE REDWOOD CITY CA,SAN MATEO,Social Worker,Behavioral Health & Social Service Providers,School
+1003004052,2,DE GINO CORPORATION LLC,7447 HARWIN DR SUITE 220C HOUSTON TX,HARRIS,Durable Medical Equipment & Medical Supplies,Suppliers,
+1003004060,1,DR. MICHELE DENISE TRUMAN JONES PHARM. D,2181 E AURORA RD SUITE 201 TWINSBURG OH,SUMMIT,Pharmacist,Pharmacy Service Providers,
+1003004078,,,,,,,
+1003004086,2,"MICHIGAN ADVANCED NEUROLOGY CENTER, PLLC",4705 TOWNE CTR STE. 201 SAGINAW MI,SAGINAW,Psychiatry & Neurology,Allopathic & Osteopathic Physicians,Neurology
+1003004094,2,AGRA PUBLIC SCHOOLS,112 S. MAIN AGRA OK,PAYNE,Public Health or Welfare,Agencies,
+1003004102,1,LAURIE CHRISTINA LOEWENSTEIN OTR,354 SANTA FE DR ENCINITAS CA,SAN DIEGO,Occupational Therapist,"Respiratory, Developmental, Rehabilitative and Restorative Service Providers",
+1003004110,1,ROBERT SPROUL PHARMD,5201 RAYMOND ST ORLANDO FL,ORANGE,Pharmacist,Pharmacy Service Providers,
+1003004128,1,AMIR RAZAVI MD,2500 METROHEALTH DR CLEVELAND OH,CUYAHOGA,Internal Medicine,Allopathic & Osteopathic Physicians,
+1003004136,,,,,,,
+1003004144,1,MRS. KRISTELL L MICHAEL APN,US AIR FORCE 377 MDG/SGHC 2050A SECOND STREET SE ALBUQUERQUE NM,BERNALILLO,Nurse Practitioner,Physician Assistants & Advanced Practice Nursing Providers,Family
+1003004151,1,MRS. TANYA MARIE PLETIN PA-C,5323 HARRY HINES BLVD DALLAS TX,DALLAS,Physician Assistant,Physician Assistants & Advanced Practice Nursing Providers,
+1003004169,1,DR. SUSAN LEE IVEY MD,"2140 SHATTUCK AVE 10TH FLOOR, HEALTH RESEARCH FOR ACTION, UC-BERKELEY SPH BERKELEY CA",ALAMEDA,Family Medicine,Allopathic & Osteopathic Physicians,
+1003004177,1,MRS. ROSEMARIE TOWNSEND RN,100 EMANCIPATION DR HAMPTON VA,HAMPTON CITY,Registered Nurse,Nursing Service Providers,
+1003004185,1,KATHLEEN QUIGLEY MORGAN PA-C,599 LAFAYETTE RD PORTSMOUTH NH,ROCKINGHAM,Physician Assistant,Physician Assistants & Advanced Practice Nursing Providers,
+1003004193,1,ELIZABETH AMY WILSON ATC,1240 UNIVERSITY OF OREGON 122 ESSLINGER EUGENE OR,LANE,Specialist/Technologist,"Respiratory, Developmental, Rehabilitative and Restorative Service Providers",Athletic Trainer
+1003004201,1,DR. NATALIE W PHILBRICK D.O.,3301 S ALAMEDA ST STE 201 CORPUS CHRISTI TX,NUECES,Internal Medicine,Allopathic & Osteopathic Physicians,
+1003004219,2,"HAMILTON-MADISON, INC.",105 1/2 E. STATE STREET PENDLETON IN,HANCOCK,Durable Medical Equipment & Medical Supplies,Suppliers,Customized Equipment
+1003004227,2,"LOWER BUCKS TOTAL HEALTH AND WELLNESS CENTER, P.C.",103 MILL ST BRISTOL PA,BUCKS,Chiropractor,Chiropractic Providers,
+1003004235,2,ASHLAND FOOTCARE,841 29TH ST ASHLAND KY,BOYD,Podiatrist,Podiatric Medicine & Surgery Service Providers,
+1003004243,1,ANGELICA OROPEZA,1200 WILSHIRE BLVD LOS ANGELES CA,LOS ANGELES,Case Manager/Care Coordinator,Other Service Providers,
+1003004250,1,JOANNE FRANCES CARRUBBA LCSW,1433 FAIRFIELD DR AUSTIN TX,TRAVIS,Social Worker,Behavioral Health & Social Service Providers,Clinical
+1003004268,2,"ALEXANDER I. ZAMANIAN,M.D. INC.A PROFESSIONAL CORPORATION",14642 NEWPORT AVE SUITE 310 TUSTIN CA,ORANGE,Exclusive Provider Organization,Managed Care Organizations,
+1003004276,2,VINCENZO NOVARA MD PA,100 NW 170TH ST SUITE 301 NORTH MIAMI BEACH FL,MIAMI-DADE,Internal Medicine,Allopathic & Osteopathic Physicians,Pulmonary Disease
+1003004284,2,"LIFESTYLE MANAGEMENT OF BIRMINGHAM, INC",10 OLD MONTGOMERY HWY SUITE 100 BIRMINGHAM AL,JEFFERSON,Internal Medicine,Allopathic & Osteopathic Physicians,
+1003004292,1,MR. JEAN MARQUES LAFOREST COUNSELOR,"230 HIGHLAND AVE S.O.N, ROOM 401 SOMERVILLE MA",MIDDLESEX,Community Health Worker,Other Service Providers,
+1003004300,2,FAMILY & COSMETIC DENTISTRY,13706 SW 56TH ST SUITE 201 MIAMI FL,MIAMI-DADE,Dentist,Dental Providers,General Practice
+1003004318,1,GWEN P NORDAHL PA-C,2101 ELM ST N FARGO ND,CASS,Physician Assistant,Physician Assistants & Advanced Practice Nursing Providers,
+1003004326,,,,,,,
+1003004334,2,BUFFALO DENTAL GROUP PA,1000 HIGHWAY 25 SOUTH BUFFALO MN,WRIGHT,Dentist,Dental Providers,
+1003004342,1,MR. SHINGO TANAKA MPT,225 EAGLE CREST ST RANGELY CO,RIO BLANCO,Physical Therapist,"Respiratory, Developmental, Rehabilitative and Restorative Service Providers",
+1003004359,1,MR. JEREMY JAMES BALDILLEZ,3100 OAK ST LAS CRUCES NM,DONA ANA,Psychologist,Behavioral Health & Social Service Providers,School
+1003004367,1,MR. BRUCE ALAN REEVES PT,"169 ASHLEY AVE ROOM, 3SW WING CHARLESTON SC",CHARLESTON,Physical Therapist,"Respiratory, Developmental, Rehabilitative and Restorative Service Providers",Orthopedic
+1003004375,2,KENNETH H. CYR,1256 SE BISHOP BLVD SUITE N PULLMAN WA,WHITMAN,Chiropractor,Chiropractic Providers,
+1003004383,2,"REINIER RAMIREZ, MD, PC",6604 STATE HIGHWAY 56 POTSDAM NY,ST. LAWRENCE,Family Medicine,Allopathic & Osteopathic Physicians,
+1003004391,1,DR. DAVID BERMAN WALKER MD,10625 CALHOUN RD OMAHA NE,DOUGLAS,Psychiatry & Neurology,Allopathic & Osteopathic Physicians,Psychiatry
+1003004409,1,MR. WALTER ANDREW BARTASHUS LPCC-S,2803 AKRON RD WOOSTER OH,ASHLAND,Counselor,Behavioral Health & Social Service Providers,Mental Health
+1003004417,1,NEVIN YILMAZ MD,1250 E MARSHALL ST RICHMOND VA,RICHMOND CITY,Student in an Organized Health Care Education/Training Program,"Student, Health Care",
+1003004425,2,"PERFECT STEPS CARE CENTER, INC.",1665 BEDFORD AVE STE 2 BROOKLYN NY,KINGS,Clinic/Center,Ambulatory Health Care Facilities,Podiatric
+1003004433,1,MR. CHAD R KELLEY ATC,232 PEARL ST STOUGHTON MA,NORFOLK,Specialist/Technologist,"Respiratory, Developmental, Rehabilitative and Restorative Service Providers",Athletic Trainer
+1003004441,2,"LASTING IMPRESSION CARE, INC",405 GRETNA BLVD SUITE 103C GRETNA LA,JEFFERSON,"Community Based Residential Treatment Facility, Intellectual and/or Developmental Disabilities",Residential Treatment Facilities,
+1003004458,1,COURTNEY ANNE KRILEY LSW,1315 W COLLEGE AVE STATE COLLEGE PA,CENTRE,Social Worker,Behavioral Health & Social Service Providers,
+1003004466,2,JERROLD N ROSENBERG.MD INC,827 N MAIN ST SUITE 6 PROVIDENCE RI,PROVIDENCE,Physical Medicine & Rehabilitation,Allopathic & Osteopathic Physicians,
+1003004474,1,MS. JENNIFER RUTH PETTIBONE RN,2101 COURAGE DR MS-10-200 FAIRFIELD CA,SOLANO,Registered Nurse,Nursing Service Providers,Psychiatric/Mental Health
+1003004482,2,"SUMMIT AMBULATORY SURGICAL CENTER, LLC",6535 N CHARLES ST STE 625 TOWSON MD,BALTIMORE,Clinic/Center,Ambulatory Health Care Facilities,Ambulatory Surgical
+1003004490,1,RICHARD IRWIN MARKS DDS,105 BELLVUE DR FORT WORTH TX,TARRANT,Dentist,Dental Providers,
+1003004508,2,"KREATIVE COUNSELING ENRICHMENT SERVICES, LLC",2110 N BELTLINE BLVD COLUMBIA SC,RICHLAND,Counselor,Behavioral Health & Social Service Providers,Professional
+1003004516,1,MS. TERRI LYNN MOORE LMP,4701 AUBURN WAY N AUBURN WA,KING,Massage Therapist,"Respiratory, Developmental, Rehabilitative and Restorative Service Providers",
+1003004524,1,DR. CHRISTINE MARIE CISNEROS M.D.,700 E BEARDSLEY AVE STE 100 ELKHART IN,ELKHART,Preventive Medicine,Allopathic & Osteopathic Physicians,Occupational Medicine
+1003004532,1,MR. DONALD FRANCIS BOUCHARD,17 WATERHOUSE LN CHESTER CT,LOWER CONNECTICUT RIVER VALLEY,Contractor,Other Service Providers,
+1003004540,1,DR. JENNINE M. CABANELLAS MD,"12777 FOREST HILL BLVD, SUITE 1502 WELLINGTON FL",PALM BEACH,Ophthalmology,Allopathic & Osteopathic Physicians,
+1003004557,1,"MR. ERIC SCOTT BAILE M.DIV., MAC",763 S NEW BALLAS RD SUITE 340 SAINT LOUIS MO,ST. LOUIS,Counselor,Behavioral Health & Social Service Providers,Mental Health
+1003004565,2,"SKOKIE MEADOWS NURSING CENTERS II,LLC",4600 GOLF RD SKOKIE IL,COOK,"Intermediate Care Facility, Mental Illness",Nursing & Custodial Care Facilities,
+1003004573,1,MRS. JOANNE LYNN OSETSKY ARNP,550 17TH AVE STE 110 SEATTLE WA,KING,Nurse Practitioner,Physician Assistants & Advanced Practice Nursing Providers,
+1003004581,2,ANESTHESIA ASSOCIATES OF CAPE CORAL,665 DEL PRADO BLVD S CAPE CORAL FL,LEE,Clinic/Center,Ambulatory Health Care Facilities,Endoscopy
+1003004599,2,"SIMPLYREHAB, LLC",12975 SHERIDAN BLVD BROOMFIELD CO,BROOMFIELD,Physical Therapist,"Respiratory, Developmental, Rehabilitative and Restorative Service Providers",
+1003004607,1,ERIN FRATIS PT,1701 READING BLVD WYOMISSING PA,BERKS,Physical Therapist,"Respiratory, Developmental, Rehabilitative and Restorative Service Providers",Pediatrics
+1003004615,2,PRECISION HEALTH STUDIOS,2346 BOSTON POST RD GUILFORD CT,SOUTH CENTRAL CONNECTICUT,Clinic/Center,Ambulatory Health Care Facilities,Physical Therapy
+1003004623,1,MR. HAROLD DWAYNE ROLLER LCMFT,21350 W 153RD ST OLATHE KS,JOHNSON,Marriage & Family Therapist,Behavioral Health & Social Service Providers,
+1003004631,1,TERRY THOMAS CAVANAUGH PT,222 TONGASS DR SITKA AK,SITKA,Physical Therapist,"Respiratory, Developmental, Rehabilitative and Restorative Service Providers",
+1003004649,2,SCERBO/KOZEL MDS,331 GRAND ST HOBOKEN NJ,HUDSON,Internal Medicine,Allopathic & Osteopathic Physicians,Pulmonary Disease
+1003004656,1,DR. DEBBIE FRIEDMAN MD,5325 GREENWOOD AVE SUITE 201 WEST PALM BEACH FL,PALM BEACH,Pediatrics,Allopathic & Osteopathic Physicians,Pediatric Cardiology
+1003004664,1,ALICIA BROADWAY SWANN AUDIOLOGIST,541 HIGHWAY 80 W SUITE C CLINTON MS,HINDS,Audiologist,"Speech, Language and Hearing Service Providers",
+1003004672,2,"BRYSON S. SMITH, MD, PC",4403 HARRISON BLVD SUITE 1815 OGDEN UT,WEBER,Neurological Surgery,Allopathic & Osteopathic Physicians,
+1003004680,2,FMT MEDICAL EQUIPMENT CORP,11117 W OKEECHOBEE RD SUITE 207 HIALEAH GARDENS FL,MIAMI-DADE,Durable Medical Equipment & Medical Supplies,Suppliers,
+1003004698,1,DR. MERLE FRANKLIN GODFREY III DDS,3669 TAYLOR RD #2178 LOOMIS CA,PLACER,Dentist,Dental Providers,General Practice
+1003004706,2,"HENRY G. GODFREY, M.D., P.C.",1919 MADISON AVE NEW YORK NY,NEW YORK,Surgery,Allopathic & Osteopathic Physicians,
+1003004714,2,SERVICIOS ESPECIALIZADOS DE ORTODONCIA,OFFICE 12 65 INFANTERIA RIO PIEDRAS CENT COM LOS FLAMBOYANES SAN JUAN PR,SAN JUAN,Clinic/Center,Ambulatory Health Care Facilities,Dental
+1003004722,2,"HAYNES AMBULANCES OF WETUMPKA, LLC",527 HOSPITAL DR WETUMPKA AL,ELMORE,Ambulance,Transportation Services,
+1003004730,1,"HELEN BERINGER GATES MAG,RD,LD/N",1255 BRICE BLVD BARTOW FL,POLK,"Dietitian, Registered",Dietary & Nutritional Service Providers,
+1003004748,1,MISS TRACY TASSONE RN,203 HELEN ST # 2 SYRACUSE NY,ONONDAGA,Registered Nurse,Nursing Service Providers,Critical Care Medicine
+1003004755,1,MS. LORI M ORTIZ M.A. LMHC,2403 SAN MATEO BLVD NE ALBUQUERQUE NM,BERNALILLO,Counselor,Behavioral Health & Social Service Providers,Mental Health
+1003004763,,,,,,,
+1003004771,1,DR. ERIN ELIZABETH RIGGLE M.D.,15 W DRY CREEK CIR LITTLETON CO,ARAPAHOE,Internal Medicine,Allopathic & Osteopathic Physicians,Critical Care Medicine
+1003004789,1,ROBIN POSTON OT,2200 FORT JESSE RD SUITE 250 NORMAL IL,MC LEAN,Occupational Therapist,"Respiratory, Developmental, Rehabilitative and Restorative Service Providers",
+1003004797,1,DEBORAH KAY KOLK R.N.,204 DEPAUL CT LAS VEGAS NV,CLARK,Registered Nurse,Nursing Service Providers,
+1003004805,1,RAFAELA HERNANDEZ,6055 E WASHINGTON BLVD SUITE 900 LOS ANGELES CA,LOS ANGELES,Rehabilitation Practitioner,"Respiratory, Developmental, Rehabilitative and Restorative Service Providers",
+1003004813,2,"PROEYE GROUP GATEWAY, P.C.",8250 OLD CHENEY RD STE A LINCOLN NE,LANCASTER,Optometrist,Eye and Vision Services Providers,
+1003004821,2,"FIBROMYALGIA AND FATIGUE CENTERS, INC",7180 E ORCHARD RD SUITE 206 CENTENNIAL CO,DENVER,Non-Pharmacy Dispensing Site,Suppliers,
+1003004839,1,BEVERLY HAGNER DARNELL MD,10810 CONNECTICUT AVE KENSINGTON MD,MONTGOMERY,Internal Medicine,Allopathic & Osteopathic Physicians,
+1003004847,2,"PREFERRED MDCARE, LLC",180 TURN OF RIVER RD SUITE 8C STAMFORD CT,WESTERN CONNECTICUT,Clinic/Center,Ambulatory Health Care Facilities,Primary Care
+1003004854,1,EDWARD LEE WINTER MA,111 FAYETTE AVE. FAYETTE COUNTY SCHOOLS FAYETTEVILLE WV,FAYETTE,Psychologist,Behavioral Health & Social Service Providers,School
+1003004862,2,VIRGINIA ANN SCHEKORRA PA,6020 PARK BLVD PINELLAS PARK FL,PINELLAS,Dermatology,Allopathic & Osteopathic Physicians,
+1003004870,1,DR. NADINE M GIRGIS - HANNA O.D.,3200 S UNIVERSITY DR DAVIE FL,BROWARD,Optometrist,Eye and Vision Services Providers,
+1003004888,1,NORMA YUEN DDS,DEFENSORES DE BAJA CALIFORNIA #702 COLONIA RUIZ CORTINEZ TIJUANA BAJA CALIFORNIA,ALEXANDRIA CITY,Dentist,Dental Providers,General Practice
+1003004896,2,"KAILUA PHYSICAL THERAPY CLINIC, INC",155 HAMAKUA DR SUITE B KAILUA HI,HONOLULU,Specialist,Other Service Providers,
+1003004904,2,TEXAS ROAD OLD BRIDGE LLC,1183 ENGLISHTOWN RD OLD BRIDGE NJ,MIDDLESEX,Pharmacy,Suppliers,Community/Retail Pharmacy
+1003004912,2,ST. JOHN NEUMANN'S EXTENDED HOURS CLINIC,1389 HIGHWAY 15 NORTH JACKSON KY,LEE,Family Medicine,Allopathic & Osteopathic Physicians,
+1003004920,1,NAM HOAI NGUYEN D.D.S,459 S CAPITOL AVE SAN JOSE CA,SANTA CLARA,Dentist,Dental Providers,
+1003004938,2,"CVS STATE CAPITAL, L.L.C.",446 SABATTUS ST LEWISTON ME,ANDROSCOGGIN,Pharmacy,Suppliers,
+1003004946,1,"EDDIE JOOHYUN MOON DAOM, L.AC.",758 E COLORADO BLVD STE.201 PASADENA CA,LOS ANGELES,Acupuncturist,Other Service Providers,
+1003004953,1,HEATHER GRIFFIN,829 HALBERT ST MALVERN AR,HOT SPRING,Case Manager/Care Coordinator,Other Service Providers,
+1003004961,,,,,,,
+1003004979,1,JUSTINE JOYNER,3209 N ALAMEDA ST STE B COMPTON CA,LOS ANGELES,Counselor,Behavioral Health & Social Service Providers,Addiction (Substance Use Disorder)
+1003004987,1,STEPHANIE LOUDERMILK,8060 KNUE RD STE 110 INDIANAPOLIS IN,MARION,Licensed Practical Nurse,Nursing Service Providers,
+1003004995,2,"PIGGLY WIGGLY ANDREWS, INC.",15 WEST ASHLAND AVE. ANDREWS SC,GEORGETOWN,Durable Medical Equipment & Medical Supplies,Suppliers,
+1003005000,2,THE ROSS ORTHOPAEDIC WELLNESS CENTER,5900 HILLANDALE DR SUITE 215 LITHONIA GA,GWINNETT,Orthopaedic Surgery,Allopathic & Osteopathic Physicians,
+1003005018,1,DR. ANDREW ROBERT COULSON D.C.,13800 83RD WAY N SUITE 108 MAPLE GROVE MN,HENNEPIN,Chiropractor,Chiropractic Providers,
+1003005026,,,,,,,
+1003005034,1,MISTI D. STAGGERS CNP,120 MCMILLEN DR NEWARK OH,LICKING,Clinical Nurse Specialist,Physician Assistants & Advanced Practice Nursing Providers,Gerontology
+1003005042,1,MRS. LORI LEE DEUTSCH RN,5220 COLLEGE RD KEY WEST FL,MONROE,Registered Nurse,Nursing Service Providers,Case Management
+1003005059,2,TORRINGTON AREA HEALTH DISTRICT,350 MAIN ST STE A TORRINGTON CT,NORTHWEST HILLS,Public Health or Welfare,Agencies,
+1003005067,2,MIAMI FAMILY CARE INC,15806 SW 98TH ST MIAMI FL,MIAMI-DADE,General Practice,Allopathic & Osteopathic Physicians,
+1003005075,1,MR. TOM VU DMD,4955 VAN NUYS BLVD SUITE #518 SHERMAN OAKS CA,LOS ANGELES,Dentist,Dental Providers,
+1003005083,2,EXCEL MEDICAL PC,4348 COLDEN STREET FLUSHING NY,QUEENS,Family Medicine,Allopathic & Osteopathic Physicians,
+1003005091,2,"JOSEPH JETT F. ZAPANTA, DDS.INC",722 W WILLOW ST LONG BEACH CA,LOS ANGELES,Dentist,Dental Providers,
+1003005109,1,DR. NICHOLAS AARON FETTMAN MD,1700 N ROSE AVE SUITE 460 OXNARD CA,VENTURA,Otolaryngology,Allopathic & Osteopathic Physicians,
+1003005117,2,"JEFFREY M. DEMBNER, MD, INC.",2617 E CHAPMAN AVE SUITE 201 ORANGE CA,ORANGE,Neurological Surgery,Allopathic & Osteopathic Physicians,
+1003005125,2,"NETTLETON FAMILY MEDICAL CLINIC, INC.",1495 MAPLE RD NETTLETON MS,LEE,Clinic/Center,Ambulatory Health Care Facilities,Primary Care
+1003005133,2,SINGING RIVER HEALTH SYSTEM,2101 HIGHWAY 90 GAUTIER MS,JACKSON,Thoracic Surgery (Cardiothoracic Vascular Surgery),Allopathic & Osteopathic Physicians,
+1003005141,1,SHARON N HOMAN R.N.,25 RAILROAD AVE WARREN RI,BRISTOL,"Community Based Residential Treatment Facility, Mental Illness",Residential Treatment Facilities,
+1003005158,1,TRACEY ASHMAN,2250 HICKORY RD SUITE 240 PLYMOUTH MEETING PA,MONTGOMERY,Licensed Practical Nurse,Nursing Service Providers,
+1003005166,1,MR. MICHAEL ANDREW MONTGOMERY LCSW,7877 S HIGHWAY 89 # 91 WELLSVILLE UT,CACHE,Social Worker,Behavioral Health & Social Service Providers,Clinical
+1003005174,1,MR. DAVID M. GILMAN PA-C,300 PINE GROVE CMNS YORK PA,YORK,Physician Assistant,Physician Assistants & Advanced Practice Nursing Providers,
+1003005182,1,MS. LINDA WALLS - MCCARTHA RN,592 ROCKAWAY AVE BROOKLYN NY,KINGS,Registered Nurse,Nursing Service Providers,General Practice
+1003005190,1,ANDREA ROAD-TRAVELER LONGORIA,518 LOW GAP RD UKIAH CA,MENDOCINO,Case Manager/Care Coordinator,Other Service Providers,
+1003005208,1,THELMA R YANGA-BARKSDALE P.T.,2723 S 7TH STREET SUITE A TERRE HAUTE IN,CLAY,Physical Therapist,"Respiratory, Developmental, Rehabilitative and Restorative Service Providers",
+1003005216,1,"MS. KIMBERLEY J WHORTON LCSW, PIP",376 CHRISLYN DR GADSDEN AL,CHEROKEE,Social Worker,Behavioral Health & Social Service Providers,Clinical
+1003005224,,,,,,,
+1003005232,2,HAROLD D LEWIS DO PA,1901 WEST WILLIAM CANNON DRIVE SUITE 123 AUSTIN TX,TRAVIS,Family Medicine,Allopathic & Osteopathic Physicians,
+1003005240,2,"PHYD, INC. (PRETTY HOMES YOUTH DEVELOPMENT)",1611 POOLE RD RALEIGH NC,JOHNSTON,"Residential Treatment Facility, Emotionally Disturbed Children",Residential Treatment Facilities,
+1003005257,1,DR. STANLEY CARTER PACE MD,"7580 AUBURN RD #302, C/O DRS. HILL AND CHAPNICK, INC CONCORD TWP OH",GEAUGA,Pathology,Allopathic & Osteopathic Physicians,Anatomic Pathology & Clinical Pathology
+1003005265,1,MATTHEW B REAMSMA PHARMD,3633 GRAY AVE ADAMSVILLE AL,JEFFERSON,Pharmacist,Pharmacy Service Providers,
+1003005273,1,"MRS. SHERI ANN ELLIOTT MS, LPC",909 LONG DR STE C SHERIDAN WY,SHERIDAN,Counselor,Behavioral Health & Social Service Providers,Professional
+1003005281,1,MRS. DARLEEN DANSBY APN,1513 VICEROY DR DALLAS TX,DALLAS,Nurse Practitioner,Physician Assistants & Advanced Practice Nursing Providers,Family
+1003005299,2,"DONALD L. SMITHA, DDS, MDS, PA",812 ALDERMAN RD JACKSONVILLE FL,DUVAL,Dentist,Dental Providers,Prosthodontics
+1003005307,2,COMMUNITY ORAL HEALTH SERVICES,801 WALNUT AVE GREENFIELD CA,MONTEREY,Clinic/Center,Ambulatory Health Care Facilities,Dental
+1003005315,1,DR. ADAM BRYANT SMITH MD,4977 SKYVIEW CT TRAVERSE CITY MI,GRAND TRAVERSE,Surgery,Allopathic & Osteopathic Physicians,Plastic and Reconstructive Surgery
+1003005323,1,DR. JUAN F QUIROZ MD,4811A COLUMBIA AVE DALLAS TX,DALLAS,Family Medicine,Allopathic & Osteopathic Physicians,
+1003005331,2,DERMATOLOGY & SKIN CARE ASSOC PC,10 LAUREL AVE SUITE 300 WELLESLEY MA,NORFOLK,Dermatology,Allopathic & Osteopathic Physicians,
+1003005349,2,"T. NGUYEN, DDS, CORPORATION",500 ALFRED NOBEL DR 285 HERCULES CA,CONTRA COSTA,Preferred Provider Organization,Managed Care Organizations,
+1003005356,2,A BETTER VUE EYE PHYSICIANS,1333 3RD AVE S STE 301 NAPLES FL,COLLIER,Ophthalmology,Allopathic & Osteopathic Physicians,
+1003005364,,,,,,,
+1003005372,1,DR. JESUEL PADRO-GUZMAN M.D.,525 E 68TH ST # F-16 BOX 142 NEW YORK NY,NEW YORK,Physical Medicine & Rehabilitation,Allopathic & Osteopathic Physicians,
+1003005380,,,,,,,
+1003005398,1,MR. JOSEPH B LOCARIA MA,4510 PERALTA BLVD SUITE 1 FREMONT CA,ALAMEDA,Counselor,Behavioral Health & Social Service Providers,Addiction (Substance Use Disorder)
+1003005406,1,BOBBIE CHASSE,43 HATCH DR STE 310 CARIBOU ME,AROOSTOOK,Counselor,Behavioral Health & Social Service Providers,
+1003005414,1,JOAN LUNA VICENTE PT,4560 SE INTERNATIONAL WAY CONSONUS HEALTHCARE SERVICES SUITE 100 MILWAUKIE OR,MULTNOMAH,Physical Therapist,"Respiratory, Developmental, Rehabilitative and Restorative Service Providers",
+1003005422,1,"MRS. ANDREA MORGANSTEIN RD, CDCES",4801 S UNIVERSITY DR #228 DAVIE FL,BROWARD,"Dietitian, Registered",Dietary & Nutritional Service Providers,
+1003005430,1,DR. LAURA ANN BEAUMONT PSYD,11801 SOUTHWEST HIGHWAY STE 3 SOUTH PALOS HEIGHTS IL,COOK,Psychologist,Behavioral Health & Social Service Providers,Clinical
+1003005448,2,LV HOME HEALTH SERVICES,4160 S PECOS RD STE 17 LAS VEGAS NV,CLARK,Community/Behavioral Health,Agencies,
+1003005455,1,NANCI ROSE SMITH,175 W B ST BUILDING I SPRINGFIELD OR,LANE,Counselor,Behavioral Health & Social Service Providers,Mental Health
+1003005463,2,"KING CITY SURGERY CENTER, S.C.",2605 MAIN ST MOUNT VERNON IL,JEFFERSON,Thoracic Surgery (Cardiothoracic Vascular Surgery),Allopathic & Osteopathic Physicians,
+1003005471,2,"HEART AND VASCULAR CARE, P.C.",2550 LUSK DR NEOSHO MO,NEWTON,Thoracic Surgery (Cardiothoracic Vascular Surgery),Allopathic & Osteopathic Physicians,
+1003005489,2,ASSOCIATED PHYSICIANS INC.,912 E ACACIA AVE HEMET CA,RIVERSIDE,Chiropractor,Chiropractic Providers,
+1003005497,2,NINIGRET ORTHOPEDICS INC,81 BEACH ST WESTERLY RI,WASHINGTON,Orthopaedic Surgery,Allopathic & Osteopathic Physicians,
+1003005505,1,MRS. SHELLEY RENAE HAMMEN RPH,4910 S YOSEMITE ST GREENWOOD VILLAGE CO,DENVER,Pharmacist,Pharmacy Service Providers,
+1003005513,2,KELLY SMITH,30724 BENTON RD C-302 #551 WINCHESTER CA,RIVERSIDE,Licensed Vocational Nurse,Nursing Service Providers,
+1003005521,1,CHRISTINA LINDEMUTH,1034 OAK GROVE RD. CONCORD CA,CONTRA COSTA,Counselor,Behavioral Health & Social Service Providers,
+1003005539,2,NITYA SURGICAL ASSOCIATES PLLC,8038 WURZBACH RD # 650B SAN ANTONIO TX,BEXAR,Internal Medicine,Allopathic & Osteopathic Physicians,Obesity Medicine
+1003005547,1,DR. SEAN PHUC DO DMD,1341 S MILITARY HWY CHESAPEAKE VA,VIRGINIA BEACH CITY,Dentist,Dental Providers,Pediatric Dentistry
+1003005554,1,MICHELLE FOWLER,398 HOSPITAL RD SYLVA NC,HAYWOOD,Counselor,Behavioral Health & Social Service Providers,
+1003005562,2,"HERITAGE EYE CARE, INC",3211 ROGERS RD STE 100 WAKE FOREST NC,FRANKLIN,Optometrist,Eye and Vision Services Providers,
+1003005570,1,MS. RENEE ANN HILL LPN,2226 PENNSYLVANIA AVE SANDUSKY OH,ERIE,Licensed Practical Nurse,Nursing Service Providers,
+1003005588,1,"MR. DUNCAN NJARAMBA KIHORO MA, LPC",8211 WILLOWGLEN DR RALEIGH NC,WAKE,Counselor,Behavioral Health & Social Service Providers,Professional
+1003005596,2,WARREN-LORAINE INC,241 PADDOCK CT DELAWARE OH,UNION,Clinic/Center,Ambulatory Health Care Facilities,Primary Care
+1003005604,1,MS. CHRISTY ANN COLE LCPC,36 MAIN ST STE D KENNEBUNK ME,YORK,Counselor,Behavioral Health & Social Service Providers,Professional
+1003005612,2,PHYTCARE LLC,4100 WAKE FOREST RD RALEIGH NC,WAKE,Physical Therapist,"Respiratory, Developmental, Rehabilitative and Restorative Service Providers",
+1003005620,,,,,,,
+1003005638,1,DR. ALISON K KARASZ PHD,241 CUMBERLAND ST BROOKLYN NY,KINGS,Psychologist,Behavioral Health & Social Service Providers,Clinical
+1003005646,2,SPINE TIME PA,4702 NORTHWEST HWY GARLAND TX,DALLAS,Chiropractor,Chiropractic Providers,
+1003005653,2,ACTION CHIROPRATIC,1501 POTTERY AVE PORT ORCHARD WA,KITSAP,Chiropractor,Chiropractic Providers,
+1003005661,1,DR. ADEFOLAJU OKETOKUN MD,1629 K STREET NW SUITE 300 WASHINGTON DC,THE DISTRICT,Internal Medicine,Allopathic & Osteopathic Physicians,Addiction Medicine
+1003005679,1,DR. YVETTE RENEE DOUGLAS-LEWIS,163 CHRISTMAS RD WARRENTON NC,FRANKLIN,Family Medicine,Allopathic & Osteopathic Physicians,
+1003005687,1,LAURA K CAMARGO LCSW,2400 S 48TH ST SPRINGDALE AR,BENTON,Social Worker,Behavioral Health & Social Service Providers,
+1003005695,2,BREASTFEEDING CONCEPTS,3957 FORTNER ST DOTHAN AL,GENEVA,Durable Medical Equipment & Medical Supplies,Suppliers,
+1003005703,2,INTERNAL MEDICINE OF WEST HAVEN LLC,764 CAMPBELL AVE SUITE E WEST HAVEN CT,SOUTH CENTRAL CONNECTICUT,Internal Medicine,Allopathic & Osteopathic Physicians,
+1003005711,2,"BARZIN KHALILI, M.D., LLC",511 SW 10TH AVE SUITE 1301 PORTLAND OR,MULTNOMAH,Allergy & Immunology,Allopathic & Osteopathic Physicians,
+1003005729,1,WADE WALNOHA P.A.-C.,500 S CLEVELAND AVE WESTERVILLE OH,DELAWARE,Physician Assistant,Physician Assistants & Advanced Practice Nursing Providers,
+1003005737,2,"TRUE SLEEP, LLC",6535 WILSHIRE BLVD SUITE 105 LOS ANGELES CA,LOS ANGELES,Clinic/Center,Ambulatory Health Care Facilities,Sleep Disorder Diagnostic
+1003005745,1,DR. JAHANNAZ DASTGIR DO,710 W 168TH ST NEW YORK NY,NEW YORK,Psychiatry & Neurology,Allopathic & Osteopathic Physicians,Neurology with Special Qualifications in Child Neurology
+1003005752,2,"KIRK E. ELLIOTT, M.D. , LLC",DR KIRK ELLIOT 410 OLIVE ST. ARNAUDVILLE LA,ST. LANDRY,Legal Medicine,Other Service Providers,
+1003005760,1,MRS. BARBARA ASCAH ARMSTRONG RD,2066 HIGHWAY 125 ROANOKE RAPIDS NC,HALIFAX,"Dietitian, Registered",Dietary & Nutritional Service Providers,
+1003005778,1,BELA M GANDHI MD,700 CHILDRENS DR COLUMBUS OH,FRANKLIN,Psychiatry & Neurology,Allopathic & Osteopathic Physicians,Child & Adolescent Psychiatry
+1003005786,,,,,,,
+1003005794,2,MADISON AVENUE MRI PC,240 MADISON AVE 2ND FLOOR NEW YORK NY,NEW YORK,Radiology,Allopathic & Osteopathic Physicians,Diagnostic Radiology
+1003005802,1,DR. STEPHANIE JILL PLANSKY D.M.D.,275 MADISON AVE SUITE 2500 NEW YORK NY,NEW YORK,Dentist,Dental Providers,General Practice
+1003005810,1,DAWN M PALASZEWSKI M.D.,2 TAMPA GENERAL CIR 4TH FLOOR TAMPA FL,HILLSBOROUGH,Obstetrics & Gynecology,Allopathic & Osteopathic Physicians,
+1003005828,2,MANIILAQ ASSOCIATION,722 SECOND AVE KOTZEBUE AK,NORTHWEST ARTIC,Substance Abuse Rehabilitation Facility,Residential Treatment Facilities,
+1003005836,1,EMILY LEASURE MD,200 1ST ST SW ROCHESTER MN,OLMSTED,Internal Medicine,Allopathic & Osteopathic Physicians,
+1003005844,2,RITE AID OF MARYLAND INC,200 NEWBERRY COMMONS ETTERS PA,YORK,Pharmacy,Suppliers,Community/Retail Pharmacy
+1003005851,1,MR. GREGORY SCOTT WENTZ MS,128 NORTH GEORGE STREET YORK PA,YORK,Counselor,Behavioral Health & Social Service Providers,
+1003005869,2,CLEVELAND CLINIC FOUNDATION,2001 E ROYALTON RD BROADVIEW HEIGHTS OH,CUYAHOGA,Durable Medical Equipment & Medical Supplies,Suppliers,
+1003005877,1,NALINI MALARKKAN MD,4800 SAND POINT WAY NE SEATTLE WA,KING,Anesthesiology,Allopathic & Osteopathic Physicians,
+1003005885,1,DR. JAMES H JASTER MD,"23 SOUTH PAULINE STREET, SUITE 709 MEMPHIS TN",SHELBY,Psychiatry & Neurology,Allopathic & Osteopathic Physicians,Neurology
+1003005893,2,"ENDOCRINOLOGY, DIABETES, AND THYROID CENTER OF ARIZONA PLLC",20100 N 51ST AVE SUITE F-635 GLENDALE AZ,MARICOPA,Internal Medicine,Allopathic & Osteopathic Physicians,"Endocrinology, Diabetes & Metabolism"
+1003005901,1,MRS. NINA M ANDERSON II,1201 PROUST RD VIRGINIA BEACH VA,VIRGINIA BEACH CITY,Physical Therapy Assistant,"Respiratory, Developmental, Rehabilitative and Restorative Service Providers",
+1003005919,1,MRS. AMANDA E. CASH R.D.,116 S ENNIS ST PORT ANGELES WA,CLALLAM,"Dietitian, Registered",Dietary & Nutritional Service Providers,
+1003005927,1,MRS. MARICELA CISNEROS,496 APPLE TREE LANE FAIRFIELD CA,SOLANO,Counselor,Behavioral Health & Social Service Providers,Mental Health
+1003005935,1,ALICIA J SGARLATA LPN,9125 SNELL RD CANASTOTA NY,MADISON,Licensed Practical Nurse,Nursing Service Providers,
+1003005943,2,DEVELOPMENTAL ASSESSMENT & INTERVENTION CENTER,301 WEST MAIN SUITE 324 ARDMORE OK,CARTER,Counselor,Behavioral Health & Social Service Providers,Mental Health
+1003005950,1,DR. HEIDI WORTH M.D.,1197 BLUE RIDGE RD SILVERTHORNE CO,EAGLE,Internal Medicine,Allopathic & Osteopathic Physicians,
+1003005968,1,MR. JOHN JOSEPH MAJKUT MSOTR/L,189 PARK AVE PORTLAND ME,CUMBERLAND,Occupational Therapist,"Respiratory, Developmental, Rehabilitative and Restorative Service Providers",
+1003005976,1,MR. JOHN DUSKY ADAMSON JR. PT,26179 RESERVATION LANE RUTHER GLEN VA,CAROLINE,Physical Therapist,"Respiratory, Developmental, Rehabilitative and Restorative Service Providers",
+1003005984,2,URBANDALE CHIROPRACTIC DRS SHAD B & JODY L ENGLAND,10437 HICKMAN RD URBANDALE IA,POLK,Chiropractor,Chiropractic Providers,
+1003005992,2,NATALIE ACCOMANDO DMD PLLC,1361 ELM ST SUITE 300 MANCHESTER NH,HILLSBOROUGH,Dentist,Dental Providers,General Practice
+1003006008,2,PROVIDENCE HEALTH & SERVICES - WASHINGTON,5633 N LIDGERWOOD ST SPOKANE WA,SPOKANE,Case Manager/Care Coordinator,Other Service Providers,
+1003006016,1,ROBIN THOMAS,1120 S DORA ST UKIAH CA,MENDOCINO,Case Manager/Care Coordinator,Other Service Providers,
+1003006024,1,"DR. MARK DARRIN UNRUH D.D.S., M.S.",425 S MADISON BLVD BARTLESVILLE OK,NOWATA,Dentist,Dental Providers,Orthodontics and Dentofacial Orthopedics
+1003006032,2,"LANE M. COOK, M.D.",4428 SUTHERLAND AVE KNOXVILLE TN,KNOX,Psychiatry & Neurology,Allopathic & Osteopathic Physicians,Psychiatry
+1003006040,2,"NEW MEXICO SURGICAL ASSOCIATES, PA",711 ENCINO PL NE ALBUQUERQUE NM,BERNALILLO,Specialist,Other Service Providers,
+1003006057,2,EYE AND VISION MANAGEMENT,3417 SPECTRUM BLVD SUITE 100 RICHARDSON TX,DALLAS,Optometrist,Eye and Vision Services Providers,
+1003006065,2,JOHN F NIELSEN M D FAMILY MEDICINE PA,702 DAVIS ST STE 4 CARTHAGE TX,RUSK,Family Medicine,Allopathic & Osteopathic Physicians,
+1003006073,1,MS. CATHERINE ANN WEIBEL MPT,260 S OSCEOLA AVE APT 1101 ORLANDO FL,ORANGE,Physical Therapist,"Respiratory, Developmental, Rehabilitative and Restorative Service Providers",Sports
+1003006081,2,"N-MET, INC.",3700 GEORGIA AVE #9 WEST PALM BEACH FL,PALM BEACH,Non-emergency Medical Transport (VAN),Transportation Services,
+1003006099,1,"ELIZABETH OSTOJA MSN, FNP",1976 LIME KILN RD GREEN BAY WI,BROWN,Nurse Practitioner,Physician Assistants & Advanced Practice Nursing Providers,Family
+1003006107,1,SAAD M AL-SAAB M.D.,425 HOLDERRIETH BLVD STE 118 TOMBALL TX,HARRIS,Internal Medicine,Allopathic & Osteopathic Physicians,Cardiovascular Disease
+1003006115,1,MR. BENJAMIN DURHAM PA-C,522 N CENTER ST THOMASTON GA,UPSON,Physician Assistant,Physician Assistants & Advanced Practice Nursing Providers,
+1003006123,2,INVISION EYECARE INC.,2161 MAIN ST DUNEDIN FL,PINELLAS,Optometrist,Eye and Vision Services Providers,
+1003006131,1,MR. THOMAS S. BENDER LPCC,"540 MAIN STREET DELTA, CO 81416 DELTA CO",MONTROSE,Counselor,Behavioral Health & Social Service Providers,
+1003006149,1,"DR. STEPHEN H GAMBOA M.D., M.P.H.","UNC DEPT OF FAMILY MEDICINE 590 MANNING DR, CB #7595 CHAPEL HILL NC",ORANGE,Family Medicine,Allopathic & Osteopathic Physicians,
+1003006156,2,"LABORDE DERMATOLOGY, PA",1333 WEST LOOP S STE 1425 HOUSTON TX,HARRIS,Specialist,Other Service Providers,
+1003006164,1,"MRS. MICHELE ANN BUYCO LMFT, PPSC",317 W F ST ONTARIO CA,RIVERSIDE,Marriage & Family Therapist,Behavioral Health & Social Service Providers,
+1003006172,1,NESTOR MANUEL QUEZADA MD,7305 N MILITARY TRL RIVIERA BEACH FL,PALM BEACH,Internal Medicine,Allopathic & Osteopathic Physicians,Infectious Disease
+1003006180,2,"MEDICWEST AMBULANCE, INC.",9 W DELHI AVE NORTH LAS VEGAS NV,CLARK,Ambulance,Transportation Services,
+1003006198,1,LAURA ANNE CINSKI M.D.,8081 INNOVATION PARK DR STE 900 FAIRFAX VA,FAIRFAX CITY,Psychiatry & Neurology,Allopathic & Osteopathic Physicians,Neurology
+1003006206,1,LAMAR DAVIS II M.D.,2500 N STATE ST JACKSON MS,HINDS,Psychiatry & Neurology,Allopathic & Osteopathic Physicians,Neurology with Special Qualifications in Child Neurology
+1003006214,1,AARON DORFMAN M.D.,3401 CIVIC CENTER BLVD CHILDREN'S HOSPITAL OF PHILADELPHIA - CARDIOLOGY PHILADELPHIA PA,PHILADELPHIA,Pediatrics,Allopathic & Osteopathic Physicians,Pediatric Cardiology
+1003006222,2,AMERICA'S BEST CONTACTS AND EYEGLASSES,800 N KEDZIE AVE SUITE 223 CHICAGO IL,COOK,Technician/Technologist,Eye and Vision Services Providers,Optician
+1003006230,1,MISS BETHANY GAYLE HOBLET MSCCCSLP,779 GLENDALE MILFORD RD CINCINNATI OH,HAMILTON,Speech-Language Pathologist,"Speech, Language and Hearing Service Providers",
+1003006248,1,MARK RIZZI M.D.,34TH & CIVIC CENTER BLVD CHILDREN'S HOSPITAL OF PHILADELPHIA PHILADELPHIA PA,PHILADELPHIA,Otolaryngology,Allopathic & Osteopathic Physicians,
+1003006255,2,MANUAL THERAPY ASSOCIATES,13431 OLD MERIDIAN ST SUITE 100 CARMEL IN,HAMILTON,Physical Therapist,"Respiratory, Developmental, Rehabilitative and Restorative Service Providers",
+1003006263,2,"THOMAS BUSINESS ENTERPRISES, INC",910 S FLORISSANT RD STE 100 SAINT LOUIS MO,ST. LOUIS,Home Health,Agencies,
+1003006271,1,DR. KAREN M BENEZRA D.O.,1232 PORTLAND RD ARUNDEL ME,YORK,Neuromusculoskeletal Medicine & OMM,Allopathic & Osteopathic Physicians,
+1003006289,2,WADDELL CENTER FAMILY MEDICINE,902 W WASHINGTON ST ATHENS AL,LIMESTONE,Family Medicine,Allopathic & Osteopathic Physicians,
+1003006297,1,"MR. STEVEN C HICKS MS,ATC",GUTHRIE SPORTS MEDICINE ONE GUTHRIE SQUARE SAYRE PA,BRADFORD,Specialist/Technologist,"Respiratory, Developmental, Rehabilitative and Restorative Service Providers",Athletic Trainer
+1003006305,1,LISA KAY ANDERSON CCC/SLP,1201 E 15TH ST SUITE 304 PLANO TX,COLLIN,Speech-Language Pathologist,"Speech, Language and Hearing Service Providers",
+1003006313,2,UTAH VALLEY PAIN MANAGEMENT,412 W. 800 N. OREM UT,UTAH,Pain Medicine,Allopathic & Osteopathic Physicians,Pain Medicine
+1003006321,1,SCOTT STEWART HILL MSPT,5850 EUBANK BLVD NE # B49-242 ALBUQUERQUE NM,BERNALILLO,Contractor,Other Service Providers,
+1003006339,,,,,,,
+1003006347,2,CORPUS CHRISTI LABORATORY SERVICES,1125 AIRLINE RD CORPUS CHRISTI TX,NUECES,Clinical Medical Laboratory,Laboratories,
+1003006354,1,DR. DEBORA ANN CHELSON NMD,11650 E OLD SPANISH TRL TUCSON AZ,PIMA,Naturopath,Other Service Providers,
+1003006362,1,MICHELE MABRY WILSON,411 30TH ST #314 OAKLAND CA,ALAMEDA,Counselor,Behavioral Health & Social Service Providers,
+1003006370,1,MS. BARBARA ANN MURRAY LCSW,1312 CARMEL RD N HAMPDEN ME,PENOBSCOT,Social Worker,Behavioral Health & Social Service Providers,Clinical
+1003006388,1,GLORIA MILANO CNA,2250 HICKORY RD SUITE 240 PLYMOUTH MEETING PA,MONTGOMERY,Nurse's Aide,Nursing Service Related Providers,
+1003006396,1,"MICHELLE L RUSH MSN, APRN, BC",880 MADISON AVE MEMPHIS TN,SHELBY,Nurse Practitioner,Physician Assistants & Advanced Practice Nursing Providers,Family
+1003006404,2,EBADAT CHIROPRACTIC INC.,20445 PROSPECT RD STE 1 SAN JOSE CA,SANTA CLARA,Chiropractor,Chiropractic Providers,
+1003006412,2,LESLIE H FENTON MD,6614 MELODY LANE BETHESDA MD,MONTGOMERY,Internal Medicine,Allopathic & Osteopathic Physicians,
+1003006420,1,SARA M MUSACHIA RDCS,6925 PRENTISS DR HOUSTON TX,HARRIS,"Technician, Cardiology","Technologists, Technicians & Other Technical Service Providers",
+1003006438,,,,,,,
+1003006446,1,DR. VLADIMIR BUKRINSKY D.D.S.,1632 E 18TH ST SUITE A-1 BROOKLYN NY,KINGS,Dentist,Dental Providers,General Practice
+1003006453,2,BAKER FAMILY CHIROPRACTIC,10494 LOVELAND MADEIRA RD LOVELAND OH,HAMILTON,Chiropractor,Chiropractic Providers,
+1003006461,2,NORTHEAST WASHINGTON ALLIANCE COUNSELING SERVICES,165 E HAWTHORNE AVE COLVILLE WA,STEVENS,Community/Behavioral Health,Agencies,
+1003006479,,,,,,,
+1003006487,1,DR. CINDY Y SZETO D.D.S.,6524 ROSE BRIDGE DR ROSEVILLE CA,PLACER,Dentist,Dental Providers,
+1003006495,1,YEON BRADY KOREAN INTERPRETER,6903 SE RIVERSIDE DR APT 14 VANCOUVER WA,CLARK,Interpreter,Other Service Providers,
+1003006503,1,DR. OLUGBEMIGA EBENEZER JEGEDE M.D,201 E WENDOVER AVE GREENSBORO NC,GUILFORD,Internal Medicine,Allopathic & Osteopathic Physicians,
+1003006511,1,MRS. KATHLEEN A HRUSOVSKY,9710 ALDER CT MENTOR OH,GEAUGA,Home Health Aide,Nursing Service Related Providers,
+1003006529,1,DR. JOON SEUNG LEE D.D.S.,7523 FORT HAMILTON PKWY BROOKLYN NY,KINGS,Dentist,Dental Providers,General Practice
+1003006537,1,"JENNIFER ROSS M.A., PLMHP",2205 S 10TH ST SUITE 328 OMAHA NE,DOUGLAS,Counselor,Behavioral Health & Social Service Providers,Mental Health
+1003006545,1,MRS. DIONE C GILES PT,1416 N. CHURCH STREET MCKINNEY TX,COLLIN,Physical Therapist,"Respiratory, Developmental, Rehabilitative and Restorative Service Providers",
+1003006552,1,DR. ALNER MIGUEL QUINONEZ M.D.,25 N LANIER AVE FORT MEADE FL,POLK,Family Medicine,Allopathic & Osteopathic Physicians,
+1003006560,2,"ROVAJO ENTERPRISE, INC.",7056 KEARNY DR HUNTINGTON BEACH CA,ORANGE,Durable Medical Equipment & Medical Supplies,Suppliers,
+1003006578,1,DR. KATHRYN MARIE LANG D.P.T.,77 S ELLIOTT RD CHAPEL HILL NC,ORANGE,Physical Therapist,"Respiratory, Developmental, Rehabilitative and Restorative Service Providers",
+1003006586,1,JYOTSNA MAREEDU M.D.,1500 FOREST GLEN RD SILVER SPRING MD,MONTGOMERY,Internal Medicine,Allopathic & Osteopathic Physicians,
+1003006594,,,,,,,
+1003006602,1,DR. HOSSEIN NASAJPOUR MD,1410 JEFFERSON ST LAUREL MS,JONES,Surgery,Allopathic & Osteopathic Physicians,Plastic and Reconstructive Surgery
+1003006610,1,CINDI S RULE ARNP,318 MAIN ST IRETON IA,SIOUX,Nurse Practitioner,Physician Assistants & Advanced Practice Nursing Providers,Family
+1003006628,2,BRANCH MEDICAL CLINIC NAVAL STATION SAN DIEGO,2450 CRAVEN STEET SAN DIEGO CA,SAN DIEGO,Clinic/Center,Ambulatory Health Care Facilities,Military/U.S. Coast Guard Outpatient
+1003006636,1,SABA F HASAN MD,5544 GREENWICH RD STE 200 VIRGINIA BEACH VA,VIRGINIA BEACH CITY,Radiology,Allopathic & Osteopathic Physicians,Diagnostic Radiology
+1003006644,1,DR. MANUEL D AQUINO MD,9400 E ILIFF AVE APT 41 DENVER CO,DENVER,Radiology,Allopathic & Osteopathic Physicians,Diagnostic Radiology
+1003006651,1,ZENA KAY HOMAN M.D.,3000 32ND AVE S FARGO ND,CASS,Obstetrics & Gynecology,Allopathic & Osteopathic Physicians,
+1003006669,2,PEDIATRICS CARE CLINIC,5506 BROADWAY BLVD GARLAND TX,DALLAS,Pediatrics,Allopathic & Osteopathic Physicians,
+1003006677,2,"DAVID M. CAMPBELL, D.D.S.,APC",6342 FALLBROOK AVE SUITE # 202 WOODLAND HILLS CA,LOS ANGELES,Dentist,Dental Providers,General Practice
+1003006685,,,,,,,
+1003006693,1,ANTHONY TSAI DC,5710 CAHALAN AVE STE 6H SAN JOSE CA,SANTA CLARA,Chiropractor,Chiropractic Providers,
+1003006701,1,DR. DRAGOSLAV GVOZDJAN M.D.,415 N 26TH ST STE 103 LAFAYETTE IN,TIPPECANOE,Psychiatry & Neurology,Allopathic & Osteopathic Physicians,Psychiatry
+1003006719,2,STAR VIEW CFS (TEAMMATES),1055 W VICTORIA ST COMPTON CA,LOS ANGELES,"Residential Treatment Facility, Emotionally Disturbed Children",Residential Treatment Facilities,
+1003006727,1,KATHERINE ANNE GAMBACORTA D.O.,30 S CAYUGA RD WILLIAMSVILLE NY,ERIE,Anesthesiology,Allopathic & Osteopathic Physicians,
+1003006735,1,MS. NICOLE MARIE KOEPKE CRNP,3401 CIVIC CENTER BLVD CHILDREN'S HOSPITAL OF PHILADELPHIA - EMERGENCY MED PHILADELPHIA PA,PHILADELPHIA,Nurse Practitioner,Physician Assistants & Advanced Practice Nursing Providers,Pediatrics
+1003006743,2,"SPECIALTY ANESTHESIA, PLLC",1360 HYLAN BLVD STATEN ISLAND NY,RICHMOND,Anesthesiology,Allopathic & Osteopathic Physicians,
+1003006750,1,FREDERICK KANE DMD,11634 N KENDALL DR MIAMI FL,MIAMI-DADE,Dentist,Dental Providers,
+1003006768,1,DR. MAUREEN A NEWMAN M.D.,1055 N CURTIS RD BOISE ID,ADA,Family Medicine,Allopathic & Osteopathic Physicians,Hospice and Palliative Medicine
+1003006776,1,EDDYME DANGER MD,32 W GORE ST 2ND FLOOR ORLANDO FL,ORANGE,Physical Medicine & Rehabilitation,Allopathic & Osteopathic Physicians,
+1003006784,1,MRS. VERONICA YVETTE EPHRAIM M.S.,1202 MORENA BLVD STE 300 SAN DIEGO CA,SAN DIEGO,Marriage & Family Therapist,Behavioral Health & Social Service Providers,
+1003006792,1,DR. MARSHALL ANDREW GLENN LPC,3613 GULLANE DR NORMAN OK,MCCLAIN,Counselor,Behavioral Health & Social Service Providers,Professional
+1003006800,1,BRIDGIT ANN MENA PA-C,301 SAINT PAUL PL ORTHOPEDIC AND JOINT REPLACEMENT BALTIMORE MD,BALTIMORE CITY,Physician Assistant,Physician Assistants & Advanced Practice Nursing Providers,
+1003006818,2,EXCEL OCCUPATIONAL CLINICS,6450 BRENTWOOD STAIR RD SUITE 110 FORT WORTH TX,TARRANT,Clinic/Center,Ambulatory Health Care Facilities,Occupational Medicine
+1003006826,1,PROF. DONG S KIM L.AC,23300 CINEMA DR STE 240 VALENCIA CA,LOS ANGELES,Acupuncturist,Other Service Providers,
+1003006834,2,LATINO FAMILY DENTAL,835 3RD AVE STE A CHULA VISTA CA,SAN DIEGO,Dentist,Dental Providers,General Practice
+1003006842,1,MS. DEBORAH LEE JACKSON LCSW,2820 W PETERSON AVE CHICAGO IL,COOK,Social Worker,Behavioral Health & Social Service Providers,Clinical
+1003006859,1,"MRS. JULIE ENGEL B.A., QMHA",37875 JASPER LOWELL RD JASPER OR,LANE,Counselor,Behavioral Health & Social Service Providers,Mental Health
+1003006867,2,OPTICAL IDEAS,2168 WHITE PLAINS RD BRONX NY,BRONX,Technician/Technologist,Eye and Vision Services Providers,Optician
+1003006875,,,,,,,
+1003006883,1,JANICE WEBB PAYNE LPC,416 S MAIN ST SUITE B-3 HAILEY ID,BLAINE,Counselor,Behavioral Health & Social Service Providers,Professional
+1003006891,1,JULIE A SUMMERS M.S. CCC-SLP/L,104 DILLON DR SPARTANBURG SC,CHEROKEE,Speech-Language Pathologist,"Speech, Language and Hearing Service Providers",
+1003006909,1,"JULIA ANN PINKHAM L.M.T., L.AC.",2170 RIVERSIDE DR COLUMBUS OH,FRANKLIN,Acupuncturist,Other Service Providers,
+1003006917,2,"NEIGHBORHOOD COUNSELING CENTER OF WADENA, INC",720 COMMERCE RD LONG PRAIRIE MN,MORRISON,Community/Behavioral Health,Agencies,
+1003006925,2,FAMILY FIRST,RR 1 BOX 11 MACHIAS ME,WASHINGTON,Case Management,Agencies,
+1003006933,1,MS. HA LE CAO,255 INTERNATIONAL BLVD OAKLAND CA,ALAMEDA,Marriage & Family Therapist,Behavioral Health & Social Service Providers,
+1003006941,1,DR. CHRISTIAN BRENT PAHLS D.D.S.,346 N CENTRAL ST COQUILLE OR,COOS,Dentist,Dental Providers,
+1003006958,1,DAVID WAYNE FARRAR PA-C,217 WESTRIDGE DR ORD NE,VALLEY,Physician Assistant,Physician Assistants & Advanced Practice Nursing Providers,
+1003006966,1,DR. MICHAEL ANTHONY D'ANGELO JR. PSY.D.,MADIGAN ARMY MEDICAL CENTER 9040 JACKSON AVE TACOMA WA,PIERCE,Psychologist,Behavioral Health & Social Service Providers,Clinical
+1003006974,2,HASSAN CHAHADEH MDPA,5225 KATY FWY STE 150 HOUSTON TX,HARRIS,Pain Medicine,Allopathic & Osteopathic Physicians,Interventional Pain Medicine
+1003006982,2,MANNIX FAMILY MARKET @ FOREST AND RICHMOND AVE LLC,985 RICHMOND AVE STATEN ISLAND NY,RICHMOND,Pharmacy,Suppliers,Community/Retail Pharmacy
+1003006990,,,,,,,
+1003007006,2,HANCOCK MEDICAL CENTER,4540 SHEPHERD SQUARE SUITE B DIAMONDHEAD MS,HANCOCK,Clinic/Center,Ambulatory Health Care Facilities,Urgent Care
+1003007014,2,DELRAY FAMILY PRACTICE INC,3816 HOLLYWOOD BLVD SUITE 102 HOLLYWOOD FL,BROWARD,General Practice,Allopathic & Osteopathic Physicians,
+1003007022,1,DR. MAMTA GUPTA MD,3600 GASTON AVE SUITE 550 DALLAS TX,DALLAS,Internal Medicine,Allopathic & Osteopathic Physicians,
+1003007030,1,DR. DANIEL GRANGER PECK,20855 BOND RD NE POULSBO WA,KITSAP,Dentist,Dental Providers,
+1003007048,1,DR. SAM SAMAN FEREIDOUNI M.D.,7699 E PINNACLE PEAK RD SUITE 115 SCOTTSDALE AZ,MARICOPA,Family Medicine,Allopathic & Osteopathic Physicians,
+1003007055,1,DR. TIFFANY NICOLE HOWARD MD,"103 SUM MOR DR VITALITY MEDICAL CENTERS, INC. WEST COLUMBIA SC",LEXINGTON,Physical Medicine & Rehabilitation,Allopathic & Osteopathic Physicians,
+1003007063,2,"LAFAYETTE LIFEPLANS OF HIAWATHA, INC.",302 E. IOWA STREET RR 2 E. IOWA STREET HIAWATHA KS,BROWN,Skilled Nursing Facility,Nursing & Custodial Care Facilities,
+1003007071,1,DR. JOSEPH WILLIAM MCKENNA D.C.,923 DILL AVE SW ATLANTA GA,FULTON,Chiropractor,Chiropractic Providers,
+1003007089,1,MS. ANA M. GARCIA M.A.,1330 S LONG BEACH BLVD COMPTON CA,LOS ANGELES,Counselor,Behavioral Health & Social Service Providers,
+1003007097,1,SUSAN J SMEDLEY RDH,102 N PLUMER AVE TUSD DENTAL HEALTH SERVICES TUCSON AZ,PIMA,Dental Hygienist,Dental Providers,
+1003007105,2,"ADVISACARE HEALTHCARE SOLUTIONS, INC.",3600 PORT OF TACOMA RD STE 511 FIFE WA,PIERCE,Home Health,Agencies,
+1003007113,1,DIVINE ABEI ESSEM REGISTERED NURSE,11312 EVANS TRL APT 101 BELTSVILLE MD,PRINCE GEORGES,Registered Nurse,Nursing Service Providers,
+1003007121,1,KUI TOH GERARD LEONG M.D.,55 FRUIT STREET MASSACHUSETTS GENERAL HOSPITAL BOSTON MA,SUFFOLK,Internal Medicine,Allopathic & Osteopathic Physicians,Cardiovascular Disease
+1003007139,2,"JOHN F. ROMANO, MD, LLP",36 7TH AVE SUITE# 423 NEW YORK NY,NEW YORK,Specialist,Other Service Providers,
+1003007147,1,MR. DARYUSH PARVINBENAM PCC,287 W JOHNSTOWN RD COLUMBUS OH,FRANKLIN,Counselor,Behavioral Health & Social Service Providers,Mental Health
+1003007154,1,MRS. HEATHER MAE CASHELL LCSW,170 S 2ND ST STE C HAMILTON MT,RAVALLI,Social Worker,Behavioral Health & Social Service Providers,Clinical
+1003007162,2,DDYMON INC.,71 WALNUT BLVD STE 108 ROCHESTER MI,OAKLAND,Hearing Aid Equipment,Suppliers,
+1003007170,1,DR. SORIN C DANCIU M.D.,3134 N CLARK ST CHICAGO IL,COOK,Internal Medicine,Allopathic & Osteopathic Physicians,Cardiovascular Disease
+1003007188,2,WHITE OAK MEDICAL OFFICE INC,51 E. CAMPBELL AVE SUITE 170 CAMPBELL CA,SANTA CLARA,Psychiatry & Neurology,Allopathic & Osteopathic Physicians,Psychiatry
+1003007196,2,"HANK HU, A CHIROPRACTIC CORPORACTION",749 W FREMONT AVE SUNNYVALE CA,SANTA CLARA,Chiropractor,Chiropractic Providers,
+1003007204,1,HUSSEIN NOORUDDIN YAMANI MD,100 MEDICAL CENTER BLVD SUITE 200 CONROE TX,MONTGOMERY,Internal Medicine,Allopathic & Osteopathic Physicians,Interventional Cardiology
+1003007212,1,ERIN ELIZABETH SULLIVAN,940 BELMONT ST BROCKTON MA,PLYMOUTH,Social Worker,Behavioral Health & Social Service Providers,Clinical
+1003007220,2,PHYSIOTHERAPY ASSOCIATES INC,SAN FRANCISCO INTERNATIONAL AIRPORT TERMINAL 2 SAN FRANCISCO CA,SAN MATEO,Clinic/Center,Ambulatory Health Care Facilities,Physical Therapy
+1003007238,1,"MS. MARILYN STEFONETTI LMFT, NE",6 PETALUMA BLVD N STE B4 PETALUMA CA,SONOMA,Marriage & Family Therapist,Behavioral Health & Social Service Providers,
+1003007246,1,JESSICA L WILLIAMS MSPT,152 E MARKET ST SUITE 200 LEWISTOWN PA,MIFFLIN,Physical Therapist,"Respiratory, Developmental, Rehabilitative and Restorative Service Providers",
+1003007253,1,AMY LYN ROYAL RN,151 N MAIN ST TOOELE UT,TOOELE,Registered Nurse,Nursing Service Providers,Community Health
+1003007261,1,MS. JUDITH A TATE LSW,1330 E COOLEY DR COLTON CA,RIVERSIDE,Counselor,Behavioral Health & Social Service Providers,
+1003007279,1,JENNIFER WILLIAMS,602 E NOB HILL BLVD YAKIMA WA,KITTITAS,Physician Assistant,Physician Assistants & Advanced Practice Nursing Providers,
+1003007287,1,DR. MICHAELA ELIZABETH GINN MD,13214 INDIAN CREEK ROAD HOUSTON TX,HARRIS,Internal Medicine,Allopathic & Osteopathic Physicians,
+1003007295,1,DR. OBINNA C. UZOWULU M.D.,22250 BULVERDE RD SUITE 111 SAN ANTONIO TX,BEXAR,Family Medicine,Allopathic & Osteopathic Physicians,
+1003007303,,,,,,,
+1003007311,1,MICHAEL ANTHONY BLACK SR. P.A.-C,1762 E MAIN ST SPARTANBURG SC,CHEROKEE,Physician Assistant,Physician Assistants & Advanced Practice Nursing Providers,
+1003007329,1,MS. SHIRLEY A JAUTZ CRNA,221 PHYSICIANS PARK POPLAR BLUFF MO,CARTER,"Nurse Anesthetist, Certified Registered",Physician Assistants & Advanced Practice Nursing Providers,
+1003007337,2,ROBERTS PHYSICAL THERAPY & MASSAGE,3900 GASKINS RD RICHMOND VA,HENRICO,Physical Therapist,"Respiratory, Developmental, Rehabilitative and Restorative Service Providers",Orthopedic
+1003007345,1,DR. MICHAEL CHARLES HARLOW M.D.,900 S 8TH ST STE 110 HENNEPIN COUNTY MEDICAL CENTER MINNEAPOLIS MN,HENNEPIN,Psychiatry & Neurology,Allopathic & Osteopathic Physicians,Psychiatry
+1003007352,1,AVIS LORRAINE BARKER D.M.D.,50648 WEEPING WILLOW RUN E GRANGER IN,ST. JOSEPH,Dentist,Dental Providers,
+1003007360,1,DR. TINA DEBORAH MONTEMURNO M.D.,12157 POWHATAN TRL CONIFER CO,JEFFERSON,Anesthesiology,Allopathic & Osteopathic Physicians,
+1003007378,1,GLENN ALVIN FOSTER JR. DDS,4410 BERRY FARM ROAD NORMAN OK,MCCLAIN,Dentist,Dental Providers,Oral and Maxillofacial Surgery
+1003007386,2,"THE GIANT COMPANY, LLC",925 NORLAND AVE CHAMBERSBURG PA,FRANKLIN,Pharmacy,Suppliers,Community/Retail Pharmacy
+1003007394,1,MR. JOSEPH ANDREW BECHARD MSW EDS LLP,36 WEST 8TH STREET SUITE 250 CENTER FOR PSYCHO EDUCATIONAL SERVICES HOLLAND MI,OTTAWA,Psychologist,Behavioral Health & Social Service Providers,
+1003007402,2,PAULINE LU DDS PROFESSIONAL CORPORATION,3434 EL CAMINO REAL SANTA CLARA CA,SANTA CLARA,Dentist,Dental Providers,
+1003007410,1,ADRIENNE UNDERKOFFLER M.A.,807 LAWN AVENUE SELLERSVILLE PA,BUCKS,Counselor,Behavioral Health & Social Service Providers,Addiction (Substance Use Disorder)
+1003007428,2,"ADIENT HEALTH, INC",951- A INDUSTRIAL ROAD SAN CARLOS CA,SAN MATEO,Physical Therapist,"Respiratory, Developmental, Rehabilitative and Restorative Service Providers",
+1003007436,1,MRS. ALISHA LEE ETTLEMAN OTR/L,1314 3RD AVE NEBRASKA CITY NE,OTOE,Occupational Therapist,"Respiratory, Developmental, Rehabilitative and Restorative Service Providers",
+1003007444,1,MS. BLANCA V. LAURSEN SUDP,1601 E COLLEGE WAY MOUNT VERNON WA,SKAGIT,Counselor,Behavioral Health & Social Service Providers,Addiction (Substance Use Disorder)
+1003007451,1,MRS. LISA KAY WILLIS PT,556 AUBUCHON RD TROY MO,LINCOLN,Physical Therapist,"Respiratory, Developmental, Rehabilitative and Restorative Service Providers",
+1003007469,1,DR. EDUARDO OZUNA M.D.,55 GRUENE PARK DR NEW BRAUNFELS TX,HAYS,Anesthesiology,Allopathic & Osteopathic Physicians,Pain Medicine
+1003007477,1,MS. KIMBERLY BETH ABDOW N.P.,435 SHREWSBURY ST WORCESTER MA,WORCESTER,Registered Nurse,Nursing Service Providers,Psychiatric/Mental Health
+1003007485,1,MARIA LUGO BA,1430 E COOLEY DR STE 240 COLTON CA,RIVERSIDE,Counselor,Behavioral Health & Social Service Providers,Mental Health
+1003007493,2,SANJAY K KHURANA MD INC,122 SHELDON ST EL SEGUNDO CA,LOS ANGELES,Orthopaedic Surgery,Allopathic & Osteopathic Physicians,
+1003007501,,,,,,,
+1003007519,2,LAWRENCE VASQUEZ MERCY MEDICAL CARE,1 S BROADWAY SUITE 305 EDMOND OK,OKLAHOMA,Durable Medical Equipment & Medical Supplies,Suppliers,
+1003007527,1,JULIE TAYLOR LOCKE,8100 WESTPORT RD LOUISVILLE KY,JEFFERSON,Counselor,Behavioral Health & Social Service Providers,
+1003007535,1,DR. DANIEL E KNIGHT PHARMD,7500 STATE RD CINCINNATI OH,HAMILTON,Pharmacist,Pharmacy Service Providers,
+1003007543,1,DR. DMITRY EPELBOYM DDS,7708 4TH AVE BROOKLYN NY,KINGS,Dentist,Dental Providers,General Practice
+1003007550,1,"MS. BROOKE ELLYN SCHNEIDER M.S.ED, BCBA",4000 GROVE ST SUITE 200 SKOKIE IL,COOK,Behavior Analyst,Behavioral Health & Social Service Providers,
+1003007568,1,PAMELA J SEARLES OT,159 BENNETT DR CARIBOU ME,AROOSTOOK,Occupational Therapist,"Respiratory, Developmental, Rehabilitative and Restorative Service Providers",Neurorehabilitation
+1003007576,,,,,,,
+1003007584,1,DR. CAROLE AVON PATTERSON PH.D.,144 W 12TH ST REISS 4TH FLOOR NEW YORK NY,NEW YORK,Social Worker,Behavioral Health & Social Service Providers,Clinical
+1003007592,1,CAROLYN KARAFIATH MILLER PA-C,81 CLARION RD JOHNSONBURG PA,ELK,Physician Assistant,Physician Assistants & Advanced Practice Nursing Providers,
+1003007600,1,"MR. HANSON H YANG ATC, LAT",5050 DUNEVILLE ST APT 140 LAS VEGAS NV,CLARK,Specialist/Technologist,"Respiratory, Developmental, Rehabilitative and Restorative Service Providers",Athletic Trainer
+1003007618,2,UPRISING HOMES INC,814 GOVERNORS RD WINDSOR NC,BERTIE,Community/Behavioral Health,Agencies,
+1003007626,1,RACHAEL ANNE HART LMSW,2615 STADIUM DRIVE KALAMAZOO MI,KALAMAZOO,Social Worker,Behavioral Health & Social Service Providers,Clinical
+1003007634,2,"INFECTIOUS DISEASE SPECIALISTS OF CENTRAL FLORIDA , PA",201 HILDA ST STE # 22 KISSIMMEE FL,OSCEOLA,Internal Medicine,Allopathic & Osteopathic Physicians,Infectious Disease
+1003007642,1,JENNIFER LYNN HARK MSW,11301 WILSHIRE BLVD BLDG 206 ROOM 123 LOS ANGELES CA,LOS ANGELES,Social Worker,Behavioral Health & Social Service Providers,
+1003007659,2,"KIDS IN BALANCE, INC.",10022 WATER WORKS LN RIVERVIEW FL,HILLSBOROUGH,Voluntary or Charitable,Agencies,
+1003007667,1,"MS. KIMBERLY ANNE EVANS M.A., L.C.P.C.",219 APPLEBEE ST BARRINGTON IL,LAKE,Counselor,Behavioral Health & Social Service Providers,Mental Health
+1003007675,,,,,,,
+1003007683,1,DR. MELANIE KAY TUROCK D.O.,801 OSTRUM ST DEPT. OF EMERGENCY MEDICINE BETHLEHEM PA,LEHIGH,Emergency Medicine,Allopathic & Osteopathic Physicians,
+1003007691,1,"JENNIFER DEBORA HUDSON MA, LMHC, CMHS",1906 82ND AVE NE LAKE STEVENS WA,SNOHOMISH,Counselor,Behavioral Health & Social Service Providers,Mental Health
+1003007709,,,,,,,
+1003007717,1,MOISES FARRERA DDS,AVE ABRAHAM LINCOLN #1247 CD JUAREZ MX,LEON,Dentist,Dental Providers,
+1003007725,1,MISS RASHAM MANHAR SHAH PHARMD,1601 CHERRY ST 3 PARKWAY -SUITE 1700 PHILADELPHIA PA,PHILADELPHIA,Pharmacist,Pharmacy Service Providers,
+1003007733,1,VALERIE PATRICK ZARYCZNY,1514 ARTHUR MINNIS RD HILLSBOROUGH NC,DURHAM,Occupational Therapist,"Respiratory, Developmental, Rehabilitative and Restorative Service Providers",
+1003007741,1,DR. KRISANNA L DEPPEN MD,290 E TOWN ST COLUMBUS OH,FRANKLIN,Preventive Medicine,Allopathic & Osteopathic Physicians,Addiction Medicine
+1003007758,2,"JACOB ZAMSTEIN, MD, LLC",701 COTTAGE GROVE RD # C SUITE 110 BLOOMFIELD CT,CAPITOL,Urology,Allopathic & Osteopathic Physicians,
+1003007766,2,PUBLIC HEALTH SOLUTIONS,295 FLATBUSH AVENUE EXT FL 3 BROOKLYN NY,KINGS,Clinic/Center,Ambulatory Health Care Facilities,Community Health
+1003007774,1,GEORGINA SALGADO CHAVEZ ACUPUNCTURIST,3844 W 63RD ST CHICAGO IL,COOK,Acupuncturist,Other Service Providers,
+1003007782,1,KENNETH S SMERKA PA,4050 HARLEM RD AMHERST NY,ERIE,Physician Assistant,Physician Assistants & Advanced Practice Nursing Providers,
+1003007790,1,MARK PRUDEN L.P.C.C.,42 CALHOUN ST CINCINNATI OH,HAMILTON,Counselor,Behavioral Health & Social Service Providers,Professional
+1003007808,1,JONATHAN REX GUSTAVSON MSPT,3426 NE 62ND AVE PORTLAND OR,MULTNOMAH,Physical Therapist,"Respiratory, Developmental, Rehabilitative and Restorative Service Providers",
+1003007816,1,ARUSHA GUPTA M.D.,8630 FENTON ST SUITE 514 SILVER SPRING MD,MONTGOMERY,Ophthalmology,Allopathic & Osteopathic Physicians,
+1003007824,1,DR. LEONARD ANANG SOWAH M.D.,22 S GREENE ST BALTIMORE MD,BALTIMORE CITY,Internal Medicine,Allopathic & Osteopathic Physicians,
+1003007832,1,"FRANCES LYNN OPPENHEIMER RN, LMT",1212 NW 12TH AVE SUITE 3 GAINESVILLE FL,ALACHUA,Mechanotherapist,Other Service Providers,
+1003007840,2,VENICE DERMATOLOGY CLINIC PA,716 THE RIALTO VENICE FL,SARASOTA,Dermatology,Allopathic & Osteopathic Physicians,
+1003007857,1,ANGELA MURRAY YOUNG MD,20 MEDICAL RIDGE DR GREENVILLE SC,GREENVILLE,Pediatrics,Allopathic & Osteopathic Physicians,
+1003007865,2,"PEAK REHABCARE, LLC",101 N 7TH ST # 16 MAYFIELD KY,HICKMAN,Occupational Therapist,"Respiratory, Developmental, Rehabilitative and Restorative Service Providers",
+1003007873,,,,,,,
+1003007881,1,"MR. ALFREDO HERNANDEZ M.S., LMHC, Q-S",7171 SW 62ND AVE STE 300 SOUTH MIAMI FL,MIAMI-DADE,Counselor,Behavioral Health & Social Service Providers,Mental Health
+1003007899,1,BRITTANY LYNN HALL M.S. CCC-SLP,3601 4TH STREETE STE 2A300 LUBBOCK TX,LUBBOCK,Speech-Language Pathologist,"Speech, Language and Hearing Service Providers",
+1003007907,1,DR. EMMANUEL TRUNGTOAN TAVAN MD,2800 N VANCOUVER AVE SUITE 230 PORTLAND OR,MULTNOMAH,Internal Medicine,Allopathic & Osteopathic Physicians,Pulmonary Disease
+1003007915,1,SHANNON MARIE BEARD,13455 SE OATFIELD RD APT 28 MILWAUKIE OR,MULTNOMAH,Counselor,Behavioral Health & Social Service Providers,Mental Health
+1003007923,1,CLYDE RAMEY,446 METROPLEX DR SUITE A-100 NASHVILLE TN,DAVIDSON,Case Manager/Care Coordinator,Other Service Providers,
+1003007931,1,DR. RONALD ALLAN ALTMAN DDS,97 VREELAND STREET STATEN ISLAND NY,RICHMOND,Dentist,Dental Providers,General Practice
+1003007949,1,BONNIE L. MROCZKOWSKI COTAL,2303 N SWAN RD TUCSON AZ,PIMA,Occupational Therapy Assistant,"Respiratory, Developmental, Rehabilitative and Restorative Service Providers",
+1003007956,2,"AESTHETIC DENTAL CARE OF ARIZONA, P.C.",34 LAKE HAVASU AVE N SUITE 5 LAKE HAVASU CITY AZ,MOHAVE,Dentist,Dental Providers,General Practice
+1003007964,1,OLGA MARIA KRAMER PA-C,3101 LATROBE DR CHARLOTTE NC,MECKLENBURG,Physician Assistant,Physician Assistants & Advanced Practice Nursing Providers,
+1003007972,1,MS. ANA MORIAH VANHOOK L.M.T.,499 E CENTRAL PKWY SUITE 115 ALTAMONTE SPRINGS FL,SEMINOLE,Massage Therapist,"Respiratory, Developmental, Rehabilitative and Restorative Service Providers",
+1003007980,1,JUAN MARIO BERNAL M.D.,3680 GRANDVIEW PKWY STE 200 BIRMINGHAM AL,JEFFERSON,Internal Medicine,Allopathic & Osteopathic Physicians,Interventional Cardiology
+1003007998,1,WILLIAM D. HOLMES JR. M.D.,843 MILLING AVE LULING LA,ST. CHARLES,Family Medicine,Allopathic & Osteopathic Physicians,
+1003008004,1,MS. MARTHA WHITE,3306 W CATALINA DR PHOENIX AZ,MARICOPA,Counselor,Behavioral Health & Social Service Providers,Mental Health
+1003008012,1,DR. JOHN R. WHITEMAN D.D.S,515 3RD ST NIAGARA FALLS NY,NIAGARA,Dentist,Dental Providers,Orthodontics and Dentofacial Orthopedics
+1003008020,1,MS. CHERYL SANTACATERINA M.S.,161 WESTERN AVE SUITE 102 ST JOHNSBURY VT,ESSEX,Counselor,Behavioral Health & Social Service Providers,Mental Health
+1003008038,1,MRS. HANA DANDONA RPA-C,796 DEER PARK AVE NORTH BABYLON NY,SUFFOLK,Physician Assistant,Physician Assistants & Advanced Practice Nursing Providers,Medical
+1003008046,2,BLUE MOUNTAIN HEART TO HEART,2330 EASTGATE ST STE 105 WALLA WALLA WA,WALLA WALLA,Case Management,Agencies,
+1003008053,1,NATY MADARIAGA TOLENTINO MD,FIFTH STREET & WESTERN AVENUE CALIFORNIA REHABILITATION CENTER NORCO CA,RIVERSIDE,Internal Medicine,Allopathic & Osteopathic Physicians,
+1003008061,,,,,,,
+1003008079,1,"DR. RONALD J. CARR D.D.S., M.S., P.C.",4917 PLAZA AT PARKWAY ODESSA TX,ECTOR,Dentist,Dental Providers,Orthodontics and Dentofacial Orthopedics
+1003008087,,,,,,,
+1003008095,1,ROBIN R HOUSE APRN NP,1406 W 5TH ST SUITE 201 LONDON KY,LAUREL,Nurse Practitioner,Physician Assistants & Advanced Practice Nursing Providers,Family
+1003008103,2,H MILANO MELLON MD INC,915 MYRTLE AVE INGLEWOOD CA,LOS ANGELES,Family Medicine,Allopathic & Osteopathic Physicians,Adult Medicine
+1003008111,1,DR. MARIE OWSLEY EASTERLIN M.D.,418 EH CT UNIT 4B BRUNSWICK GA,GLYNN,Obstetrics & Gynecology,Allopathic & Osteopathic Physicians,
+1003008129,2,MEDSERVE OF DADE COUNTY,15328 NW 7TH AVE MIAMI FL,MIAMI-DADE,Physical Therapist,"Respiratory, Developmental, Rehabilitative and Restorative Service Providers",
+1003008137,1,MISS GRACE FREDEEN CO,600 BROADWAY SUITE 190 SEATTLE WA,KING,Orthotist,"Respiratory, Developmental, Rehabilitative and Restorative Service Providers",
+1003008145,1,MS. DEBORAH ANNETTE HADLEY SLP,6219 BILLINSGATE DR KATY TX,HARRIS,Speech-Language Pathologist,"Speech, Language and Hearing Service Providers",
+1003008152,2,OAKLEAF MEDICAL NETWORK,3430 OAKWOOD MALL DR SUITE 400 EAU CLAIRE WI,DUNN,General Acute Care Hospital,Hospitals,
+1003008160,2,STERLING OPTICAL#541,1 MILLS CIR 1016 ONTARIO CA,SAN BERNARDINO,Optometrist,Eye and Vision Services Providers,
+1003008178,2,PSYCHOLOGICAL HEALTH ASSOCIATES,303 N 2ND ST STE B ST CHARLES IL,DU PAGE,Counselor,Behavioral Health & Social Service Providers,Mental Health
+1003008186,1,CAROL GRIFFIN,1301 SUMMIT VIEW ST ANCHORAGE AK,ANCHORAGE,Nurse's Aide,Nursing Service Related Providers,
+1003008194,1,MRS. CINDY CLARK COTA,10420 BARTON ST OVERLAND PARK KS,JOHNSON,Occupational Therapy Assistant,"Respiratory, Developmental, Rehabilitative and Restorative Service Providers",
+1003008202,1,ANGELA D. OLIVER LCSW,244 TUNE DRIVE EL PRADO NM,TAOS,Social Worker,Behavioral Health & Social Service Providers,Clinical
+1003008210,1,MS. LOYCE ANN HAMPSON M.A.,790 E BONITA AVE POMONA CA,LOS ANGELES,Rehabilitation Practitioner,"Respiratory, Developmental, Rehabilitative and Restorative Service Providers",
+1003008228,1,AMANDA STARFIELD,78 POMEROY TER CUTCHINS PROGRAMS FOR CHILDREN AND FAMILES NORTHAMPTON MA,HAMPSHIRE,Student in an Organized Health Care Education/Training Program,"Student, Health Care",
+1003008236,1,DR. BYRON JAMES FALER MD,300 W HOSPITAL RD DEPT GENERAL FORT EISENHOWER GA,RICHMOND,Surgery,Allopathic & Osteopathic Physicians,
+1003008244,1,RUMA RAJBHANDARI,75 FRANCIS ST BOSTON MA,SUFFOLK,Internal Medicine,Allopathic & Osteopathic Physicians,Gastroenterology
+1003008251,2,"BIGFORK DENTAL CENTER, P.C.",8289 MT HIGHWAY 35 BIGFORK MT,LAKE,Clinic/Center,Ambulatory Health Care Facilities,Dental
+1003008269,1,DR. MATTHEW LARSON M.D.,701 PARK AVE # P4 MINNEAPOLIS MN,HENNEPIN,Anesthesiology,Allopathic & Osteopathic Physicians,
+1003008277,2,BANNER HEALTH,1650 COWLES ST DEPT 41B FAIRBANKS AK,FAIRBANKS NORTH STAR,Pharmacy,Suppliers,Home Infusion Therapy Pharmacy
+1003008285,1,DR. MONIE APPLEGATE DDS,27 CENTRAL AVE LANCASTER NY,ERIE,Dentist,Dental Providers,
+1003008293,1,RUTH S BRAUN RN,11484 B AVE AUBURN CA,PLACER,Registered Nurse,Nursing Service Providers,Community Health
+1003008301,2,"CENTER FOR COMMUNITY ALTERNATIVES, INC.",25 CHAPEL ST STE 701 BROOKLYN NY,KINGS,Clinic/Center,Ambulatory Health Care Facilities,"Rehabilitation, Substance Use Disorder"
+1003008319,2,"ENRIQUE ARAUJO DDS, A DENTAL CORPORATION",1024 N MACLAY AVE STE 3 SAN FERNANDO CA,LOS ANGELES,Dentist,Dental Providers,
+1003008327,1,PEDRO HERNANDEZ M.D.,364 WHITE OAK ST ASHEBORO NC,RANDOLPH,Surgery,Allopathic & Osteopathic Physicians,
+1003008335,1,LORI SIEGEL HAUSMAN PHD,4 ALLEGHENY CTR FL 8 PITTSBURGH PA,ALLEGHENY,Psychologist,Behavioral Health & Social Service Providers,Clinical
+1003008343,2,BRUCE & MARILYN VINOKUR FOOT CARE GROUP LLC,1211 W MAIN ST WATERBURY CT,NAUGATUCK VALLEY,Podiatrist,Podiatric Medicine & Surgery Service Providers,Foot Surgery
+1003008350,2,JAMES BAIRD DPM INC,1410 S BARRINGTON RD BARRINGTON IL,LAKE,Podiatrist,Podiatric Medicine & Surgery Service Providers,Foot & Ankle Surgery
+1003008368,2,OSTERMAN'S #1 INC,1751 DAKOTA WAY REDDING CA,SHASTA,"Community Based Residential Treatment Facility, Intellectual and/or Developmental Disabilities",Residential Treatment Facilities,
+1003008376,2,MARSHALL MEDICAL CENTER NORTH JONES PEDIATRIC PRACTICE,45 MEDICAL PARK DR B GUNTERSVILLE AL,MARSHALL,Clinic/Center,Ambulatory Health Care Facilities,Primary Care
+1003008384,2,CALIFORNIA SLEEP SOLUTIONS,9230 BRUCEVILLE RD SUITE 4 ELK GROVE CA,SACRAMENTO,Durable Medical Equipment & Medical Supplies,Suppliers,
+1003008392,1,MS. LYNETTE LEE LCSW,801 ALAKEA ST STE 205 HONOLULU HI,HONOLULU,Social Worker,Behavioral Health & Social Service Providers,Clinical
+1003008400,2,"HUMBLE SPINE CENTER, PA",18929 HIGHWAY 59 N HUMBLE TX,HARRIS,Clinic/Center,Ambulatory Health Care Facilities,Ambulatory Surgical
+1003008418,1,SANDRA P. CUARTAS DDS,6600 W 12TH AVE HIALEAH FL,MIAMI-DADE,Dentist,Dental Providers,General Practice
+1003008426,2,WELLNESSONE OF STONE MOUNTAIN,6254 MEMORIAL DR STE F STONE MOUNTAIN GA,DE KALB,Chiropractor,Chiropractic Providers,
+1003008434,2,PATRICIA K JOSEPH MD PC,200 GRAND AVE SUITE 202 ENGLEWOOD NJ,BERGEN,Surgery,Allopathic & Osteopathic Physicians,
+1003008442,1,MRS. CYPRESS J. MORALES REDMON MFCC,5905 SOQUEL DR STE 550 SOQUEL CA,SANTA CRUZ,Case Manager/Care Coordinator,Other Service Providers,
+1003008459,1,DR. PHILIP E FIDEL DDS,3236 W FULLERTON AVE CHICAGO IL,COOK,Dentist,Dental Providers,General Practice
+1003008467,1,DR. ESTHER SHINYOUNG SONG M.D.,655 WATKINS MILL RD GAITHERSBURG MD,MONTGOMERY,Pediatrics,Allopathic & Osteopathic Physicians,
+1003008475,1,JENNIFER KAY DAVIS NP,901 CONNECTOR 206 N DOUGLAS GA,COFFEE,Nurse Practitioner,Physician Assistants & Advanced Practice Nursing Providers,Family
+1003008483,1,JILL ANNE HELMER TLMLP,102 S MAIN ST MEDICINE LODGE KS,BARBER,Social Worker,Behavioral Health & Social Service Providers,
+1003008491,1,CHRISTINE J DE GRAAN MSPT,1611 NW 12TH AVE MIAMI FL,MIAMI-DADE,Physical Therapist,"Respiratory, Developmental, Rehabilitative and Restorative Service Providers",
+1003008509,2,"TED P. KEMP, M.D., L.L.C.",315 VETERANS BLVD DENHAM SPRINGS LA,LIVINGSTON,Internal Medicine,Allopathic & Osteopathic Physicians,
+1003008517,1,DR. DANIEL MENDEZ MD,100 AVE LUIS MUNOZ MARIN CAGUAS PR,GURABO,Radiology,Allopathic & Osteopathic Physicians,Body Imaging
+1003008525,1,JONATHON R PETERSON PT,705 PLEASANT AVE S PARK RAPIDS MN,CLEARWATER,Physical Therapist,"Respiratory, Developmental, Rehabilitative and Restorative Service Providers",
+1003008533,1,VALERIY SABODASH M.D.,5741 BEE RIDGE RD STE 530 SARASOTA FL,SARASOTA,Psychiatry & Neurology,Allopathic & Osteopathic Physicians,Neurology
+1003008541,2,C'S NEW BEGINNINGS,1240 TELLURIDE CIR LEXINGTON KY,CLARK,"Residential Treatment Facility, Intellectual and/or Developmental Disabilities",Residential Treatment Facilities,
+1003008558,2,NISQUALLY TRIBE,4816 SHE NAH NUM DR SE OLYMPIA WA,THURSTON,Clinic/Center,Ambulatory Health Care Facilities,
+1003008566,1,DR. MARC A. SAFRAN MD,"1600 CLIFTON RD NE TO: CAPT MARC SAFRAN, US PUBLIC HEALTH SERVICE, CDC ATLANTA GA",DE KALB,Psychiatry & Neurology,Allopathic & Osteopathic Physicians,Psychiatry
+1003008574,1,DR. ERIC R. GINN M.D.,130 S BRYN MAWR AVE SUITE H321 BRYN MAWR PA,MONTGOMERY,Hospitalist,Allopathic & Osteopathic Physicians,
+1003008582,1,MRS. REBECCA MENCIAS-REITZ PHYSICAL THERAPIST,15941 LOREL AVE OAK FOREST IL,COOK,Physical Therapist,"Respiratory, Developmental, Rehabilitative and Restorative Service Providers",
+1003008590,1,RADHA CHIRUMAMILLA M.D.,600 COFFEE RD MODESTO CA,STANISLAUS,Hospitalist,Allopathic & Osteopathic Physicians,
+1003008608,,,,,,,
+1003008616,2,STEPHEN A VANNUCCI MD INC,251 COHASSET RD SUITE 230 CHICO CA,BUTTE,Dermatology,Allopathic & Osteopathic Physicians,
+1003008624,2,"GEORGE T. YANG, M.D., A PROFESSIONAL CORPORATION",906 S SUNSET AVE STE 102 WEST COVINA CA,LOS ANGELES,Internal Medicine,Allopathic & Osteopathic Physicians,"Endocrinology, Diabetes & Metabolism"
+1003008632,2,"HUBER EYECARE, INC.",2711 COMMERCE DR NW SUITE 100 ROCHESTER MN,OLMSTED,Optometrist,Eye and Vision Services Providers,
+1003008640,1,MATTHEW M KOSCHNITZKY ATC,550 W OGDEN AVE HINSDALE IL,DU PAGE,Specialist/Technologist,"Respiratory, Developmental, Rehabilitative and Restorative Service Providers",Athletic Trainer
+1003008657,,,,,,,
+1003008665,2,"KISHORE G. PATHIAL, M.D., P.C.",2397 NE CUMULUS AVE. MCMINNVILLE OR,YAMHILL,Internal Medicine,Allopathic & Osteopathic Physicians,Pulmonary Disease
+1003008673,1,PATRICK M FRIED CRNA,1700 LINDBERG DR SLIDELL LA,ST. TAMMANY,"Nurse Anesthetist, Certified Registered",Physician Assistants & Advanced Practice Nursing Providers,
+1003008681,1,BARBARA LYNN MARCUM RN,511 HARRISON LEADVILLE CO,LAKE,Registered Nurse,Nursing Service Providers,
+1003008699,,,,,,,
+1003008707,2,TRAVEL MEDICINE OF SUGAR LAND,4660 SWEETWATER BLVD SUITE #190 SUGAR LAND TX,FORT BEND,Specialist,Other Service Providers,
+1003008715,1,JANELLE M HINSON PA,4416 FOREST DR SUITE A COLUMBIA SC,RICHLAND,Physician Assistant,Physician Assistants & Advanced Practice Nursing Providers,
+1003008723,1,"DR. TEDDY ROGER BLAND JR. DMD, MS",1340 E ORANGE AVE EUSTIS FL,LAKE,Dentist,Dental Providers,
+1003008731,2,BACHAR AL ALAMI,3813 22ND ST SUITE E LUBBOCK TX,LUBBOCK,Pediatrics,Allopathic & Osteopathic Physicians,
+1003008749,2,ATHENS OPTICAL INC,957 BAXTER ST ATHENS GA,OCONEE,Eyewear Supplier,Suppliers,
+1003008756,2,EYE 20 OPTICAL INC,155 SE LOOP 338 SUITE 300 ODESSA TX,ECTOR,Eyewear Supplier,Suppliers,
+1003008764,2,"POOLE CHIROPRACTIC, PLLC",6245 E BELL RD STE 118 SCOTTSDALE AZ,MARICOPA,Chiropractor,Chiropractic Providers,
+1003008772,1,LOUISE MARY BRUCE FNP,1691 THE ALAMEDA SAN JOSE CA,SANTA CLARA,Nurse Practitioner,Physician Assistants & Advanced Practice Nursing Providers,Family
+1003008780,1,DR. MAJA KATARINA BERGMAN PHD,600 W 146TH ST APT 52 NEW YORK NY,NEW YORK,Psychologist,Behavioral Health & Social Service Providers,Clinical
+1003008798,1,DR. MARTIN A. SOBEL PH.D.,30 ANDREA DR SETAUKET NY,SUFFOLK,Psychologist,Behavioral Health & Social Service Providers,Clinical Child & Adolescent
+1003008806,1,DR. LAURIE ANN VALENZANO D.P.T,9040 FITZSIMMONS DR JOINT BASE LEWIS MCCHORD WA,PIERCE,Physical Therapist,"Respiratory, Developmental, Rehabilitative and Restorative Service Providers",
+1003008814,1,DR. MARILYN LOBO DDS,13575 W INDIAN SCHOOL RD STE #1000 LITCHFIELD PARK AZ,MARICOPA,Dentist,Dental Providers,Pediatric Dentistry
+1003008822,,,,,,,
+1003008830,1,MS. PAULA GRACE LCSW C,7190 CRESTWOOD BLVD KAISER PERMANENTE FREDERICK MEDICAL CENTER FREDERICK MD,FREDERICK,Social Worker,Behavioral Health & Social Service Providers,Clinical
+1003008848,1,"DR. KATHLEEN E RICHKIND PH.D., FACMG",2000 VIVIGEN WAY SANTA FE NM,SANTA FE,Medical Genetics,Allopathic & Osteopathic Physicians,Clinical Cytogenetics
+1003008855,1,ALISIA D. LEE PA-C,1014 SAN JUAN AVE EXETER CA,TULARE,Physician Assistant,Physician Assistants & Advanced Practice Nursing Providers,
+1003008863,1,MS. HOLLY SUE FLYNN LMP,1963 BETHEL RD SE PORT ORCHARD WA,KITSAP,Contractor,Other Service Providers,
+1003008871,1,DIONE TAYLOR,2865 LOGAN AVE SAN DIEGO CA,SAN DIEGO,Counselor,Behavioral Health & Social Service Providers,Mental Health
+1003008889,2,MEDICAL CLINIC OF OAK CREEK INC,2301 W HWY 89A STE 107 SEDONA AZ,YAVAPAI,Naturopath,Other Service Providers,
+1003008897,2,"ADVANCED INTEGRATIVE MEDICINE, PC",10455 PARK MEADOWS DR SUITE 102 LONE TREE CO,DOUGLAS,Internal Medicine,Allopathic & Osteopathic Physicians,
+1003008905,2,"HORIZON MENTAL HEALTH MANAGEMENT, INC.",18 UPPER MAIN ST SHARON CT,NORTHWEST HILLS,Psychiatry & Neurology,Allopathic & Osteopathic Physicians,Psychiatry
+1003008913,1,SANDRA K WALKER ARNP,325 9TH AVE SEATTLE WA,KING,Nurse Practitioner,Physician Assistants & Advanced Practice Nursing Providers,Acute Care
+1003008921,,,,,,,
+1003008939,,,,,,,
+1003008947,2,HASTINGS & ASSOCIATES LTD. CO.,1643 CORAL REEF ST SEBASTIAN FL,INDIAN RIVER,Respite Care,Respite Care Facility,"Respite Care, Intellectual and/or Developmental Disabilities, Child"
+1003008954,1,ANN LAUREN ROBINSON PA-C,7046 SW ARCHER RD GAINESVILLE FL,ALACHUA,Physician Assistant,Physician Assistants & Advanced Practice Nursing Providers,
+1003008962,1,MS. DORIAN LATOYA TONEY,6601 W 12TH ST LITTLE ROCK AR,PULASKI,Case Manager/Care Coordinator,Other Service Providers,
+1003008970,1,MS. MONICA YOUNG,701 W LAMM RD FREEPORT IL,STEPHENSON,Counselor,Behavioral Health & Social Service Providers,Mental Health
+1003008988,1,ALLYSON B ALEXANDER DPT,13A MAIN ST SUITE 4 SPARTA NJ,SUSSEX,Physical Therapist,"Respiratory, Developmental, Rehabilitative and Restorative Service Providers",
+1003008996,1,"MELISSA OMOHUNDRO RD, LD",164 ACORN FALLS DR LEXINGTON KY,CLARK,"Dietitian, Registered",Dietary & Nutritional Service Providers,
+1003009002,1,MAYA BASIN RPH.,250 174TH ST APT 704 SUNNY ISLES BEACH FL,MIAMI-DADE,Pharmacist,Pharmacy Service Providers,
+1003009010,1,TRACY BLAIR WANDTKE HERRMANN CNM,1032 S CESAR E CHAVEZ DR MILWAUKEE WI,MILWAUKEE,Advanced Practice Midwife,Physician Assistants & Advanced Practice Nursing Providers,
+1003009028,1,"MISS CATHERINE MARY ZIMMER PT,OCS",1378 MAIN ST CARBONDALE CO,GARFIELD,Physical Therapist,"Respiratory, Developmental, Rehabilitative and Restorative Service Providers",
+1003009036,1,"MRS. JENNILLE ZABIEREK PT, DPT",1103 CYPRESS CREEK RD SUITE 101 CEDAR PARK TX,WILLIAMSON,Physical Therapist,"Respiratory, Developmental, Rehabilitative and Restorative Service Providers",
+1003009044,1,MR. PATRICK MICHAEL OHAVER ATC,1950 45TH AVE SUITE 200 MUNSTER IN,LAKE,Specialist/Technologist,"Respiratory, Developmental, Rehabilitative and Restorative Service Providers",Athletic Trainer
+1003009051,2,COOPER SURGICAL ASSOCIATES,4 PLAZA DR SUITE 402 SEWELL NJ,CAMDEN,Podiatrist,Podiatric Medicine & Surgery Service Providers,
+1003009069,2,"LIBERTY MEDICAL SPECIALTIES, INC.",1768 HIGHWAY 501 MYRTLE BEACH SC,HORRY,Durable Medical Equipment & Medical Supplies,Suppliers,
+1003009077,1,MOHAMMAD ISRAR SHEIKH MD,2000 EMBARCADERO STE 400 OAKLAND CA,ALAMEDA,Psychiatry & Neurology,Allopathic & Osteopathic Physicians,Child & Adolescent Psychiatry
+1003009085,1,PHILIPPE OLIVIER SZAPARY MD,"3400 CIVIC CENTER BLVD EAST PAVILION, 2ND FLOOR PHILADELPHIA PA",PHILADELPHIA,Internal Medicine,Allopathic & Osteopathic Physicians,Cardiovascular Disease
+1003009093,2,DIGESTIVE HEALTH PHYSICIANS OF CENTRAL FLORIDA PA,1350 E MAIN ST STE C-2 BARTOW FL,POLK,Internal Medicine,Allopathic & Osteopathic Physicians,Gastroenterology
+1003009101,1,ISA PILOTO-BAKER L.C.S.W.,430 W 66TH ST HIALEAH FL,MIAMI-DADE,Social Worker,Behavioral Health & Social Service Providers,Clinical
+1003009119,1,DR. TROY RANDOLPH MOHLER M.D.,"20 TOWN SQUARE, SUITE 180 LOVETTSVILLE VA",LOUDOUN,Family Medicine,Allopathic & Osteopathic Physicians,
+1003009127,1,JANNETTE MARIE FIGUEROA-VELEZ M.D.,100 PASEO SAN PABLO EDIF DR ARTURO CADILLA VINAS SUITE 104 BAYAMON PR,BAYAMON,Internal Medicine,Allopathic & Osteopathic Physicians,
+1003009135,1,RITA A KOSTELIK ARNP,192 E BAKERVIEW RD STE 102 BELLINGHAM WA,WHATCOM,Nurse Practitioner,Physician Assistants & Advanced Practice Nursing Providers,Psychiatric/Mental Health
+1003009143,,,,,,,
+1003009150,1,IRVIN LEE ENCE,10 DIAGONAL STREET #102 ST GEORGE UT,WASHINGTON,Dentist,Dental Providers,
+1003009168,1,"DR. BERNICE LOUISE COLEMAN PH.D, ACNP-BC",8700 BEVERLY BLVD NORTH TOWER ROOM 6215 WEST HOLLYWOOD CA,LOS ANGELES,Nurse Practitioner,Physician Assistants & Advanced Practice Nursing Providers,Acute Care
+1003009176,1,MS. CHERYL A. SPRAGG PA-C,2100 SE OCEAN BLVD SUITE 100 STUART FL,MARTIN,Physician Assistant,Physician Assistants & Advanced Practice Nursing Providers,
+1003009184,1,GARY ROBERT WALLACE PTA,13 NORTHTOWN DR TRINITY REHAB SUITE 110 JACKSON MS,HINDS,Physical Therapy Assistant,"Respiratory, Developmental, Rehabilitative and Restorative Service Providers",
+1003009192,1,PATRICIA DOBBS CMP,522 MILL RD CLARKSVILLE AR,JOHNSON,Case Manager/Care Coordinator,Other Service Providers,
+1003009200,1,TERESA RAMONA KARJALAINEN OTR,1010 E 10TH ST TUCSON AZ,PIMA,Occupational Therapist,"Respiratory, Developmental, Rehabilitative and Restorative Service Providers",
+1003009218,,,,,,,
+1003009226,1,MS. CAROL SUE BRUSCA LMFT,5601 DOMINGO RD NE ALBUQUERQUE NM,BERNALILLO,Marriage & Family Therapist,Behavioral Health & Social Service Providers,
+1003009234,1,"DR. ADRIANNE LYN MILLER AUD, CCC-A, FAAA",3001 S JACKSON ST SAN ANGELO TX,IRION,Audiologist,"Speech, Language and Hearing Service Providers",
+1003009242,2,SABATINI PEDIATRICS PC,612 YALE PL CANON CITY CO,CUSTER,Pediatrics,Allopathic & Osteopathic Physicians,
+1003009259,2,PROVIDENCE HEALTH & SERVICE - WASHINGTON,2015 COOKS HILL RD SUITE 200 CENTRALIA WA,LEWIS,Internal Medicine,Allopathic & Osteopathic Physicians,Medical Oncology
+1003009267,1,CRAIG STEVEN BOSLEY,10 OROTE POINT RD SANTA RITA GU,,Military Health Care Provider,Other Service Providers,Independent Duty Corpsman
+1003009275,,,,,,,
+1003009283,1,DR. HEIDI M. SOLBERG-SHANKLE MD,3288 MOANALUA RD HONOLULU HI,HONOLULU,Emergency Medicine,Allopathic & Osteopathic Physicians,
+1003009291,2,BAKER COMMUNITY MEDICAL PRACTICE INC,159 N 3RD ST MACCLENNY FL,BAKER,Clinic/Center,Ambulatory Health Care Facilities,
+1003009309,1,DR. DEBRA BURNETT BREWER AUD,1365 CLIFTON RD NE # A2334 ATLANTA GA,DE KALB,Audiologist,"Speech, Language and Hearing Service Providers",
+1003009317,1,HEATHER HUGELMEYER LCSW,73 S CENTRAL AVE VALLEY STREAM NY,QUEENS,Social Worker,Behavioral Health & Social Service Providers,Clinical
+1003009325,2,"AUDIOLOGY CONSULTANTS OF SOUTHERN OREGON, INC.",1367 W HARVARD AVE ROSEBURG OR,DOUGLAS,Audiologist,"Speech, Language and Hearing Service Providers",
+1003009333,1,"DEBORAH MOLLY LEVIN LCSW, ACSW",10411 CLAYTON RD STE 305 SAINT LOUIS MO,ST. LOUIS,Social Worker,Behavioral Health & Social Service Providers,Clinical
+1003009341,1,MRS. KAREN GREENE,305 E BRANDON BLVD SUITE 101 BRANDON FL,HILLSBOROUGH,Registered Nurse,Nursing Service Providers,Orthopedic
+1003009358,1,VAMSI KIRAN KODUMURI,258 S CHICKASAW TRL STE 203 ORLANDO FL,ORANGE,Internal Medicine,Allopathic & Osteopathic Physicians,Interventional Cardiology
+1003009366,1,WAYNE C. THOMAS ATC,660 GOLDEN RIDGE RD STE 130 GOLDEN CO,JEFFERSON,Specialist/Technologist,"Respiratory, Developmental, Rehabilitative and Restorative Service Providers",Athletic Trainer
+1003009374,2,ENDODONTIC PROFESSIONALS PA ARBOR LAKES ENDODONTICS,12000 ELM CREEK BLVD SUITE 240 MAPLE GROVE MN,HENNEPIN,Dentist,Dental Providers,Endodontics
+1003009382,1,DR. DAVID JOSEPH DOPERAK DC,4859 N 20TH ST PHOENIX AZ,MARICOPA,Chiropractor,Chiropractic Providers,
+1003009390,2,DERMATOPATHOLOGY SPECIALISTS JIM PHILLIPS MD DERMATOPATHOLOGIST LLC,1280 JOHNNIE DODDS BLVD SUITE 101 MT PLEASANT SC,CHARLESTON,Dermatology,Allopathic & Osteopathic Physicians,Dermatopathology
+1003009408,1,LISA WYNLAND LUKIANOFF,555 NORTHGATE DR FAMILY SERVICE AGENCY OF MARIN SAN RAFAEL CA,MARIN,Counselor,Behavioral Health & Social Service Providers,Mental Health
+1003009416,1,MATTHEW BARCELLONA M.D.,10200 N 92ND ST STE 150 SCOTTSDALE AZ,MARICOPA,Pediatrics,Allopathic & Osteopathic Physicians,
+1003009424,1,MR. ALEX SCOTT CADAN PA-C,267 GRANT ST BRIDGEPORT CT,GREATER BRIDGEPORT,Physician Assistant,Physician Assistants & Advanced Practice Nursing Providers,Surgical
+1003009432,1,"DR. KOURTNEY T. VAILLANCOURT PH.D, LMFT, LADAC",619 N ALAMEDA BLVD LAS CRUCES NM,DONA ANA,Marriage & Family Therapist,Behavioral Health & Social Service Providers,
+1003009440,1,REKHA VONTELA DDS,3737 LONE TREE WAY SUITE F ANTIOCH CA,CONTRA COSTA,Dentist,Dental Providers,
+1003009457,2,"VOLK HUMAN SERVICES, PC",501 3RD ST NE STE 1 DEVILS LAKE ND,RAMSEY,Psychologist,Behavioral Health & Social Service Providers,Clinical
+1003009465,1,PAMELA SORRELL,115 ROCKWOOD LN HAZARD KY,PERRY,Counselor,Behavioral Health & Social Service Providers,
+1003009473,1,DR. JESUS RAFAEL ALVAREZ-PEREZ M.D.,30 PROSPECT AVE HACKENSACK NJ,BERGEN,Obstetrics & Gynecology,Allopathic & Osteopathic Physicians,Maternal & Fetal Medicine
+1003009481,1,BARBARA A WIGGINS OTR/L,13 NORTHTOWN DR SUITE 110 TRINITY REHAB JACKSON MS,HINDS,Occupational Therapist,"Respiratory, Developmental, Rehabilitative and Restorative Service Providers",
+1003009499,2,"ROGER F. SHAW, III APMC",7587 JEFFERSON HWY BATON ROUGE LA,E. BATON ROUGE,Optometrist,Eye and Vision Services Providers,
+1003009507,2,ELLICOTT SQUARE CHIROPRACTIC PLLC,2075 SHERIDAN DR TONAWANDA NY,ERIE,Chiropractor,Chiropractic Providers,
+1003009515,1,SHANNA BRIDGES II,19 TABER ST NEW BEDFORD MA,BRISTOL,Speech-Language Pathologist,"Speech, Language and Hearing Service Providers",
+1003009523,1,BRIAN LESTINI M.D.,34TH & CIVIC CENTER BLVD CHILDREN'S HOSPITAL OF PHILADELPHIA PHILADELPHIA PA,PHILADELPHIA,Pediatrics,Allopathic & Osteopathic Physicians,Pediatric Hematology-Oncology
+1003009531,1,TERRA J JOLLY L.M.P.,312 COLUMBIA ST NW OLYMPIA WA,THURSTON,Massage Therapist,"Respiratory, Developmental, Rehabilitative and Restorative Service Providers",
+1003009549,1,RAMUNE SILEIKYTE,2601 TVC NASHVILLE TN,DAVIDSON,Student in an Organized Health Care Education/Training Program,"Student, Health Care",
+1003009556,1,"MARTINE DOMINIQUE PAREKH AU.D FAAA, CCC-A",16260 VENTURA BLVD STE 420 ENCINO CA,LOS ANGELES,Audiologist,"Speech, Language and Hearing Service Providers",
+1003009564,1,DR. FREDERICK ALBERT DEUTSCH MD,STUDIO MEDICO VIALE SAN LAZZARO 102 VICENZA VICENZA,,Contractor,Other Service Providers,
+1003009572,1,RITA JOAN STOVER-CONWELL MSW,925 VASBINDER DR CHESTERFIELD IN,MADISON,Social Worker,Behavioral Health & Social Service Providers,Clinical
+1003009580,1,MIMI SONG IDICULA NP,6161 N STATE HIGHWAY 161 IRVING TX,DALLAS,Nurse Practitioner,Physician Assistants & Advanced Practice Nursing Providers,
+1003009598,1,DR. ANITA WEINREB KATZ PH..D,108 E 91ST ST APT 6A SUITE 1C NEW YORK NY,NEW YORK,Psychologist,Behavioral Health & Social Service Providers,
+1003009606,2,"PLUS 1 RX, LLC",50 MOISEY DRIVE SUITE 218 HAZLETON PA,LUZERNE,Pharmacy,Suppliers,Community/Retail Pharmacy
+1003009614,2,"AUDIOLOGY CONSULTANTS OF LOUISIANA, INC.",1408 METRO DR ALEXANDRIA LA,RAPIDES,Audiologist-Hearing Aid Fitter,"Speech, Language and Hearing Service Providers",
+1003009622,,,,,,,
+1003009630,1,DR. ROBERT L SINGLETARY MD,17 LANSING ST AUBURN NY,CAYUGA,Emergency Medicine,Allopathic & Osteopathic Physicians,
+1003009648,,,,,,,
+1003009655,1,ENGRACIA FERRER FLORES M.D.,5720 W PROSPECT DR VISALIA CA,TULARE,Internal Medicine,Allopathic & Osteopathic Physicians,
+1003009663,1,"MISS LINDSAY ANN CHARLES M.S., CFY SLP",61 CORPORATE CIR NEW CASTLE DE,NEW CASTLE,Speech-Language Pathologist,"Speech, Language and Hearing Service Providers",
+1003009671,1,DEBRA KAMKA MA,3500 LAKESIDE CT STE. 101 RENO NV,WASHOE,Counselor,Behavioral Health & Social Service Providers,Addiction (Substance Use Disorder)
+1003009689,1,"MS. ROSALYNDA SAUCEDO B.A, SLPA",21520 PIONEER BLVD STE 110 HAWAIIAN GARDENS CA,LOS ANGELES,Marriage & Family Therapist,Behavioral Health & Social Service Providers,
+1003009697,1,LUCY S VILLEGAS,1720 E 120TH ST LOS ANGELES CA,LOS ANGELES,Social Worker,Behavioral Health & Social Service Providers,Clinical
+1003009705,1,DR. SERENA DAWN WOODS-GRIMM M.D.,201 N CENTRAL AVE PHOENIX AZ,MARICOPA,Family Medicine,Allopathic & Osteopathic Physicians,
+1003009713,2,TURRELL NEURODIAGNOSTIC SERVICES INC,21866 AMBAR DR WOODLAND HILLS CA,LOS ANGELES,Psychiatry & Neurology,Allopathic & Osteopathic Physicians,Clinical Neurophysiology
+1003009721,2,FAMILY PRESERVATION SERVICES,5369 PETERS CREEK RD NW ROANOKE VA,ROANOKE CITY,Community/Behavioral Health,Agencies,
+1003009739,1,RACHELLE MARIE THOMAS PT,4660 S HAGADORN RD STE 400 EAST LANSING MI,CLINTON,Physical Therapist,"Respiratory, Developmental, Rehabilitative and Restorative Service Providers",
+1003009747,2,"ST. JOHN'S/ST. VINCENT'S HOME FOR CHILDREN, INC",141 KEY AVE WHEELING WV,OHIO,Voluntary or Charitable,Agencies,
+1003009754,1,DR. DANIEL M SHULL DC,2923 O ST LINCOLN NE,LANCASTER,Chiropractor,Chiropractic Providers,
+1003009762,,,,,,,
+1003009770,2,BELLAIRE WELLNESS & CHIRO,5959 WEST LOOP S STE 250 BELLAIRE TX,HARRIS,Chiropractor,Chiropractic Providers,Rehabilitation
+1003009788,2,"CENTRAL CARE SERVICES, INC.",2001 PALM BEACH LAKES BLVD STE 300D WEST PALM BEACH FL,PALM BEACH,Nursing Care,Agencies,
+1003009796,1,DR. HOLLY ANNE NELSON D.O.,12040 NE 128TH ST # MS 69 KIRKLAND WA,KING,Anesthesiology,Allopathic & Osteopathic Physicians,
+1003009804,1,JILL VOLK D.O.,100 KENYON AVE WAKEFIELD RI,WASHINGTON,Emergency Medicine,Allopathic & Osteopathic Physicians,
+1003009812,2,"ADOBE DENTISTRY, INC.",1640 N COUNTRY CLUB RD TUCSON AZ,PIMA,Dentist,Dental Providers,General Practice
+1003009820,1,MRS. MICHELLE ANDRE BARBAGALLO O.T.,150 NEW PROVIDENCE RD MOUNTAINSIDE NJ,UNION,Occupational Therapist,"Respiratory, Developmental, Rehabilitative and Restorative Service Providers",Pediatrics
+1003009838,1,"DR. SHRUTI VIJAYA SIMHA M.D., M.P.H",301 E WENDOVER AVE STE 400 GREENSBORO NC,GUILFORD,Pediatrics,Allopathic & Osteopathic Physicians,
+1003009846,2,"JEFFERY M REUBEN, MD PA",40 OKATIE CTR BLVD STE 205 OKATIE SC,JASPER,Orthopaedic Surgery,Allopathic & Osteopathic Physicians,
+1003009853,1,GRACE DUNN M.D.,1830 N MAIN ST BELL FL,GILCHRIST,Family Medicine,Allopathic & Osteopathic Physicians,
+1003009861,1,MOUSTAFA BANNA MD,13460 N 94TH DR STE J1 PEORIA AZ,MARICOPA,Internal Medicine,Allopathic & Osteopathic Physicians,Cardiovascular Disease
+1003009879,1,GEORGE WILLIAM KEMPER JR.,4455 NE HIGHWAY 20 CORVALLIS OR,BENTON,Social Worker,Behavioral Health & Social Service Providers,
+1003009887,1,KRISTIN BOWMAN,111 NATURE WALK PKWY SUITE 101 ST AUGUSTINE FL,ST. JOHNS,Speech-Language Pathologist,"Speech, Language and Hearing Service Providers",
+1003009895,1,MS. LAURA MARIE FRYE MA SPED MS CCC-SLP,7000 W 121ST ST STE 110 LEAWOOD KS,JOHNSON,Speech-Language Pathologist,"Speech, Language and Hearing Service Providers",
+1003009903,1,DR. RYAN K VANLAECKEN D.D.S. M.S.,600 4TH ST NE STE 103 WATERTOWN SD,HAMLIN,Dentist,Dental Providers,Orthodontics and Dentofacial Orthopedics
+1003009911,1,CHARLES EVERETT COPPINGER PA-C,1492 HUDSON BRIDGE RD STOCKBRIDGE GA,ROCKDALE,Physician Assistant,Physician Assistants & Advanced Practice Nursing Providers,
+1003009929,1,MRS. MICHELLE MUNDY TEAGUE PT,1223 W MCDERMOTT DR STE 50 ALLEN TX,COLLIN,Physical Therapist,"Respiratory, Developmental, Rehabilitative and Restorative Service Providers",
+1003009937,1,MR. KEITH R JACKSON OTR/L,600 NORTH BLVD W SUITE D LEESBURG FL,LAKE,Occupational Therapist,"Respiratory, Developmental, Rehabilitative and Restorative Service Providers",
+1003009945,1,MRS. SANDRA L SKEETS RN,516 E. NIZHONI BLVD GALLUP NM,MCKINLEY,Registered Nurse,Nursing Service Providers,Ambulatory Care
+1003009952,1,MARY COLEEN GELMANN CRNA,21A OAK BRANCH DR GREENSBORO NC,GUILFORD,"Nurse Anesthetist, Certified Registered",Physician Assistants & Advanced Practice Nursing Providers,
+1003009960,1,JULIE ANNE MERITT P.A.,1380 S DOUGLAS BLVD MIDWEST CITY OK,OKLAHOMA,Physician Assistant,Physician Assistants & Advanced Practice Nursing Providers,
+1003009978,2,STONE CREEK PSYCHOTHERAPY AND WELLNESS CENTER,20915 KINGSLAND BLVD KATY TX,FORT BEND,Counselor,Behavioral Health & Social Service Providers,Mental Health
+1003009986,1,DR. DANIQUE LYSANNE VANDONGEN MD,23331 GRAND RESERVE DR KATY TX,FORT BEND,Physical Medicine & Rehabilitation,Allopathic & Osteopathic Physicians,
+1003009994,1,BETH NICOLE BROWN LSW,1901 WILLOW ST VINCENNES IN,KNOX,Social Worker,Behavioral Health & Social Service Providers,
+1003010018,1,DR. KARI BORGEN,440 A AVE LAKE OSWEGO OR,MULTNOMAH,Dentist,Dental Providers,Orthodontics and Dentofacial Orthopedics
+1003010026,1,LAUREL ANN BARTH RAS,369 EAST LELAND PITTSBURG CA,CONTRA COSTA,Counselor,Behavioral Health & Social Service Providers,Addiction (Substance Use Disorder)
+1003010034,1,MS. MAUREEN THERESA SHEEHAN MSW LCSW,853 BROADWAY SUITE 1201 NEW YORK NY,NEW YORK,Social Worker,Behavioral Health & Social Service Providers,Clinical
+1003010042,2,MANIILAQ ASSOCIATION,436 5TH & TED STEVENS WAY KOTZEBUE AK,NORTHWEST ARTIC,Dentist,Dental Providers,
+1003010059,1,ANDREA CATALINA PARDO M.D.,225 E CHICAGO AVE # 51 CHICAGO IL,COOK,Psychiatry & Neurology,Allopathic & Osteopathic Physicians,Neurology with Special Qualifications in Child Neurology
+1003010067,,,,,,,
+1003010075,1,DR. WILLIAM G ALBERT III DC,937 MAIN ST NEW MILFORD PA,SUSQUEHANNA,Chiropractor,Chiropractic Providers,
+1003010083,,,,,,,
+1003010091,1,MS. SUSAN P CHRYSTAL MDIV,16 MADISON AVE MADISON NJ,MORRIS,,,
+1003010109,2,"SAN FRANCISCO UROGYNECOLOGY, INC.",3838 CALIFORNIA ST SUITE 316 SAN FRANCISCO CA,SAN FRANCISCO,Obstetrics & Gynecology,Allopathic & Osteopathic Physicians,Gynecology

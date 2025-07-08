@@ -5,3 +5,8 @@
 azure-functions
 pandas
 jupyter
+azure-storage-blob
+sqlalchemy
+polars
+pyarrow
+pytest
