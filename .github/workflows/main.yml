@@ -25,4 +25,4 @@ jobs:
 
     - name: Check code formatting
       run: |
-        black function_app.py
+        black function_app.py tests
