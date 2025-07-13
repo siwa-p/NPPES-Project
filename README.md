@@ -8,7 +8,7 @@ This project processes and analyzes healthcare provider data to identify the dis
 
 ## 🏗️ Architecture
 
-![Project Architecture Diagram](./docs/images/architecture.png)
+![Project Architecture Diagram](./docs/images/NPPES-ARCHITECTURE.png)
 
 ### Data Sources
 - **NPPES Data Dissemination File**: Primary healthcare provider data
