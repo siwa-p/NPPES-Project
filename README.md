@@ -1,10 +1,10 @@
 # NPPES Healthcare Provider Analysis Project
 
-A comprehensive dat processing pipeline for analyzing healthcare providers across US counties using the National Plan and Provider Enumeration System (NPPES) data.
+A comprehensive data processing pipeline for analyzing healthcare providers across US counties using the National Plan and Provider Enumeration System (NPPES) data.
 
 ## 🎯 Project Overview
 
-This project processes and analyzes healthcare provider data to identify the distribution and types of healthcare providers in each US county. The solution includes data extraction, transformation, loading (ETL), and county-level aggregation with population data integration.
+This project processes and analyzes healthcare provider data to identify the distribution and types of healthcare providers in each US county. The solution includes data extraction, transformation, loading (ETL), and county-level aggregation with population data.
 
 ## 🏗️ Architecture
 
